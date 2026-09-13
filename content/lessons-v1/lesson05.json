@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson5(ST).pptx and rewritten into structured study data.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids.",
+    "copyright": "Do not republish full PPT slides or textbook artwork."
+  },
+  "lesson": {
+    "id":"lesson-5",
+    "number":5,
+    "titleKo":"서점에서",
+    "titleEn":"At the Bookstore",
+    "theme":"Places, time, purpose, and everyday activities",
+    "situations":["meeting someone after a long time","going to places","saying where an activity happens","telling time","explaining why you are going somewhere","talking about courses"],
+    "goals":["Distinguish 에 and 에서","Build full SOV sentences with location and object particles","Tell time using Native Korean hours and Sino-Korean minutes","Use V-(으)러 가다/오다 for purpose","Conjugate ㄷ-irregular verbs such as 듣다 and 걷다"],
+    "teacherFocus":["static vs destination vs dynamic location","time particle 에","mixed number systems in clock time","수업을 듣다","N하고 같이","purpose of motion"],
+    "connections":["sentence-particles","numbers","irregulars","real-life"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson5(ST).pptx","slides":[2,3,6,7,8,9,12,13,15,21,22,23,24,26,39,46,50,51,52,53,54,62,64,81,82,84]}]
+  },
+  "vocabulary": [
+    {"id":"v5-park","korean":"공원","meaningEn":"park","meaningZh":"公园","pos":"noun","hanja":"公園","originType":"sino-korean","tags":["place"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":3}]},
+    {"id":"v5-deptstore","korean":"백화점","meaningEn":"department store","meaningZh":"百货商店","pos":"noun","hanja":"百貨店","originType":"sino-korean","tags":["place","shopping"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":3}]},
+    {"id":"v5-cafe","korean":"카페 / 커피숍","meaningEn":"cafe / coffee shop","meaningZh":"咖啡馆","pos":"noun","originType":"loanword","tags":["place"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":3}]},
+    {"id":"v5-shop","korean":"가게","meaningEn":"small shop; store","meaningZh":"商店","pos":"noun","originType":"native-korean","tags":["place","shopping"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":3}]},
+    {"id":"v5-bookstore","korean":"서점","meaningEn":"bookstore","meaningZh":"书店","pos":"noun","hanja":"書店","originType":"sino-korean","tags":["place","shopping"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[2,5]}]},
+    {"id":"v5-birthday","korean":"생일","meaningEn":"birthday","meaningZh":"生日","pos":"noun","hanja":"生日","originType":"sino-korean","tags":["time","people"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":6}]},
+    {"id":"v5-long-time","korean":"오래간만 / 오랜만","meaningEn":"after a long time; long time no see","meaningZh":"好久不见","pos":"noun/expression","originType":"native-korean","tags":["greeting"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[6,7]}]},
+    {"id":"v5-am","korean":"오전","meaningEn":"a.m.; morning period","meaningZh":"上午","pos":"noun","hanja":"午前","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[6,53]}]},
+    {"id":"v5-pm","korean":"오후","meaningEn":"p.m.; afternoon period","meaningZh":"下午","pos":"noun","hanja":"午後","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[6,53]}]},
+    {"id":"v5-clothes","korean":"옷","meaningEn":"clothes","meaningZh":"衣服","pos":"noun","originType":"native-korean","tags":["shopping"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":6}]},
+    {"id":"v5-semester","korean":"학기","meaningEn":"semester","meaningZh":"学期","pos":"noun","hanja":"學期","originType":"sino-korean","tags":["school","time"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":6}]},
+    {"id":"v5-subject","korean":"과목","meaningEn":"subject; course","meaningZh":"科目","pos":"noun","hanja":"科目","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":6}]},
+    {"id":"v5-teach","korean":"가르치다","meaningEn":"to teach","meaningZh":"教","pos":"verb","originType":"native-korean","tags":["action","school"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":9}]},
+    {"id":"v5-buy","korean":"사다","meaningEn":"to buy","meaningZh":"买","pos":"verb","originType":"native-korean","tags":["shopping"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":9}]},
+    {"id":"v5-hit-play","korean":"치다","meaningEn":"to hit; play (some sports/instruments)","meaningZh":"打；弹","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":9}]},
+    {"id":"v5-listen","korean":"듣다","meaningEn":"to hear; listen; take a course","meaningZh":"听；上（课程）","pos":"verb","originType":"native-korean","tags":["action","school","irregular"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[9,81,82]}]},
+    {"id":"v5-walk","korean":"걷다","meaningEn":"to walk","meaningZh":"走路","pos":"verb","originType":"native-korean","tags":["action","irregular"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[9,82]}]},
+    {"id":"v5-like","korean":"좋아하다","meaningEn":"to like","meaningZh":"喜欢","pos":"verb","originType":"native-korean","tags":["preference"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":9}]},
+    {"id":"v5-together","korean":"같이","meaningEn":"together","meaningZh":"一起","pos":"adverb","originType":"native-korean","tags":["social"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[12,81]}]},
+    {"id":"v5-again","korean":"또","meaningEn":"again; also","meaningZh":"又；再","pos":"adverb","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":12}]},
+    {"id":"v5-then","korean":"그럼","meaningEn":"then; if so","meaningZh":"那么；那样的话","pos":"conjunction","originType":"native-korean","tags":["discourse"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":12}]},
+    {"id":"v5-when","korean":"언제","meaningEn":"when","meaningZh":"什么时候","pos":"question word","originType":"native-korean","tags":["question","time"],"sourceRefs":[{"file":"lesson5(ST).pptx","slide":12}]},
+    {"id":"v5-monday","korean":"월요일","meaningEn":"Monday","meaningZh":"星期一","pos":"noun","hanja":"月曜日","originType":"sino-korean","tags":["weekday"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[13,14]}]},
+    {"id":"v5-friday","korean":"금요일","meaningEn":"Friday","meaningZh":"星期五","pos":"noun","hanja":"金曜日","originType":"sino-korean","tags":["weekday"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[13,14]}]},
+    {"id":"v5-sunday","korean":"일요일","meaningEn":"Sunday","meaningZh":"星期日","pos":"noun","hanja":"日曜日","originType":"sino-korean","tags":["weekday"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[13,14]}]}
+  ],
+  "grammar": [
+    {"id":"g5-location","pattern":"에 vs 에서","name":"Location particles","meaning":"에 marks static existence or a destination/goal; 에서 marks the location where an action happens.","formation":["static location: place + 에 + 있다/계시다","destination: place + 에 + 가다/오다","activity location: place + 에서 + action verb"],"examples":[{"ko":"도서관에 있어요.","en":"I am in the library."},{"ko":"도서관에 가요.","en":"I go to the library."},{"ko":"도서관에서 공부해요.","en":"I study at the library."}],"tags":["particle","location"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[22,23,24,26]}]},
+    {"id":"g5-time-particle","pattern":"time + 에","name":"Time particle 에","meaning":"Marks many specific times, dates, and scheduled points in time.","examples":[{"ko":"월요일에 영화를 봐요.","en":"I watch a movie on Monday."},{"ko":"3시에 만나요.","en":"Let’s meet at 3."}],"commonMistakes":["The PPT states that 어제, 오늘, and 내일 do not take 에 in this use."],"tags":["time","particle"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[15,16,54]}]},
+    {"id":"g5-sentence-pattern","pattern":"S + location + O + V","name":"Basic sentence pattern","meaning":"Korean is predicate-final; nominal elements can move, but the predicate stays at the end.","formation":["N이/가 + N에서 + N을/를 + V-아/어요"],"examples":[{"ko":"유미가 교실에서 한국어를 공부해요.","en":"Yumi studies Korean in the classroom."}],"tags":["sentence-structure"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[46,47]}]},
+    {"id":"g5-clock-time","pattern":"Native Korean + 시; Sino-Korean + 분","name":"Clock time","meaning":"Hours use Native Korean numbers and minutes use Sino-Korean numbers.","examples":[{"ko":"한 시 삼십 분","en":"1:30"},{"ko":"한 시 반","en":"1:30 (one-thirty / half past one)"}],"tags":["numbers","time"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[51,52,53]}]},
+    {"id":"g5-purpose","pattern":"V-(으)러 [place]에 가다/오다","name":"Purpose of motion","meaning":"Explains the purpose for going or coming somewhere.","formation":["consonant-ending stem + 으러","vowel-ending stem + 러"],"examples":[{"ko":"공부하러 도서관에 가요.","en":"I go to the library to study."},{"ko":"점심 먹으러 식당에 가요.","en":"I go to a restaurant to eat lunch."}],"tags":["purpose","motion"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[62,63,64]}]},
+    {"id":"g5-d-irregular","pattern":"ㄷ → ㄹ before vowel-initial endings","name":"ㄷ-irregular verbs","meaning":"Some ㄷ-final verb stems change ㄷ to ㄹ before a vowel-initial ending.","examples":[{"ko":"듣다 → 들어요 / 들으세요","en":"listen → listen (polite) / please listen"},{"ko":"걷다 → 걸어요 / 걸으세요","en":"walk → walk (polite) / please walk"}],"tags":["irregular","conjugation"],"sourceRefs":[{"file":"lesson5(ST).pptx","slides":[82,83,84]}]}
+  ],
+  "expressions": [
+    {"id":"e5-longtime","korean":"오래간만이에요 / 오랜만이에요.","meaningEn":"Long time no see.","meaningZh":"好久不见。","situation":"greeting","register":"polite informal","sourceRefs":[{"file":"lesson5(ST).pptx","slide":7}]},
+    {"id":"e5-where-go","korean":"어디 가세요?","meaningEn":"Where are you going?","meaningZh":"您去哪儿？","situation":"destination","register":"honorific polite","sourceRefs":[{"file":"lesson5(ST).pptx","slides":[2,27,39]}]},
+    {"id":"e5-course","korean":"수업을 들어요.","meaningEn":"I take a course/class.","meaningZh":"我上课。","situation":"school","register":"polite informal","pragmatics":"듣다 literally means ‘listen,’ but the PPT teaches [course]을/를 듣다 for taking a course.","sourceRefs":[{"file":"lesson5(ST).pptx","slide":81}]},
+    {"id":"e5-together","korean":"N하고 같이","meaningEn":"together with N","meaningZh":"和N一起","situation":"social activity","register":"neutral","sourceRefs":[{"file":"lesson5(ST).pptx","slide":81}]}
+  ],
+  "practice": [
+    {"id":"p5-001","type":"multiple-choice","prompt":"Choose the particle for ‘I study at the library.’","choices":["도서관에 공부해요.","도서관에서 공부해요.","도서관을 공부해요."],"answers":["도서관에서 공부해요."],"displayAnswer":"도서관에서 공부해요.","explanation":"An action occurs at the library, so the PPT uses 에서.","conceptIds":["g5-location"],"difficulty":1},
+    {"id":"p5-002","type":"typing","prompt":"Write 3:25 in Korean words.","answers":["세 시 이십오 분"],"displayAnswer":"세 시 이십오 분","explanation":"Hours use Native Korean; minutes use Sino-Korean.","conceptIds":["g5-clock-time"],"difficulty":2},
+    {"id":"p5-003","type":"typing","prompt":"Say ‘I go to the bookstore to buy a book.’","answers":["책을 사러 서점에 가요.","책 사러 서점에 가요."],"displayAnswer":"책을 사러 서점에 가요.","explanation":"사다 has a vowel-ending stem, so it takes -러.","conceptIds":["g5-purpose"],"difficulty":2},
+    {"id":"p5-004","type":"multiple-choice","prompt":"Choose the correct polite form of 듣다.","choices":["듣어요","들어요","듣아요"],"answers":["들어요"],"displayAnswer":"들어요","explanation":"In this ㄷ-irregular verb, ㄷ changes to ㄹ before the vowel-initial ending.","conceptIds":["g5-d-irregular"],"difficulty":2},
+    {"id":"p5-005","type":"multiple-choice","prompt":"Which time expression should NOT take 에 in the teacher’s rule?","choices":["월요일","3시","오늘"],"answers":["오늘"],"displayAnswer":"오늘","explanation":"The PPT explicitly says 어제, 오늘, 내일 do not take 에 here.","conceptIds":["g5-time-particle"],"difficulty":1}
+  ]
+}
