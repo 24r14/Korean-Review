@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from the teacher Lesson 1 PPT and rewritten into structured study data.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids, not claims copied from the PPT; only high-confidence items are filled.",
+    "copyright": "No full slide text or slide images should be republished in the public site."
+  },
+  "lesson": {
+    "id": "lesson-1",
+    "number": 1,
+    "titleKo": "자기소개",
+    "titleEn": "Self-introduction",
+    "theme": "Name, grade, nationality, and basic identity statements",
+    "situations": [
+      "introducing yourself",
+      "asking someone's name",
+      "talking about nationality",
+      "reading grades and telephone numbers"
+    ],
+    "goals": [
+      "Introduce yourself with 이에요/예요",
+      "Use 은/는, 이/가, and 도 in basic noun sentences",
+      "Say that someone is not a member of a noun category with N이/가 아니에요",
+      "Ask 이름이 뭐예요? and use 씨 appropriately",
+      "Recognize basic Sino-Korean numbers for grades and phone numbers"
+    ],
+    "teacherFocus": [
+      "predicate-final Korean sentence structure",
+      "particles attach to nouns",
+      "topic vs subject marking",
+      "Sino-Korean number reading",
+      "spacing in Korean",
+      "countries, nationalities, and languages",
+      "avoid using a direct second-person pronoun when a name/title is more appropriate"
+    ],
+    "connections": ["sentence-particles", "numbers", "speech-honorifics"],
+    "sourceRefs": [
+      {"type":"teacher-ppt","file":"lesson1.pptx","slides":[2,3,4,10,12,14,16,18,24,25,27,28,30,34,35,38,39,41,42,43]}
+    ]
+  },
+  "vocabulary": [
+    {"id":"v1-student","korean":"학생","meaningEn":"student","meaningZh":"学生","pos":"noun","hanja":"學生","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson1.pptx","slide":3}]},
+    {"id":"v1-grade","korean":"학년","meaningEn":"school year; grade","meaningZh":"年级","pos":"noun","hanja":"學年","originType":"sino-korean","tags":["school","numbers"],"sourceRefs":[{"file":"lesson1.pptx","slide":3}]},
+    {"id":"v1-school","korean":"학교","meaningEn":"school","meaningZh":"学校","pos":"noun","hanja":"學校","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson1.pptx","slide":3}]},
+    {"id":"v1-university","korean":"대학교","meaningEn":"university","meaningZh":"大学","pos":"noun","hanja":"大學校","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson1.pptx","slide":3}]},
+    {"id":"v1-highschool","korean":"고등학교","meaningEn":"high school","meaningZh":"高中","pos":"noun","hanja":"高等學校","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson1.pptx","slide":3}]},
+    {"id":"v1-teacher","korean":"선생님","meaningEn":"teacher; respectful title","meaningZh":"老师","pos":"noun/title","hanja":"先生","originType":"mixed-sino-korean","originNote":"선생 is Sino-Korean; 님 is an honorific suffix.","tags":["school","honorific"],"sourceRefs":[{"file":"lesson1.pptx","slide":3}]},
+    {"id":"v1-class","korean":"수업","meaningEn":"class; lesson","meaningZh":"课；课程","pos":"noun","hanja":"授業","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson1.pptx","slide":3}]},
+    {"id":"v1-jeo","korean":"저","meaningEn":"I; me (humble/polite)","meaningZh":"我（谦称）","pos":"pronoun","originType":"native-korean","tags":["identity","politeness"],"sourceRefs":[{"file":"lesson1.pptx","slide":4}]},
+    {"id":"v1-name","korean":"이름","meaningEn":"name","meaningZh":"名字","pos":"noun","originType":"native-korean","tags":["identity"],"sourceRefs":[{"file":"lesson1.pptx","slide":4}]},
+    {"id":"v1-what","korean":"무엇 / 뭐","meaningEn":"what","meaningZh":"什么","pos":"question word","originType":"native-korean","tags":["question"],"sourceRefs":[{"file":"lesson1.pptx","slides":[4,32]}]},
+    {"id":"v1-usa","korean":"미국","meaningEn":"United States","meaningZh":"美国","pos":"proper noun","hanja":"美國","originType":"sino-korean","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slides":[4,38]}]},
+    {"id":"v1-korea","korean":"한국","meaningEn":"Korea","meaningZh":"韩国","pos":"proper noun","hanja":"韓國","originType":"sino-korean","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slides":[4,38]}]},
+    {"id":"v1-person","korean":"사람","meaningEn":"person; people","meaningZh":"人","pos":"noun","originType":"native-korean","tags":["identity","nationality"],"sourceRefs":[{"file":"lesson1.pptx","slide":4}]},
+    {"id":"v1-language","korean":"-어 / 말","meaningEn":"language; speech","meaningZh":"语言；话","pos":"noun/suffix","hanja":"語","originType":"mixed","originNote":"-어 is the Sino-Korean suffix 語; 말 is a native Korean word.","tags":["language"],"sourceRefs":[{"file":"lesson1.pptx","slides":[4,38]}]},
+    {"id":"v1-china","korean":"중국","meaningEn":"China","meaningZh":"中国","pos":"proper noun","hanja":"中國","originType":"sino-korean","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slide":38}]},
+    {"id":"v1-japan","korean":"일본","meaningEn":"Japan","meaningZh":"日本","pos":"proper noun","hanja":"日本","originType":"sino-korean","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slide":38}]},
+    {"id":"v1-russia","korean":"러시아","meaningEn":"Russia","meaningZh":"俄罗斯","pos":"proper noun","originType":"loanword","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slide":38}]},
+    {"id":"v1-uk","korean":"영국","meaningEn":"United Kingdom; Britain","meaningZh":"英国","pos":"proper noun","hanja":"英國","originType":"sino-korean","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slide":38}]},
+    {"id":"v1-germany","korean":"독일","meaningEn":"Germany","meaningZh":"德国","pos":"proper noun","originType":"lexicalized country name","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slide":38}]},
+    {"id":"v1-france","korean":"프랑스","meaningEn":"France","meaningZh":"法国","pos":"proper noun","originType":"loanword","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slide":38}]},
+    {"id":"v1-spain","korean":"스페인","meaningEn":"Spain","meaningZh":"西班牙","pos":"proper noun","originType":"loanword","tags":["country"],"sourceRefs":[{"file":"lesson1.pptx","slide":38}]},
+    {"id":"v1-phone-number","korean":"전화번호","meaningEn":"telephone number","meaningZh":"电话号码","pos":"noun","hanja":"電話番號","originType":"sino-korean","tags":["numbers","phone"],"sourceRefs":[{"file":"lesson1.pptx","slide":24}]},
+    {"id":"v1-ssi","korean":"씨","meaningEn":"Mr./Ms.-like courtesy suffix after a name","meaningZh":"用于姓名后的礼貌称呼","pos":"bound noun/title","hanja":"氏","originType":"sino-korean","tags":["address","politeness"],"sourceRefs":[{"file":"lesson1.pptx","slides":[35,39]}]}
+  ],
+  "grammar": [
+    {"id":"g1-predicate-final","pattern":"S + O + P","name":"Predicate-final sentence order","meaning":"The predicate comes at the end of a basic Korean sentence.","formation":["nominal elements + predicate"],"usage":["basic Korean word order"],"examples":[{"ko":"영미가 저녁을 먹어요.","en":"Youngmi eats dinner."}],"commonMistakes":["Do not assume English SVO order; Korean predicates normally close the clause."],"tags":["sentence-structure"],"sourceRefs":[{"file":"lesson1.pptx","slides":[10,11]}]},
+    {"id":"g1-topic","pattern":"N은/는","name":"Topic particle","meaning":"Marks the topic being introduced or contrasted.","formation":["consonant-ending noun + 은","vowel-ending noun + 는"],"usage":["introducing a topic","contrast"],"examples":[{"ko":"저는 폴이에요.","en":"As for me, I am Paul."},{"ko":"선생님은 한국 사람이에요.","en":"The teacher is Korean."}],"related":["g1-also","g1-subject"],"tags":["particle","topic"],"sourceRefs":[{"file":"lesson1.pptx","slides":[12,17]}]},
+    {"id":"g1-copula","pattern":"N이에요/예요","name":"Polite copula","meaning":"Links a noun to an identity or category: ‘is/am/are N.’","formation":["after consonant: 이에요","after vowel: 예요"],"examples":[{"ko":"저는 마이클 정이에요.","en":"I am Michael Jung."},{"ko":"저는 김유미예요.","en":"I am Kim Yumi."}],"tags":["copula","identity"],"sourceRefs":[{"file":"lesson1.pptx","slide":14}]},
+    {"id":"g1-also","pattern":"N도","name":"Particle 도","meaning":"Adds the meaning ‘also/too.’","formation":["noun + 도"],"examples":[{"ko":"저도 학생이에요.","en":"I am a student too."}],"contrast":[{"with":"은/는","note":"The PPT contrasts 은/는 with 도 when showing difference/parallel information."}],"tags":["particle","addition"],"sourceRefs":[{"file":"lesson1.pptx","slides":[16,17]}]},
+    {"id":"g1-subject","pattern":"N이/가","name":"Subject particle","meaning":"Marks a grammatical subject or focused noun.","formation":["consonant-ending noun + 이","vowel-ending noun + 가"],"examples":[{"ko":"이름이 뭐예요?","en":"What is your name?"},{"ko":"마크 씨가 미국 사람이에요?","en":"Is Mark American?"}],"related":["g1-topic"],"tags":["particle","subject"],"sourceRefs":[{"file":"lesson1.pptx","slide":30}]},
+    {"id":"g1-noun-negation","pattern":"N이/가 아니에요","name":"Noun negation","meaning":"Says that someone or something is not N.","formation":["noun + 이/가 + 아니에요"],"examples":[{"ko":"한국 사람이 아니에요.","en":"I am not Korean."},{"ko":"선생님이 아니에요.","en":"(They) are not a teacher."}],"contrast":[{"with":"N이에요/예요","note":"이에요/예요 identifies; 아니에요 negates noun identity/category."}],"tags":["negation","copula"],"sourceRefs":[{"file":"lesson1.pptx","slides":[41,42,43]}]},
+    {"id":"g1-ellipsis","pattern":"Ø + predicate","name":"Omission of redundant elements","meaning":"Korean can omit an understood subject or other repeated information.","examples":[{"ko":"저는 스티브 윌슨이에요. 3학년이에요.","en":"I’m Steve Wilson. I’m in third year/grade."}],"tags":["discourse","ellipsis"],"sourceRefs":[{"file":"lesson1.pptx","slide":25}]}
+  ],
+  "expressions": [
+    {"id":"e1-hello","korean":"안녕하세요?","meaningEn":"Hello.","meaningZh":"你好。","situation":"greeting","register":"polite","sourceRefs":[{"file":"lesson1.pptx","slides":[2,27]}]},
+    {"id":"e1-name","korean":"이름이 뭐예요?","meaningEn":"What is your name?","meaningZh":"你叫什么名字？","situation":"introduction","register":"polite","pragmatics":"The PPT pairs this with name + 씨 rather than a direct second-person pronoun.","sourceRefs":[{"file":"lesson1.pptx","slides":[27,29,39]}]},
+    {"id":"e1-nice-meet","korean":"반갑습니다.","meaningEn":"Nice to meet you.","meaningZh":"很高兴认识你。","situation":"introduction","register":"formal polite fixed expression","sourceRefs":[{"file":"lesson1.pptx","slides":[27,36]}]},
+    {"id":"e1-nationality","korean":"___ 씨는 한국 사람이에요?","meaningEn":"Is ___ Korean?","meaningZh":"___ 是韩国人吗？","situation":"nationality","register":"polite","sourceRefs":[{"file":"lesson1.pptx","slides":[27,39,40,41]}]}
+  ],
+  "pronunciation": [
+    {"id":"pron1-linking-name","display":"이름이 뭐예요","teacherCue":"[이르미 뭐예요]","note":"The PPT highlights resyllabification/linking across 이름+이.","sourceRefs":[{"file":"lesson1.pptx","slide":28}]},
+    {"id":"pron1-linking-person","display":"사람이에요","teacherCue":"[사라미에요]","note":"The PPT highlights linking across 사람+이에요.","sourceRefs":[{"file":"lesson1.pptx","slide":28}]}
+  ],
+  "numberNotes": {
+    "system":"Sino-Korean",
+    "core":["영/공","일","이","삼","사","오","육","칠","팔","구","십","백","천","만"],
+    "teacherUses":["reading","prices","dates","telephone numbers","ID numbers","building floors"],
+    "lessonUses":["grade","telephone number"],
+    "sourceRefs":[{"file":"lesson1.pptx","slides":[18,19,20,21,22,23,24]}]
+  },
+  "practice": [
+    {"id":"p1-001","type":"multiple-choice","prompt":"Choose the correct polite copula: 저는 김유미___.","choices":["이에요","예요","아니에요"],"answers":["예요"],"displayAnswer":"저는 김유미예요.","explanation":"김유미 ends in a vowel, so the PPT pattern uses 예요.","conceptIds":["g1-copula"],"difficulty":1},
+    {"id":"p1-002","type":"typing","prompt":"Ask ‘What is your name?’ in Korean.","answers":["이름이 뭐예요?","이름이 뭐예요"],"displayAnswer":"이름이 뭐예요?","explanation":"이름 takes subject marker 이 in the teacher’s model sentence.","conceptIds":["g1-subject","e1-name"],"difficulty":1},
+    {"id":"p1-003","type":"multiple-choice","prompt":"Which means ‘I am a student too’ ?","choices":["저는 학생이에요.","저도 학생이에요.","제가 학생이 아니에요."],"answers":["저도 학생이에요."],"displayAnswer":"저도 학생이에요.","explanation":"도 adds ‘also/too.’","conceptIds":["g1-also"],"difficulty":1},
+    {"id":"p1-004","type":"typing","prompt":"Say ‘I am not Korean.’","answers":["한국 사람이 아니에요.","저는 한국 사람이 아니에요."],"displayAnswer":"저는 한국 사람이 아니에요.","explanation":"N이/가 아니에요 negates noun identity; understood subjects can be omitted.","conceptIds":["g1-noun-negation","g1-ellipsis"],"difficulty":2},
+    {"id":"p1-005","type":"multiple-choice","prompt":"For a person you have just met, which address strategy matches the teacher PPT?","choices":["Use a direct ‘you’ pronoun","Use their name + 씨 when appropriate","Never use their name"],"answers":["Use their name + 씨 when appropriate"],"displayAnswer":"Use their name + 씨 when appropriate.","explanation":"The PPT explicitly recommends name + 씨 instead of directly using ‘you’ in this situation.","conceptIds":["v1-ssi"],"difficulty":2},
+    {"id":"p1-006","type":"typing","prompt":"Write 12 with Sino-Korean number words.","answers":["십이"],"displayAnswer":"십이","explanation":"십 + 이 forms 12 in the Sino-Korean system.","conceptIds":["system-numbers"],"difficulty":1}
+  ]
+}
