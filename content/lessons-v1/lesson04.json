@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson4(ST).pptx and rewritten into structured study data.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids.",
+    "copyright": "Do not republish full PPT slides or textbook artwork."
+  },
+  "lesson": {
+    "id":"lesson-4",
+    "number":4,
+    "titleKo":"집",
+    "titleEn":"At Home",
+    "theme":"Family, quantities, counters, possession, and everyday home descriptions",
+    "situations":["talking about family members","counting people and objects","asking prices/dates/quantities","asking whose object something is"],
+    "goals":["Ask alternative questions","Use Native and Sino-Korean numbers in the appropriate counting contexts","Use noun counters and 몇","Express possession with N1(의) N2 and possessive forms","Recognize common vowel contractions"],
+    "teacherFocus":["family address terms","honorific existence 계시다","counters","price/year/month/date","possessive relations","우리 as a culturally common possessive expression"],
+    "connections":["numbers","sentence-particles","speech-honorifics","real-life"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson4(ST).pptx","slides":[2,20,21,23,28,35,38,47,48,57,65,73,83,84,85,86,94,95,96,99,102,105,114,121,122,123,132]}]
+  },
+  "vocabulary": [
+    {"id":"v4-family","korean":"가족","meaningEn":"family","meaningZh":"家人；家庭","pos":"noun","hanja":"家族","originType":"sino-korean","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":15}]},
+    {"id":"v4-father","korean":"아버지","meaningEn":"father","meaningZh":"父亲","pos":"noun","originType":"native-korean","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[3,8,20]}]},
+    {"id":"v4-mother","korean":"어머니","meaningEn":"mother","meaningZh":"母亲","pos":"noun","originType":"native-korean","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[3,7,20]}]},
+    {"id":"v4-parents","korean":"부모님","meaningEn":"parents (honorific)","meaningZh":"父母；双亲","pos":"noun","hanja":"父母","originType":"mixed-sino-korean","tags":["family","honorific"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[3,9]}]},
+    {"id":"v4-grandfather","korean":"할아버지","meaningEn":"grandfather; elderly man as extended kin term","meaningZh":"爷爷；祖父","pos":"noun","originType":"native-korean","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[3,11,19]}]},
+    {"id":"v4-grandmother","korean":"할머니","meaningEn":"grandmother; elderly woman as extended kin term","meaningZh":"奶奶；祖母","pos":"noun","originType":"native-korean","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[10,19]}]},
+    {"id":"v4-younger-sibling","korean":"동생","meaningEn":"younger sibling","meaningZh":"弟弟或妹妹","pos":"noun","originType":"native-korean","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[3,13,20]}]},
+    {"id":"v4-younger-brother","korean":"남동생","meaningEn":"younger brother","meaningZh":"弟弟","pos":"noun","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":20}]},
+    {"id":"v4-younger-sister","korean":"여동생","meaningEn":"younger sister","meaningZh":"妹妹","pos":"noun","tags":["family"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":20}]},
+    {"id":"v4-oppa","korean":"오빠","meaningEn":"older brother of a female speaker","meaningZh":"女性称哥哥","pos":"kinship term","tags":["family","address"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[14,20]}]},
+    {"id":"v4-hyeong","korean":"형","meaningEn":"older brother of a male speaker","meaningZh":"男性称哥哥","pos":"kinship term","tags":["family","address"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[12,20]}]},
+    {"id":"v4-eonni","korean":"언니","meaningEn":"older sister of a female speaker","meaningZh":"女性称姐姐","pos":"kinship term","tags":["family","address"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[14,83]}]},
+    {"id":"v4-nuna","korean":"누나","meaningEn":"older sister of a male speaker","meaningZh":"男性称姐姐","pos":"kinship term","tags":["family","address"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[12,83]}]},
+    {"id":"v4-room","korean":"방","meaningEn":"room","meaningZh":"房间","pos":"noun","hanja":"房","originType":"sino-korean","tags":["home"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[4,83]}]},
+    {"id":"v4-apartment","korean":"아파트","meaningEn":"apartment","meaningZh":"公寓","pos":"noun","originType":"loanword","tags":["home"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[4,83]}]},
+    {"id":"v4-roommate","korean":"룸메이트","meaningEn":"roommate","meaningZh":"室友","pos":"noun","originType":"loanword","tags":["home","people"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":83}]},
+    {"id":"v4-dog","korean":"개","meaningEn":"dog","meaningZh":"狗","pos":"noun","originType":"native-korean","tags":["animal"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[3,20]}]},
+    {"id":"v4-cat","korean":"고양이","meaningEn":"cat","meaningZh":"猫","pos":"noun","originType":"native-korean","tags":["animal"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":3}]},
+    {"id":"v4-thing","korean":"것 / 거","meaningEn":"thing; one","meaningZh":"东西；那个东西","pos":"dependent noun","originType":"native-korean","tags":["possession"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[4,83,91,99]}]},
+    {"id":"v4-my-humble","korean":"제","meaningEn":"my (humble/polite)","meaningZh":"我的（谦称）","pos":"possessive","originType":"native-korean contraction","tags":["possession","politeness"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[4,83,96]}]},
+    {"id":"v4-we-humble","korean":"저희","meaningEn":"we/us/our (humble)","meaningZh":"我们（谦称）","pos":"pronoun","originType":"native-korean","tags":["possession","politeness"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[4,83]}]},
+    {"id":"v4-howmany","korean":"몇","meaningEn":"how many; what number","meaningZh":"几；多少","pos":"pre-noun","originType":"native-korean","tags":["numbers","question"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[20,49,70]}]},
+    {"id":"v4-counter-general","korean":"개","meaningEn":"counter for general objects","meaningZh":"个（量词）","pos":"counter","hanja":"個","originType":"sino-korean","tags":["counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[20,65]}]},
+    {"id":"v4-counter-book","korean":"권","meaningEn":"counter for books/volumes","meaningZh":"本；卷（量词）","pos":"counter","hanja":"卷","originType":"sino-korean","tags":["counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[20,65]}]},
+    {"id":"v4-counter-animal","korean":"마리","meaningEn":"counter for animals","meaningZh":"只（动物量词）","pos":"counter","originType":"native-korean","tags":["counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[20,65]}]},
+    {"id":"v4-counter-person","korean":"명","meaningEn":"counter for people","meaningZh":"名；位（人数）","pos":"counter","hanja":"名","originType":"sino-korean","tags":["counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[20,65]}]},
+    {"id":"v4-counter-cup","korean":"잔","meaningEn":"counter for cups/glasses","meaningZh":"杯（量词）","pos":"counter","hanja":"盞","originType":"sino-korean","tags":["counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":62}]},
+    {"id":"v4-only","korean":"만","meaningEn":"only","meaningZh":"只；仅","pos":"particle","originType":"native-korean","tags":["particle"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[83,85]}]},
+    {"id":"v4-of","korean":"의","meaningEn":"of; possessive particle","meaningZh":"的","pos":"particle","hanja":"의","originType":"grammatical particle","tags":["possession"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[83,86,95]}]},
+    {"id":"v4-learn","korean":"배우다","meaningEn":"to learn","meaningZh":"学习","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[5,83]}]},
+    {"id":"v4-sleep","korean":"자다","meaningEn":"to sleep","meaningZh":"睡觉","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[5,83]}]},
+    {"id":"v4-give","korean":"주다","meaningEn":"to give","meaningZh":"给","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[5,83]}]},
+    {"id":"v4-pretty","korean":"예쁘다","meaningEn":"to be pretty","meaningZh":"漂亮","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[6,83]}]},
+    {"id":"v4-expensive","korean":"비싸다","meaningEn":"to be expensive","meaningZh":"贵","pos":"adjective","originType":"native-korean","tags":["description","money"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[6,83]}]}
+  ],
+  "grammar": [
+    {"id":"g4-alternative","pattern":"Choice 1 ..., Choice 2 ...?","name":"Alternative questions","meaning":"Asks the listener to choose between explicit alternatives.","examples":[{"ko":"동생이 있어요, 없어요?","en":"Do you have a younger sibling or not?"},{"ko":"소피아는 일본 사람이에요, 중국 사람이에요?","en":"Is Sophia Japanese or Chinese?"}],"tags":["question"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[28,29]}]},
+    {"id":"g4-noun-and","pattern":"N와/과, N(이)랑, N하고","name":"Noun coordination","meaning":"Connects nouns with the meaning ‘and/with.’","formation":["vowel-ending noun + 와/랑","consonant-ending noun + 과/이랑","하고 works after either"],"examples":[{"ko":"의자와 책상","en":"a chair and a desk"},{"ko":"동생하고 저","en":"my younger sibling and me"}],"tags":["particle","coordination"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":35}]},
+    {"id":"g4-numbers","pattern":"Native Korean vs Sino-Korean numbers","name":"Two number systems","meaning":"Korean uses two number systems for different functions; this lesson reviews both and applies them to prices, dates, quantities, and counters.","examples":[{"ko":"오백팔십 원","en":"580 won"},{"ko":"2024년 6월 30일","en":"June 30, 2024"}],"tags":["numbers"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[37,38,39,40,46,47,48,55,56]}]},
+    {"id":"g4-counters","pattern":"N + number + counter","name":"Noun counters","meaning":"Counted nouns use classifiers/counters such as 개, 명, 마리, and 권.","formation":["하나→한, 둘→두, 셋→세, 넷→네, 스물→스무 before counters","noun + number + counter","noun + particle + number + counter + 있다"],"examples":[{"ko":"교과서 두 권","en":"two textbooks"},{"ko":"친구가 세 명 있어요.","en":"I have three friends."}],"tags":["numbers","counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[57,65,66,67,68,69,70,73,74,75]}]},
+    {"id":"g4-possessive","pattern":"N1(의) N2 / N1 거","name":"Possessive relations","meaning":"Places the possessor before the possessed noun; 의 is often omitted in conversation. 거/것 can replace an understood possessed object.","formation":["possessor + (의) + possessed","나+의→내","저+의→제","possessor + 거"],"examples":[{"ko":"마이클 책","en":"Michael’s book"},{"ko":"제 거예요.","en":"It’s mine."},{"ko":"누구 거예요?","en":"Whose is it?"}],"commonMistakes":["The PPT notes that possessive 의 is usually pronounced [에] and is often dropped in conversation."],"tags":["possession","particle"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[86,88,90,93,94,95,96,99,102]}]},
+    {"id":"g4-vowel-contraction","pattern":"vowel + -아/어요 → contracted form","name":"Vowel contraction","meaning":"When vowels meet during conjugation, Korean often merges, deletes, or contracts them.","formation":["가+아요→가요","마시+어요→마셔요","주+어요→줘요","오+아요→와요","크+어요→커요","예쁘+어요→예뻐요"],"examples":[{"ko":"내일 형이 와요.","en":"My older brother comes tomorrow."},{"ko":"시계가 예뻐요.","en":"The watch is pretty."}],"tags":["conjugation"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[114,118,119,120,121,122,123,125,127]}]}
+  ],
+  "expressions": [
+    {"id":"e4-honorific-exist","korean":"계세요","meaningEn":"is/stays (honorific existence)","meaningZh":"在（敬语）","situation":"respectful reference","register":"honorific polite","sourceRefs":[{"file":"lesson4(ST).pptx","slides":[21,22,23,24,25]}]},
+    {"id":"e4-price","korean":"얼마예요?","meaningEn":"How much is it?","meaningZh":"多少钱？","situation":"price","register":"polite informal","sourceRefs":[{"file":"lesson4(ST).pptx","slides":[46,72]}]},
+    {"id":"e4-whose","korean":"누구 거예요?","meaningEn":"Whose is it?","meaningZh":"是谁的？","situation":"possession","register":"polite informal","sourceRefs":[{"file":"lesson4(ST).pptx","slides":[93,99]}]}
+  ],
+  "culture": [
+    {"id":"c4-uri","title":"우리 as a common possessive frame","category":"language-culture","summary":"The teacher PPT highlights 우리 with family, home, class, school, and country where English may prefer ‘my.’","languageConnection":["우리 나라","우리 집","우리 가족","우리 학교"],"relatedLessons":[4],"tags":["culture","possession"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":105}]},
+    {"id":"c4-kinship-extension","title":"Extending family terms","category":"language-culture","summary":"The PPT shows kinship terms extending beyond literal family relationships, depending on age, familiarity, and social context.","languageConnection":["할아버지","할머니","언니","오빠","형","누나"],"relatedLessons":[4,12],"tags":["kinship","address"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[18,19]}]}
+  ],
+  "practice": [
+    {"id":"p4-001","type":"multiple-choice","prompt":"Choose the natural counter phrase for ‘three books.’","choices":["책 세 명","책 세 권","책 삼 권"],"answers":["책 세 권"],"displayAnswer":"책 세 권","explanation":"권 counts books and 셋 changes to 세 before a counter.","conceptIds":["g4-counters"],"difficulty":1},
+    {"id":"p4-002","type":"typing","prompt":"Ask ‘Whose is it?’","answers":["누구 거예요?","누구 거예요"],"displayAnswer":"누구 거예요?","explanation":"거 can stand for an understood possessed object.","conceptIds":["g4-possessive"],"difficulty":1},
+    {"id":"p4-003","type":"typing","prompt":"Conjugate 오다 in polite present style.","answers":["와요"],"displayAnswer":"와요","explanation":"오 + 아요 contracts to 와요.","conceptIds":["g4-vowel-contraction"],"difficulty":1},
+    {"id":"p4-004","type":"multiple-choice","prompt":"Which asks for a choice between two options?","choices":["동생이 있어요?","동생이 있어요, 없어요?","동생은요?"],"answers":["동생이 있어요, 없어요?"],"displayAnswer":"동생이 있어요, 없어요?","explanation":"Alternative questions place both choices in the question.","conceptIds":["g4-alternative"],"difficulty":1},
+    {"id":"p4-005","type":"typing","prompt":"Write ‘My book’ using the humble possessive form.","answers":["제 책"],"displayAnswer":"제 책","explanation":"저 + 의 contracts to 제.","conceptIds":["g4-possessive"],"difficulty":1}
+  ]
+}
