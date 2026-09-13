@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "purpose": "Canonical content model for Korean Review. Lesson packs, Explore systems, user-created study items, and future Media Lab content should map into these shapes instead of inventing new fields per feature.",
+  "lesson": {
+    "required": ["id", "number", "theme"],
+    "fields": {
+      "id": "lesson-13",
+      "number": 13,
+      "titleKo": "전화",
+      "titleEn": "On the Telephone",
+      "theme": "Telephone and health",
+      "situations": ["calling someone", "asking to speak to someone", "describing illness"],
+      "goals": ["Use common telephone expressions", "Make polite requests"],
+      "vocabularyRefs": ["v13-telephone"],
+      "grammarRefs": ["g13-benefactive"],
+      "expressionRefs": ["e13-hello-phone"],
+      "cultureRefs": ["c-phone-etiquette"],
+      "teacherFocus": ["body parts", "telephone flow"],
+      "connections": ["system-honorifics", "system-reasons"],
+      "sourceRefs": [{"type":"teacher-ppt","file":"lesson13(2).pptx","slide":2}]
+    }
+  },
+  "vocabulary": {
+    "required": ["id", "korean", "meaningEn"],
+    "fields": {
+      "id": "v13-telephone",
+      "lessonId": "lesson-13",
+      "korean": "전화",
+      "meaningEn": "telephone; phone call",
+      "meaningZh": "电话",
+      "pos": "noun",
+      "rr": "jeonhwa",
+      "hanja": "電話",
+      "originType": "sino-korean",
+      "originNote": "Use Hanja as a meaning clue; modern Korean and Mandarin usage may differ.",
+      "examples": [{"ko":"나중에 전화할게요.","en":"I’ll call you later."}],
+      "image": {"url":"","alt":"","license":""},
+      "audio": {"url":"","ttsText":"전화"},
+      "tags": ["telephone", "lesson-13"],
+      "sourceRefs": []
+    }
+  },
+  "grammar": {
+    "required": ["id", "pattern", "meaning"],
+    "fields": {
+      "id": "g13-benefactive",
+      "lessonId": "lesson-13",
+      "pattern": "-아/어 주다",
+      "name": "Benefactive expression",
+      "meaning": "Do an action for someone’s benefit.",
+      "formation": ["verb stem + -아/어 주다"],
+      "usage": ["favors", "benefactive actions"],
+      "examples": [{"ko":"친구한테 빵을 사 줬어요.","en":"I bought bread for my friend."}],
+      "contrast": [{"with":"-(으)세요","note":"Both can appear in requests, but -아/어 주세요 explicitly frames the action as a favor/benefit."}],
+      "commonMistakes": ["Do not translate 주다 literally as ‘give’ in every benefactive construction."],
+      "register": "neutral-polite compatible",
+      "speechLevel": "varies with final ending",
+      "related": ["g13-obligation", "system-requests"],
+      "tags": ["request", "benefactive"],
+      "sourceRefs": []
+    }
+  },
+  "expression": {
+    "required": ["id", "korean", "meaningEn"],
+    "fields": {
+      "id": "e13-hello-phone",
+      "lessonId": "lesson-13",
+      "korean": "여보세요",
+      "meaningEn": "Hello? (on the phone)",
+      "meaningZh": "喂（电话用语）",
+      "situation": "telephone",
+      "register": "standard phone expression",
+      "pragmatics": "Used when answering or initiating a phone call; not a general face-to-face greeting.",
+      "examples": [],
+      "tags": ["telephone", "pragmatics"],
+      "sourceRefs": []
+    }
+  },
+  "culture": {
+    "required": ["id", "title", "summary"],
+    "fields": {
+      "id": "c-phone-etiquette",
+      "title": "Telephone etiquette",
+      "category": "language-culture",
+      "summary": "Korean phone conversations use conventional openings, polite requests, and relationship-sensitive endings.",
+      "languageConnection": ["여보세요", "잠깐만 기다리세요", "끊을게요"],
+      "relatedLessons": [13],
+      "tags": ["phone", "politeness"],
+      "sourceRefs": []
+    }
+  },
+  "practice": {
+    "required": ["id", "type", "prompt", "answers"],
+    "fields": {
+      "id": "p13-001",
+      "lessonId": "lesson-13",
+      "type": "multiple-choice | typing | sentence-build | listening | role-play",
+      "prompt": "Choose the most natural expression for answering a phone call.",
+      "choices": ["안녕하세요", "여보세요", "잘 가요"],
+      "answers": ["여보세요"],
+      "displayAnswer": "여보세요",
+      "explanation": "여보세요 is the conventional phone greeting.",
+      "conceptIds": ["e13-hello-phone"],
+      "difficulty": 1,
+      "tags": ["telephone"],
+      "sourceRefs": []
+    }
+  },
+  "systemPage": {
+    "required": ["id", "title", "sections"],
+    "fields": {
+      "id": "system-numbers",
+      "title": "Korean Number Systems",
+      "summary": "Connect number rules across lessons instead of reteaching them separately.",
+      "sections": [],
+      "lessonLinks": [1, 4, 5, 9, 12, 14],
+      "practiceRefs": [],
+      "tags": ["numbers", "explore"]
+    }
+  },
+  "principles": [
+    "Keep sourceRefs for traceability but do not reproduce full copyrighted slides or textbook pages in the public site.",
+    "Use original explanations and original practice questions.",
+    "Vocabulary can have Hanja/Chinese clues only when the relationship is supportable; do not label every word as Chinese-derived.",
+    "Audio, images, examples, and translations are enrichments, not required blockers for creating an item.",
+    "Course pages and Explore pages should reference the same concept IDs so a learner can move between lesson context and system-level explanations.",
+    "User-created content should use the same vocabulary/grammar shapes where possible."
+  ]
+}
