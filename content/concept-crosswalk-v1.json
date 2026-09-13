@@ -1,9 +1,68 @@
 {
   "version": 1,
-  "status": "migration aid; does not change existing lesson-local IDs",
-  "purpose": "Map lesson-local grammar IDs to stable canonical concepts before the v2 renderer is wired to the new content model.",
+  "status": "complete grammar migration crosswalk for Lessons 1-14; does not change existing lesson-local IDs",
+  "purpose": "Account for every lesson-local grammar item as either a reusable canonical concept or an intentionally lesson-local teaching item before the v2 renderer uses the new content model.",
   "mappings": [
+    {"lessonId":"lesson-1","localId":"g1-topic","canonicalIds":["concept-topic-eunneun"]},
+    {"lessonId":"lesson-1","localId":"g1-also","canonicalIds":["concept-additive-do"]},
+    {"lessonId":"lesson-1","localId":"g1-subject","canonicalIds":["concept-subject-iga"]},
+    {"lessonId":"lesson-1","localId":"g1-noun-negation","canonicalIds":["concept-noun-negation-anida"]},
+
+    {"lessonId":"lesson-2","localId":"g2-present","canonicalIds":["concept-present-polite"]},
+    {"lessonId":"lesson-2","localId":"g2-surface-changes","canonicalIds":["concept-vowel-contraction"]},
+    {"lessonId":"lesson-2","localId":"g2-object","canonicalIds":["concept-object-eulreul"]},
+    {"lessonId":"lesson-2","localId":"g2-and","canonicalIds":["concept-sentence-connectors"]},
+
+    {"lessonId":"lesson-3","localId":"g3-location","canonicalIds":["concept-location-e"]},
+    {"lessonId":"lesson-3","localId":"g3-topic-shift","canonicalIds":["concept-topic-eunneun"]},
+    {"lessonId":"lesson-3","localId":"g3-possession","canonicalIds":["concept-possession-itda"]},
+    {"lessonId":"lesson-3","localId":"g3-connectors","canonicalIds":["concept-sentence-connectors"]},
+    {"lessonId":"lesson-3","localId":"g3-honorific","canonicalIds":["concept-subject-honorific-si"]},
+    {"lessonId":"lesson-3","localId":"g3-honorific-exist","canonicalIds":["concept-honorific-existence-gyeisida","concept-honorific-lexicon"]},
+
+    {"lessonId":"lesson-4","localId":"g4-noun-and","canonicalIds":["concept-noun-coordination"]},
+    {"lessonId":"lesson-4","localId":"g4-numbers","canonicalIds":["concept-number-native","concept-number-sino"]},
+    {"lessonId":"lesson-4","localId":"g4-counters","canonicalIds":["concept-counter","concept-number-native"]},
+    {"lessonId":"lesson-4","localId":"g4-possessive","canonicalIds":["concept-possessive-ui"]},
+    {"lessonId":"lesson-4","localId":"g4-vowel-contraction","canonicalIds":["concept-vowel-contraction"]},
+
+    {"lessonId":"lesson-5","localId":"g5-location","canonicalIds":["concept-location-e","concept-location-eseo"]},
+    {"lessonId":"lesson-5","localId":"g5-time-particle","canonicalIds":["concept-time-particle-e"]},
+    {"lessonId":"lesson-5","localId":"g5-clock-time","canonicalIds":["concept-time","concept-number-native","concept-number-sino"]},
+    {"lessonId":"lesson-5","localId":"g5-purpose","canonicalIds":["concept-purpose-reo"]},
+    {"lessonId":"lesson-5","localId":"g5-d-irregular","canonicalIds":["concept-irregular-d"]},
+
+    {"lessonId":"lesson-6","localId":"g6-range","canonicalIds":["concept-range-particles","concept-location-eseo"]},
+    {"lessonId":"lesson-6","localId":"g6-duration","canonicalIds":["concept-duration-geollida"]},
+    {"lessonId":"lesson-6","localId":"g6-means","canonicalIds":["concept-ro-means-direction"]},
+    {"lessonId":"lesson-6","localId":"g6-b-irregular","canonicalIds":["concept-irregular-b"]},
+    {"lessonId":"lesson-6","localId":"g6-past","canonicalIds":["concept-past"]},
+    {"lessonId":"lesson-6","localId":"g6-short-negation","canonicalIds":["concept-negation-an"]},
+    {"lessonId":"lesson-6","localId":"g6-cannot","canonicalIds":["concept-inability-mot"]},
+
+    {"lessonId":"lesson-7","localId":"g7-future","canonicalIds":["concept-future-geoyeyo"]},
+    {"lessonId":"lesson-7","localId":"g7-probability","canonicalIds":["concept-future-geoyeyo"]},
+    {"lessonId":"lesson-7","localId":"g7-l-irregular","canonicalIds":["concept-irregular-l"]},
+    {"lessonId":"lesson-7","localId":"g7-question-determiners","canonicalIds":["concept-question-determiners"]},
+    {"lessonId":"lesson-7","localId":"g7-go","canonicalIds":["concept-connector-go"]},
+    {"lessonId":"lesson-7","localId":"g7-negative-question","canonicalIds":["concept-negative-question"]},
+
+    {"lessonId":"lesson-8","localId":"g8-jiyo","canonicalIds":["concept-jiyo-agreement"]},
+    {"lessonId":"lesson-8","localId":"g8-demonstratives","canonicalIds":["concept-demonstratives"]},
+    {"lessonId":"lesson-8","localId":"g8-formal","canonicalIds":["concept-formal-deferential"]},
+    {"lessonId":"lesson-8","localId":"g8-direction-ro","canonicalIds":["concept-ro-means-direction"]},
+    {"lessonId":"lesson-8","localId":"g8-l-irregular","canonicalIds":["concept-irregular-l"]},
+
+    {"lessonId":"lesson-9","localId":"g9-dates","canonicalIds":["concept-date","concept-number-sino"]},
+    {"lessonId":"lesson-9","localId":"g9-age","canonicalIds":["concept-age","concept-number-native"]},
+    {"lessonId":"lesson-9","localId":"g9-recipient-source","canonicalIds":["concept-recipient-source-particles","concept-location-e","concept-location-eseo"]},
+    {"lessonId":"lesson-9","localId":"g9-adj-modifier","canonicalIds":["concept-adj-modifier"]},
+    {"lessonId":"lesson-9","localId":"g9-adj-irregular","canonicalIds":["concept-adj-modifier","concept-irregular-b","concept-irregular-l"]},
+    {"lessonId":"lesson-9","localId":"g9-honorific-system","canonicalIds":["concept-subject-honorific-si","concept-honorific-lexicon"]},
+    {"lessonId":"lesson-9","localId":"g9-jiman","canonicalIds":["concept-contrast-jiman"]},
+
     {"lessonId":"lesson-10","localId":"g10-neunde","canonicalIds":["concept-neunde"]},
+    {"lessonId":"lesson-10","localId":"g10-desire","canonicalIds":["concept-desire-go-sipda"]},
     {"lessonId":"lesson-10","localId":"g10-sentence-neundeyo","canonicalIds":["concept-neundeyo-final"]},
     {"lessonId":"lesson-10","localId":"g10-reason-aseo","canonicalIds":["concept-reason-aseo"]},
     {"lessonId":"lesson-10","localId":"g10-present-modifier","canonicalIds":["concept-verb-present-modifier"]},
@@ -11,14 +70,19 @@
 
     {"lessonId":"lesson-11","localId":"g11-progressive","canonicalIds":["concept-progressive-go-itda"]},
     {"lessonId":"lesson-11","localId":"g11-raeyo","canonicalIds":["concept-intention-raeyo"]},
-    {"lessonId":"lesson-11","localId":"g11-ina-bakke","canonicalIds":["concept-ina-quantity","concept-bakke"],"note":"One lesson-local comparison card intentionally maps to two canonical concepts."},
+    {"lessonId":"lesson-11","localId":"g11-range","canonicalIds":["concept-range-particles"]},
+    {"lessonId":"lesson-11","localId":"g11-ina-bakke","canonicalIds":["concept-ina-quantity","concept-bakke"]},
     {"lessonId":"lesson-11","localId":"g11-lkkayo","canonicalIds":["concept-proposal-kkayo"]},
 
     {"lessonId":"lesson-12","localId":"g12-sequential-aseo","canonicalIds":["concept-sequence-aseo"]},
     {"lessonId":"lesson-12","localId":"g12-conjectural-get","canonicalIds":["concept-conjecture-get"]},
+    {"lessonId":"lesson-12","localId":"g12-neyo","canonicalIds":["concept-reaction-neyo"]},
     {"lessonId":"lesson-12","localId":"g12-h-irregular","canonicalIds":["concept-irregular-h"]},
     {"lessonId":"lesson-12","localId":"g12-past-modifier","canonicalIds":["concept-verb-past-modifier"]},
+    {"lessonId":"lesson-12","localId":"g12-ordinals","canonicalIds":["concept-ordinal"]},
 
+    {"lessonId":"lesson-13","localId":"g13-benefactive","canonicalIds":["concept-benefactive-juda"]},
+    {"lessonId":"lesson-13","localId":"g13-obligation","canonicalIds":["concept-obligation-aya-doeda"]},
     {"lessonId":"lesson-13","localId":"g13-lgeyo","canonicalIds":["concept-promise-lgeyo"]},
     {"lessonId":"lesson-13","localId":"g13-ttaemune","canonicalIds":["concept-reason-ttemune"]},
     {"lessonId":"lesson-13","localId":"g13-intentional-get","canonicalIds":["concept-intentional-get"]},
@@ -31,13 +95,17 @@
     {"lessonId":"lesson-14","localId":"g14-reu-irregular","canonicalIds":["concept-irregular-reu"]},
     {"lessonId":"lesson-14","localId":"g14-prices","canonicalIds":["concept-money-large-numbers"]}
   ],
-  "unmappedNeedsRegistryEntry": [
-    {"lessonId":"lesson-10","localId":"g10-desire","suggestedCanonicalId":"concept-desire-go-sipda","reason":"-고 싶다/-고 싶어 하다 deserves its own modality concept."},
-    {"lessonId":"lesson-11","localId":"g11-range","suggestedCanonicalId":"concept-range-particles","reason":"부터~까지 / 에서~까지 belongs in the new sentence-particles system."},
-    {"lessonId":"lesson-12","localId":"g12-neyo","suggestedCanonicalId":"concept-reaction-neyo","reason":"-네요 is a recurring discourse/reaction ending rather than a one-lesson detail."},
-    {"lessonId":"lesson-12","localId":"g12-ordinals","suggestedCanonicalId":"concept-ordinal","reason":"Ordinal formation is part of the cross-lesson number system."},
-    {"lessonId":"lesson-13","localId":"g13-benefactive","suggestedCanonicalId":"concept-benefactive-juda","reason":"Benefactive -아/어 주다 links requests, favors, gratitude, and future real-life interaction."},
-    {"lessonId":"lesson-13","localId":"g13-obligation","suggestedCanonicalId":"concept-obligation-aya-doeda","reason":"Obligation/necessity should connect to future modality and comparison pages."}
+  "localOnly": [
+    {"lessonId":"lesson-1","localId":"g1-predicate-final","reason":"Foundational one-lesson sentence-structure explanation; keep local until a dedicated Grammar Foundations system is created."},
+    {"lessonId":"lesson-1","localId":"g1-copula","reason":"Core beginner teaching card, but current system map has no dedicated copula/foundations system yet."},
+    {"lessonId":"lesson-1","localId":"g1-ellipsis","reason":"Discourse note rather than a reusable grammar system in the current course map."},
+    {"lessonId":"lesson-2","localId":"g2-predicate","reason":"Meta-conjugation explanation; keep local until Grammar Foundations exists."},
+    {"lessonId":"lesson-2","localId":"g2-what-do","reason":"High-frequency classroom question pattern, currently better treated as an expression than a cross-lesson grammar system."},
+    {"lessonId":"lesson-2","localId":"g2-opinion","reason":"Question frame N이/가 어때요? remains a lesson-level communicative pattern for now."},
+    {"lessonId":"lesson-2","localId":"g2-checkin","reason":"Pragmatic greeting/check-in expression rather than a system-level grammar rule."},
+    {"lessonId":"lesson-3","localId":"g3-who","reason":"누구→누가 is an important lexical/particle form but does not yet need its own Explore concept."},
+    {"lessonId":"lesson-4","localId":"g4-alternative","reason":"Question-format teaching point with limited cross-lesson reuse in the current PPT set."},
+    {"lessonId":"lesson-5","localId":"g5-sentence-pattern","reason":"Reinforces predicate-final structure; keep local until Grammar Foundations is promoted to a system page."}
   ],
-  "nextMigrationBatch": "Create exact crosswalks for Lessons 1-9, then add the six missing canonical concepts above before modifying lesson JSON files."
+  "rule": "Every grammar item in Lessons 1-14 should appear exactly once in either mappings or localOnly. Mappings may point to multiple canonical IDs when one lesson card intentionally compares several reusable concepts."
 }
