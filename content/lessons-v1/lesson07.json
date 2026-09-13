@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson 7.pptx and rewritten into structured study data.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides or textbook artwork."
+  },
+  "lesson": {
+    "id":"lesson-7",
+    "number":7,
+    "titleKo":"주말 계획과 미래",
+    "titleEn":"Weekend Plans and Future Meaning",
+    "theme":"Plans, probability, choices, connected descriptions, and negative questions",
+    "situations":["making weekend plans","predicting future events","asking what kind/which item","describing multiple actions or qualities","asking negative questions"],
+    "goals":["Use -(으)ㄹ 거예요 for plans and probability","Recognize present tense for scheduled definite future events","Distinguish 무슨 from 어느","Use -고 to connect predicates","Recognize key ㄹ-irregular omissions","Respond appropriately to negative questions"],
+    "teacherFocus":["future plan vs probable future vs scheduled present","같이 + present ending as a suggestion","무슨 vs 어느","-고 vs 하고 vs 그리고","negative questions","three-tense review"],
+    "connections":["tense-aspect","connectors","irregulars","negation","real-life"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson 7.pptx","slides":[2,3,4,5,6,8,13,15,16,18,19,20,22,23,25,37,38,46,50,56,57,58,59,60,70,72,75,77,78]}]
+  },
+  "vocabulary": [
+    {"id":"v7-movie","korean":"영화","meaningEn":"movie","meaningZh":"电影","pos":"noun","hanja":"映畵","originType":"sino-korean","tags":["entertainment"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-theater","korean":"영화관 / 극장","meaningEn":"movie theater; theater","meaningZh":"电影院；剧场","pos":"noun","tags":["place","entertainment"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-weekend","korean":"주말","meaningEn":"weekend","meaningZh":"周末","pos":"noun","hanja":"週末","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-travel","korean":"여행하다","meaningEn":"to travel","meaningZh":"旅行","pos":"verb","hanja":"旅行","originType":"sino-korean+하다","tags":["travel","word-building"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-receive","korean":"받다","meaningEn":"to receive","meaningZh":"收到","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-congratulate","korean":"축하하다","meaningEn":"to congratulate","meaningZh":"祝贺","pos":"verb","hanja":"祝賀","originType":"sino-korean+하다","tags":["social"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-what-kind","korean":"무슨","meaningEn":"what; what kind of","meaningZh":"什么样的；什么","pos":"pre-noun","originType":"native-korean","tags":["question"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[4,37]}]},
+    {"id":"v7-which","korean":"어느","meaningEn":"which","meaningZh":"哪一个；哪个","pos":"pre-noun","originType":"native-korean","tags":["question"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[4,37]}]},
+    {"id":"v7-this-year","korean":"올해","meaningEn":"this year","meaningZh":"今年","pos":"noun/adverb","originType":"native-korean","tags":["time"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-last-year","korean":"작년","meaningEn":"last year","meaningZh":"去年","pos":"noun/adverb","hanja":"昨年","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-next-year","korean":"내년","meaningEn":"next year","meaningZh":"明年","pos":"noun/adverb","hanja":"來年","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-probably","korean":"아마","meaningEn":"probably; perhaps","meaningZh":"大概；可能","pos":"adverb","originType":"native-korean","tags":["probability"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-really","korean":"정말","meaningEn":"really","meaningZh":"真的；非常","pos":"adverb/noun","hanja":"正말","originType":"mixed","tags":["degree"],"sourceRefs":[{"file":"lesson 7.pptx","slide":4}]},
+    {"id":"v7-appointment","korean":"약속","meaningEn":"appointment; promise; plan","meaningZh":"约定；约会","pos":"noun","hanja":"約束","originType":"sino-korean","tags":["social"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[4,12]}]},
+    {"id":"v7-clean","korean":"청소하다","meaningEn":"to clean","meaningZh":"打扫","pos":"verb","hanja":"淸掃","originType":"sino-korean+하다","tags":["home","word-building"],"sourceRefs":[{"file":"lesson 7.pptx","slide":5}]},
+    {"id":"v7-prepare","korean":"준비하다","meaningEn":"to prepare","meaningZh":"准备","pos":"verb","hanja":"準備","originType":"sino-korean+하다","tags":["action","word-building"],"sourceRefs":[{"file":"lesson 7.pptx","slide":5}]},
+    {"id":"v7-major","korean":"전공하다","meaningEn":"to major in","meaningZh":"主修","pos":"verb","hanja":"專攻","originType":"sino-korean+하다","tags":["school","word-building"],"sourceRefs":[{"file":"lesson 7.pptx","slide":5}]},
+    {"id":"v7-make","korean":"만들다","meaningEn":"to make","meaningZh":"制作","pos":"verb","originType":"native-korean","tags":["action","irregular"],"sourceRefs":[{"file":"lesson 7.pptx","slide":5}]},
+    {"id":"v7-spend-send","korean":"보내다","meaningEn":"to spend (time); send","meaningZh":"度过；发送","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson 7.pptx","slide":5}]},
+    {"id":"v7-groceries","korean":"장을 보다","meaningEn":"to shop for groceries","meaningZh":"买菜；采购生活用品","pos":"expression","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[5,71]}]},
+    {"id":"v7-psychology","korean":"심리학","meaningEn":"psychology","meaningZh":"心理学","pos":"noun","hanja":"心理學","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson 7.pptx","slide":5}]},
+    {"id":"v7-newspaper","korean":"신문","meaningEn":"newspaper","meaningZh":"报纸","pos":"noun","hanja":"新聞","originType":"sino-korean","tags":["media"],"sourceRefs":[{"file":"lesson 7.pptx","slide":5}]},
+    {"id":"v7-quiet","korean":"조용하다","meaningEn":"to be quiet","meaningZh":"安静","pos":"adjective","tags":["description"],"sourceRefs":[{"file":"lesson 7.pptx","slide":6}]},
+    {"id":"v7-cloudy","korean":"흐리다","meaningEn":"to be cloudy","meaningZh":"阴天；多云","pos":"adjective","originType":"native-korean","tags":["weather"],"sourceRefs":[{"file":"lesson 7.pptx","slide":6}]},
+    {"id":"v7-sometimes","korean":"가끔","meaningEn":"sometimes","meaningZh":"有时","pos":"adverb","originType":"native-korean","tags":["frequency"],"sourceRefs":[{"file":"lesson 7.pptx","slide":6}]},
+    {"id":"v7-each-other","korean":"서로","meaningEn":"each other","meaningZh":"互相","pos":"adverb/pronoun","originType":"native-korean","tags":["social"],"sourceRefs":[{"file":"lesson 7.pptx","slide":6}]},
+    {"id":"v7-especially","korean":"특히","meaningEn":"especially","meaningZh":"特别；尤其","pos":"adverb","hanja":"特히","originType":"mixed","tags":["degree"],"sourceRefs":[{"file":"lesson 7.pptx","slide":6}]},
+    {"id":"v7-season","korean":"계절","meaningEn":"season","meaningZh":"季节","pos":"noun","hanja":"季節","originType":"sino-korean","tags":["weather"],"sourceRefs":[{"file":"lesson 7.pptx","slide":6}]}
+  ],
+  "grammar": [
+    {"id":"g7-future","pattern":"V-(으)ㄹ 거예요","name":"Future plan / intention","meaning":"Expresses a future plan or intention.","formation":["vowel-ending stem + ㄹ 거예요","consonant-ending stem + 을 거예요"],"examples":[{"ko":"친구하고 영화를 볼 거예요.","en":"I’m going to watch a movie with a friend."},{"ko":"하와이에 갈 거예요.","en":"I’m going to go to Hawai‘i."}],"tags":["future","plan"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[16,18,27,30]}]},
+    {"id":"g7-probability","pattern":"A/V-(으)ㄹ 거예요","name":"Probability / probable future","meaning":"Can express a prediction or probability about a future situation.","examples":[{"ko":"아마 내일 추울 거예요.","en":"It will probably be cold tomorrow."},{"ko":"오전에는 사람이 없을 거예요.","en":"There probably won’t be many people in the morning."}],"contrast":[{"with":"present tense for scheduled future","note":"The PPT notes that a scheduled event can be expressed in present tense, e.g. 다음 월요일에 시험이 있어요."}],"tags":["future","probability"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[19,20,25]}]},
+    {"id":"g7-l-irregular","pattern":"ㄹ stem omission before ㄹ/으 and certain ㄴ/ㅂ/ㅅ environments","name":"ㄹ-irregular / ㄹ omission","meaning":"The teacher PPT groups several environments where final ㄹ is omitted rather than doubled or followed by 으.","examples":[{"ko":"살다 → 살 거예요","en":"to live → will live"},{"ko":"살다 → 살까요?","en":"to live → shall we live?/will it live? depending on context"}],"tags":["irregular","conjugation"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[22,23,24]}]},
+    {"id":"g7-question-determiners","pattern":"무슨 N vs 어느 N","name":"What kind vs which","meaning":"무슨 asks generally what kind/type; 어느 selects among limited or identifiable candidates.","examples":[{"ko":"무슨 영화 봤어요?","en":"What kind of movie did you watch?"},{"ko":"어느 극장에서 봤어요?","en":"Which theater did you see it at?"}],"commonMistakes":["The PPT states that 어느 can occur with 것/거, but 무슨 것/거 is not used in this pattern."],"tags":["question","determiner"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[37,38,43,46]}]},
+    {"id":"g7-go","pattern":"A/V-고","name":"Clausal connective -고","meaning":"Connects two predicates in one sentence with an ‘and/then’ relationship.","examples":[{"ko":"날씨가 춥고 흐려요.","en":"The weather is cold and cloudy."},{"ko":"공부하고 잤어요.","en":"I studied and slept."}],"contrast":[{"with":"그리고","note":"그리고 connects sentences; -고 connects predicates/clauses within one sentence."},{"with":"하고","note":"하고 connects nouns; -고 connects predicates."}],"tags":["connector"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[56,57,58,59,60,70,71]}]},
+    {"id":"g7-negative-question","pattern":"안/못 ... ? / N이/가 아니에요?","name":"Negative questions","meaning":"Asks a question in negative form; interpretation of yes/no depends on whether the responder agrees with the negative proposition.","examples":[{"ko":"안 추워요?","en":"Isn’t it cold?"},{"ko":"숙제가 안 쉬워요?","en":"Isn’t the homework easy?"}],"tags":["negation","question","pragmatics"],"sourceRefs":[{"file":"lesson 7.pptx","slides":[72,73,74,75]}]}
+  ],
+  "expressions": [
+    {"id":"e7-suggestion","korean":"같이 영화 봐요.","meaningEn":"Let’s watch a movie together.","meaningZh":"一起看电影吧。","situation":"suggestion","register":"polite informal","pragmatics":"The PPT teaches 같이 + present polite ending as a beginner suggestion pattern.","sourceRefs":[{"file":"lesson 7.pptx","slides":[8,9,10,11]}]},
+    {"id":"e7-plan-question","korean":"이번 주말에 뭐 할 거예요?","meaningEn":"What are you going to do this weekend?","meaningZh":"这周末你打算做什么？","situation":"plans","register":"polite informal","sourceRefs":[{"file":"lesson 7.pptx","slides":[16,31]}]},
+    {"id":"e7-have-plans","korean":"이번 주말에 약속 있으세요?","meaningEn":"Do you have plans/an appointment this weekend?","meaningZh":"这周末有安排吗？","situation":"plans","register":"honorific polite","sourceRefs":[{"file":"lesson 7.pptx","slides":[2,12]}]},
+    {"id":"e7-weekend-well","korean":"주말 잘 보내세요.","meaningEn":"Have a good weekend.","meaningZh":"周末愉快。","situation":"leave-taking","register":"honorific polite","sourceRefs":[{"file":"lesson 7.pptx","slides":[51,76]}]}
+  ],
+  "practice": [
+    {"id":"p7-001","type":"typing","prompt":"Say ‘I’m going to watch a movie with a friend.’","answers":["친구하고 영화를 볼 거예요."],"displayAnswer":"친구하고 영화를 볼 거예요.","explanation":"보다 has a vowel-ending stem, so the future form is 볼 거예요.","conceptIds":["g7-future"],"difficulty":1},
+    {"id":"p7-002","type":"multiple-choice","prompt":"You have several theaters in mind. Which question word fits: ___ 극장에서 봤어요?","choices":["무슨","어느","뭐"],"answers":["어느"],"displayAnswer":"어느 극장에서 봤어요?","explanation":"어느 selects among limited candidates.","conceptIds":["g7-question-determiners"],"difficulty":1},
+    {"id":"p7-003","type":"typing","prompt":"Combine ‘날씨가 추워요’ and ‘날씨가 흐려요’ with -고.","answers":["날씨가 춥고 흐려요."],"displayAnswer":"날씨가 춥고 흐려요.","explanation":"Attach -고 to the first predicate stem.","conceptIds":["g7-go"],"difficulty":1},
+    {"id":"p7-004","type":"multiple-choice","prompt":"Which is the teacher-PPT pattern for a probable prediction?","choices":["아마 내일 추울 거예요.","아마 내일 추워요만.","아마 내일 추웠어요."],"answers":["아마 내일 추울 거예요."],"displayAnswer":"아마 내일 추울 거예요.","explanation":"A/V-(으)ㄹ 거예요 can express probability.","conceptIds":["g7-probability"],"difficulty":1},
+    {"id":"p7-005","type":"multiple-choice","prompt":"Which connector joins nouns rather than predicates?","choices":["-고","하고","그리고"],"answers":["하고"],"displayAnswer":"하고","explanation":"The PPT contrasts noun 하고, predicate -고, and sentence-level 그리고.","conceptIds":["g7-go"],"difficulty":2}
+  ]
+}
