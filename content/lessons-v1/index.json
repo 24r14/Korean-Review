@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "content pipeline active; source-grounded packs exist for Lessons 1-9; files are not yet wired into the live UI",
+  "status": "source-grounded draft packs exist for Lessons 1-14; files are not yet wired into the live UI",
   "schema": "../content-schema-v1.json",
   "packs": [
     {"lessonId":"lesson-1","file":"lesson01.json","source":"lesson1.pptx","coverage":["lesson metadata","vocabulary","grammar","expressions","pronunciation","numbers","original practice"],"qa":"ready for content review"},
@@ -11,7 +11,12 @@
     {"lessonId":"lesson-6","file":"lesson06.json","source":"lesson6(ST).pptx","coverage":["lesson metadata","transportation/weather vocabulary","past and negation grammar","expressions","original practice"],"qa":"ready for content review"},
     {"lessonId":"lesson-7","file":"lesson07.json","source":"lesson 7.pptx","coverage":["lesson metadata","vocabulary","future/probability grammar","question determiners","connectors","negative questions","original practice"],"qa":"ready for content review"},
     {"lessonId":"lesson-8","file":"lesson08.json","source":"lesson 8.pptx + formal speech mini lesson","coverage":["lesson metadata","directions vocabulary","demonstratives","formal speech","direction grammar","irregulars","culture/pragmatics","original practice"],"qa":"ready for content review"},
-    {"lessonId":"lesson-9","file":"lesson09.json","source":"lesson 9(ST).pptx + honorific mini lesson","coverage":["lesson metadata","birthday/clothing/honorific vocabulary","dates and age","recipient/source particles","noun modifiers","honorific system","contrast connector","original practice"],"qa":"ready for content review"}
+    {"lessonId":"lesson-9","file":"lesson09.json","source":"lesson 9(ST).pptx + honorific mini lesson","coverage":["lesson metadata","birthday/clothing/honorific vocabulary","dates and age","recipient/source particles","noun modifiers","honorific system","contrast connector","original practice"],"qa":"ready for content review"},
+    {"lessonId":"lesson-10","file":"lesson10.json","source":"lesson 10(ST).pptx","coverage":["lesson metadata","academic vocabulary","-는데 system","desire","formal speech","reason","present noun modifiers","pragmatics","original practice"],"qa":"ready for content review"},
+    {"lessonId":"lesson-11","file":"lesson11.json","source":"lesson 11(ST).pptx","coverage":["lesson metadata","dorm/social vocabulary","progressive aspect","-ㄹ래요","range particles","이나/밖에","-ㄹ까요 uses","original practice"],"qa":"ready for content review"},
+    {"lessonId":"lesson-12","file":"lesson12.json","source":"lesson 12(ST).pptx + lesson 12.pptx","coverage":["lesson metadata","family/clothing/color vocabulary","sequential -아/어서","conjectural -겠-","-네요","ㅎ irregular","past noun modifiers","ordinals","culture/pragmatics","original practice"],"qa":"ready for content review"},
+    {"lessonId":"lesson-13","file":"lesson13.json","source":"lesson13(1).pptx + lesson13(2).pptx","coverage":["lesson metadata","telephone/health vocabulary","body vocabulary","benefactive","obligation","-ㄹ게요","때문에","intentional -겠-","phone pragmatics","original practice"],"qa":"ready for content review"},
+    {"lessonId":"lesson-14","file":"lesson14.json","source":"ppt-lesson14(S).pptx","coverage":["lesson metadata","airport/taxi vocabulary","prices","N(이)라서","-지 못하다","A-게","-지 마세요/-지 말고","르 irregular","service pragmatics","original practice"],"qa":"ready for content review"}
   ],
   "pipelineRules": [
     "Core lesson facts must be traceable to teacher PPT slides through sourceRefs.",
@@ -21,6 +26,7 @@
     "Course and Explore should eventually reference the same concept IDs rather than duplicating explanations.",
     "Before scaling, check vocabulary meanings, Hanja, grammar labels, and sourceRefs for accuracy."
   ],
-  "nextBatch": ["lesson-10", "lesson-11", "lesson-12"],
-  "laterBatch": ["lesson-13", "lesson-14"]
+  "completedBatch": ["lesson-1","lesson-2","lesson-3","lesson-4","lesson-5","lesson-6","lesson-7","lesson-8","lesson-9","lesson-10","lesson-11","lesson-12","lesson-13","lesson-14"],
+  "nextBatch": ["lesson-15","lesson-16"],
+  "nextBatchStatus": "Teacher PPTs for Lessons 15-16 are not currently available; do not fabricate teacher emphasis. Textbook-only extraction can be done separately if requested."
 }
