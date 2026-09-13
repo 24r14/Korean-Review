@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "status": "content architecture draft; not wired into live UI",
+  "purpose": "Cross-lesson knowledge map built from the Lesson 1-14 teacher-PPT curriculum. Course pages answer 'what is in this lesson?'; Explore system pages should answer 'how does this Korean system work across lessons?'.",
+  "systems": [
+    {
+      "id":"system-numbers",
+      "title":"Numbers, counters, dates, time & money",
+      "lessonProgression":[
+        {"lesson":1,"focus":"Sino-Korean basics and telephone/ID-style reading"},
+        {"lesson":4,"focus":"Native vs Sino-Korean systems, counters, prices, dates"},
+        {"lesson":5,"focus":"time: Native Korean hours + Sino-Korean minutes"},
+        {"lesson":9,"focus":"dates and Native Korean age"},
+        {"lesson":12,"focus":"ordinal numbers 번째 / 째"},
+        {"lesson":14,"focus":"large Sino-Korean numbers and prices/fares"}
+      ],
+      "exploreSections":["Sino-Korean 0-10 and place values","Native Korean 1-99","counter form changes 하나→한, 둘→두, 셋→세, 넷→네, 스물→스무","common counters","date system","time system","age","money and large numbers","mixed-system examples"],
+      "practiceIdeas":["read a price","tell a time","convert a date","choose the correct counter","mixed Native/Sino time drill"]
+    },
+    {
+      "id":"system-tense-aspect-modality",
+      "title":"Tense, aspect, intention & conjecture",
+      "lessonProgression":[
+        {"lesson":2,"focus":"present polite conjugation -아요/어요; concept of stem + ending"},
+        {"lesson":6,"focus":"past -았/었어요"},
+        {"lesson":7,"focus":"future plan/probability -(으)ㄹ 거예요"},
+        {"lesson":11,"focus":"progressive -고 있다; intention/preference -(으)ㄹ래요; supposition -(으)ㄹ까요?"},
+        {"lesson":12,"focus":"conjectural -겠- and past conjecture -았/었겠-"},
+        {"lesson":13,"focus":"promise -(으)ㄹ게요 and intentional/formal -겠-"}
+      ],
+      "keyContrasts":["-(으)ㄹ 거예요 plan vs probability","-(으)ㄹ래요 preference/intention vs -(으)ㄹ까요? shared proposal/opinion","-(으)ㄹ게요 first-person promise vs -(으)ㄹ래요","conjectural -겠- (Lesson 12) vs intentional -겠- (Lesson 13)"],
+      "practiceIdeas":["timeline converter","choose the ending by speaker intention","confidence vs promise sorting","speech-context mini dialogues"]
+    },
+    {
+      "id":"system-speech-honorifics",
+      "title":"Speech levels, politeness & honorifics",
+      "lessonProgression":[
+        {"lesson":1,"focus":"polite self-introduction, 씨, avoiding direct second-person pronouns in the taught context"},
+        {"lesson":3,"focus":"subject honorific -(으)시- / -(으)세요; 계시다 vs 있으시다"},
+        {"lesson":4,"focus":"family/address terms and honorific existence/possession"},
+        {"lesson":8,"focus":"deferential/formal polite public speech"},
+        {"lesson":9,"focus":"honorific nouns, verbs, particles, and counters"},
+        {"lesson":10,"focus":"formal professor-facing speech and indirect -는데요"},
+        {"lesson":11,"focus":"choice between less-formal -ㄹ래요 and more listener-centered -ㄹ까요?"},
+        {"lesson":13,"focus":"courteous phone requests and formal -겠-"},
+        {"lesson":14,"focus":"service expressions such as 수고하세요/수고하셨습니다"}
+      ],
+      "exploreSections":["speech level vs honorific: separate dimensions","subject honorific -(으)시-","special honorific nouns","special honorific/humble verbs","honorific particles and counters","formal/public endings","indirect politeness","service and phone pragmatics"],
+      "practiceIdeas":["convert one message across speech levels","choose a form based on relationship","spot honorific target","textbook vs real-context register comparison"]
+    },
+    {
+      "id":"system-connectors-reasons",
+      "title":"Connecting clauses, contrast & reasons",
+      "lessonProgression":[
+        {"lesson":2,"focus":"그리고 between sentences"},
+        {"lesson":3,"focus":"그래서 / 그런데"},
+        {"lesson":7,"focus":"-고 for connecting predicates/actions"},
+        {"lesson":9,"focus":"-지만 for contrast"},
+        {"lesson":10,"focus":"-(으)ㄴ데/는데 for background/contrast/setup; causal -아/어서"},
+        {"lesson":12,"focus":"sequential -아/어서 vs causal -아/어서 vs -고"},
+        {"lesson":13,"focus":"N 때문에"},
+        {"lesson":14,"focus":"N(이)라서 and three-way comparison: -아/어서 vs (이)라서 vs 때문에"}
+      ],
+      "keyContrasts":["그리고 vs -고","-지만 vs -는데","sequential -아/어서 vs causal -아/어서","A/V-아/어서 vs N(이)라서 vs N 때문에"],
+      "practiceIdeas":["reason-form selector","connector meaning map","combine two sentences","explain why one connector sounds more natural in context"]
+    },
+    {
+      "id":"system-noun-modifiers",
+      "title":"Noun-modifying / relative-clause forms",
+      "lessonProgression":[
+        {"lesson":9,"focus":"adjective -(으)ㄴ + N and irregular adjective forms"},
+        {"lesson":10,"focus":"present verb -는 + N; relative-clause word order; 이/가 inside modifier"},
+        {"lesson":12,"focus":"past/completed verb -(으)ㄴ + N; result-state reading with clothing verbs"}
+      ],
+      "exploreSections":["adjective modifiers","present verb modifiers","past verb modifiers","있다/없다 modifiers","copula modifiers 인/아닌","honorific modifiers","result-state verbs such as 입은/신은"],
+      "practiceIdeas":["build a relative clause","present vs past contrast","describe people in a picture","find the embedded subject"]
+    },
+    {
+      "id":"system-negation-inability",
+      "title":"Negation, inability & prohibition",
+      "lessonProgression":[
+        {"lesson":1,"focus":"noun negation N이/가 아니에요"},
+        {"lesson":6,"focus":"안 + A/V and 못 + action verb"},
+        {"lesson":7,"focus":"negative questions"},
+        {"lesson":11,"focus":"밖에 + negative predicate"},
+        {"lesson":14,"focus":"V-지 못하다; V-지 마세요; V-지 말고"}
+      ],
+      "keyContrasts":["안 vs 못","못 + V vs V-지 못하다","simple negation vs inability","-지 못하다 vs -지 마세요 (inability vs command/prohibition)","-지 마세요 vs -지 말고 Y-(으)세요"],
+      "practiceIdeas":["classify not/cannot/don't","rewrite short↔long inability","prohibition signs","negative-question response drill"]
+    },
+    {
+      "id":"system-irregulars",
+      "title":"Irregular conjugation families",
+      "lessonProgression":[
+        {"lesson":5,"focus":"ㄷ irregular: 듣다/걷다"},
+        {"lesson":6,"focus":"ㅂ irregular: 춥다/덥다/쉽다/어렵다/가깝다"},
+        {"lesson":7,"focus":"ㄹ deletion patterns"},
+        {"lesson":9,"focus":"ㅂ and ㄹ inside adjective noun modifiers"},
+        {"lesson":12,"focus":"ㅎ irregular color/demonstrative adjectives"},
+        {"lesson":14,"focus":"르 irregular"}
+      ],
+      "exploreSections":["trigger-based view: what following sound/ending causes the change?","regular exceptions","same stem across multiple endings","visual before→after transformations"],
+      "practiceIdeas":["conjugation matrix","identify irregular family","predict form before seeing answer","compare same stem across -아요/-세요/-ㄹ 거예요/modifier"]
+    },
+    {
+      "id":"system-word-building",
+      "title":"Word building & productive patterns",
+      "lessonProgression":[
+        {"lesson":2,"focus":"N + 하다 verbs such as 공부하다/숙제하다"},
+        {"lesson":5,"focus":"expanded N + 하다 vocabulary such as 쇼핑하다/운동하다/전화하다"},
+        {"lesson":6,"focus":"negation placement with N+하다 patterns"},
+        {"lesson":13,"focus":"benefactive V-아/어 주다 and compounds such as 빌려주다"},
+        {"lesson":14,"focus":"A-게 productive adverb formation"}
+      ],
+      "exploreSections":["N + 하다 → verb/adjective","N + 되다 change/passive-like patterns (future expansion)","N + 시키다 causative-like patterns (future expansion)","A + 게 → adverb","Hanja-derived suffix families such as -적/-성/-화/-자/-원 (enrichment, not teacher-PPT core)"],
+      "practiceIdeas":["turn noun into verb","where does 안 go?","build an adverb","word-family tree"]
+    },
+    {
+      "id":"system-location-movement",
+      "title":"Location, movement & direction",
+      "lessonProgression":[
+        {"lesson":3,"focus":"Place + 에 + 있다/없다 and position words"},
+        {"lesson":5,"focus":"static/destination 에 vs activity-location 에서; -(으)러 가다/오다"},
+        {"lesson":6,"focus":"에서...까지 and transportation/instrument (으)로"},
+        {"lesson":8,"focus":"directions, (으)로 'toward', 타다/내리다"},
+        {"lesson":9,"focus":"place goal 에 vs source 에서"},
+        {"lesson":14,"focus":"airport/taxi destination and transit interactions"}
+      ],
+      "practiceIdeas":["campus map directions","choose 에/에서","route builder","taxi role-play"]
+    }
+  ],
+  "designRule": "Explore should progressively disclose these systems and link every system explanation back to the lesson(s) where the learner encountered it. It should not load every lesson pack on initial page load."
+}
