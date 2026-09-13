@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson 8.pptx, with the formal-speech mini lesson as a supplemental teacher source.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides or textbook artwork."
+  },
+  "lesson": {
+    "id":"lesson-8",
+    "number":8,
+    "titleKo":"서울에서 길 묻기",
+    "titleEn":"In Seoul: Directions and Public Speech",
+    "theme":"Directions, transportation, demonstratives, agreement, and formal public interaction",
+    "situations":["asking and giving directions","riding a bus or subway","referring to nearby/far objects and places","using formal polite speech with strangers"],
+    "goals":["Use -지요? to seek agreement","Distinguish 이/그/저 and 여기/거기/저기","Recognize formal polite/deferential endings","Use N(으)로 for direction","Apply ㄹ-irregular omission patterns in common forms"],
+    "teacherFocus":["directions in a Korean context","informal vs formal speech level","public/service interaction","subway expressions 타다/내리다","demonstratives","ㄹ irregular review"],
+    "connections":["speech-honorifics","sentence-particles","irregulars","real-life"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson 8.pptx","slides":[2,3,4,5,6,7,8,9,14,15,19,22,27,28,34,35,39,41,42,44,46,48,49,50,51,52,53,62,63,64]},{"type":"teacher-ppt","file":"KBL formal speech level(ST).pptx","notes":"supplemental speech-level system"}]
+  },
+  "vocabulary": [
+    {"id":"v8-warm","korean":"따뜻하다","meaningEn":"to be warm","meaningZh":"温暖","pos":"adjective","originType":"native-korean","tags":["weather"],"sourceRefs":[{"file":"lesson 8.pptx","slide":4}]},
+    {"id":"v8-ride","korean":"타다","meaningEn":"to ride; take (transportation)","meaningZh":"乘；坐","pos":"verb","originType":"native-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[4,41,42]}]},
+    {"id":"v8-getoff","korean":"내리다","meaningEn":"to get off","meaningZh":"下车","pos":"verb","originType":"native-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[4,41,44]}]},
+    {"id":"v8-turn","korean":"돌다","meaningEn":"to turn","meaningZh":"转；拐","pos":"verb","originType":"native-korean","tags":["direction","irregular"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[4,53]}]},
+    {"id":"v8-ask","korean":"묻다","meaningEn":"to ask","meaningZh":"问","pos":"verb","originType":"native-korean","tags":["communication"],"sourceRefs":[{"file":"lesson 8.pptx","slide":4}]},
+    {"id":"v8-sell","korean":"팔다","meaningEn":"to sell","meaningZh":"卖","pos":"verb","originType":"native-korean","tags":["shopping","irregular"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[4,50,61]}]},
+    {"id":"v8-nearby","korean":"근처","meaningEn":"nearby; vicinity","meaningZh":"附近","pos":"noun","hanja":"近處","originType":"sino-korean","tags":["place"],"sourceRefs":[{"file":"lesson 8.pptx","slide":5}]},
+    {"id":"v8-station","korean":"역","meaningEn":"station","meaningZh":"车站","pos":"noun","hanja":"驛","originType":"sino-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson 8.pptx","slide":5}]},
+    {"id":"v8-right","korean":"오른쪽","meaningEn":"right side","meaningZh":"右边","pos":"location noun","originType":"native-korean","tags":["direction"],"sourceRefs":[{"file":"lesson 8.pptx","slide":5}]},
+    {"id":"v8-left","korean":"왼쪽","meaningEn":"left side","meaningZh":"左边","pos":"location noun","originType":"native-korean","tags":["direction"],"sourceRefs":[{"file":"lesson 8.pptx","slide":5}]},
+    {"id":"v8-straight","korean":"쭉","meaningEn":"straight; continuously","meaningZh":"一直；直走","pos":"adverb","originType":"native-korean","tags":["direction"],"sourceRefs":[{"file":"lesson 8.pptx","slide":5}]},
+    {"id":"v8-opposite","korean":"건너편","meaningEn":"opposite side; across from","meaningZh":"对面","pos":"location noun","originType":"native-korean","tags":["direction"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[5,27,38]}]},
+    {"id":"v8-cityhall","korean":"시청","meaningEn":"city hall","meaningZh":"市政府；市厅","pos":"noun","hanja":"市廳","originType":"sino-korean","tags":["place"],"sourceRefs":[{"file":"lesson 8.pptx","slide":6}]},
+    {"id":"v8-bank","korean":"은행","meaningEn":"bank","meaningZh":"银行","pos":"noun","hanja":"銀行","originType":"sino-korean","tags":["place"],"sourceRefs":[{"file":"lesson 8.pptx","slide":6}]},
+    {"id":"v8-hospital","korean":"병원","meaningEn":"hospital","meaningZh":"医院","pos":"noun","hanja":"病院","originType":"sino-korean","tags":["place"],"sourceRefs":[{"file":"lesson 8.pptx","slide":6}]},
+    {"id":"v8-pharmacy","korean":"약국","meaningEn":"pharmacy","meaningZh":"药店","pos":"noun","hanja":"藥局","originType":"sino-korean","tags":["place"],"sourceRefs":[{"file":"lesson 8.pptx","slide":7}]},
+    {"id":"v8-stamp","korean":"우표","meaningEn":"postage stamp","meaningZh":"邮票","pos":"noun","hanja":"郵票","originType":"sino-korean","tags":["post"],"sourceRefs":[{"file":"lesson 8.pptx","slide":8}]},
+    {"id":"v8-here","korean":"여기","meaningEn":"here","meaningZh":"这里","pos":"demonstrative place word","originType":"native-korean","tags":["demonstrative"],"sourceRefs":[{"file":"lesson 8.pptx","slide":22}]},
+    {"id":"v8-there","korean":"거기","meaningEn":"there (near listener / known place)","meaningZh":"那里","pos":"demonstrative place word","originType":"native-korean","tags":["demonstrative"],"sourceRefs":[{"file":"lesson 8.pptx","slide":22}]},
+    {"id":"v8-overthere","korean":"저기","meaningEn":"over there (away from both)","meaningZh":"那边","pos":"demonstrative place word","originType":"native-korean","tags":["demonstrative"],"sourceRefs":[{"file":"lesson 8.pptx","slide":22}]}
+  ],
+  "grammar": [
+    {"id":"g8-jiyo","pattern":"A/V-지요?","name":"Seeking agreement with -지요?","meaning":"Checks or invites agreement about information the speaker expects the listener to share or recognize.","examples":[{"ko":"서울 날씨가 참 좋지요?","en":"The weather in Seoul is really nice, isn’t it?"},{"ko":"저기 은행 보이지요?","en":"You see that bank over there, right?"}],"tags":["sentence-ending","agreement"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[9,11,12,13,36]}]},
+    {"id":"g8-demonstratives","pattern":"이 / 그 / 저 + N; 이것/그것/저것; 여기/거기/저기","name":"Demonstrative system","meaning":"이 marks near the speaker, 그 near the listener or contextually known, and 저 away from both; related forms point to things and places.","examples":[{"ko":"이게 제 책이에요.","en":"This is my book."},{"ko":"저건 스티브 씨 거예요.","en":"That over there is Steve’s."}],"tags":["demonstrative"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[14,15,16,17,19,20,21,22]}]},
+    {"id":"g8-formal","pattern":"-ㅂ니다/-습니다; -ㅂ니까/-습니까","name":"Formal polite / deferential style","meaning":"A formal polite speech style used in public, professional, service, presentation, and other formal situations.","examples":[{"ko":"이 근처에 우체국이 어디 있습니까?","en":"Where is a post office around here?"},{"ko":"말씀 좀 묻겠습니다.","en":"May I ask you something?"}],"commonMistakes":["Formal speech level and honorific subject marking are separate dimensions; a sentence can be formal without every referent being honorified."],"tags":["speech-level","formal","polite"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[27,28]},{"file":"KBL formal speech level(ST).pptx","notes":"formal/public vs informal settings and six-level overview"}]},
+    {"id":"g8-direction-ro","pattern":"N(으)로","name":"Direction / toward","meaning":"Marks the direction toward which movement proceeds.","examples":[{"ko":"왼쪽으로 쭉 가세요.","en":"Go straight to the left."},{"ko":"거기서 오른쪽으로 도세요.","en":"Turn right there."}],"tags":["particle","direction"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[34,55,62,63]}]},
+    {"id":"g8-l-irregular","pattern":"ㄹ omission in selected endings","name":"ㄹ-irregular review","meaning":"Final ㄹ is omitted in several environments shown in the teacher PPT, including before ㄴ/ㅂ/ㅅ, another ㄹ, or 으-containing endings.","examples":[{"ko":"살다 → 삽니다","en":"live → live (formal polite)"},{"ko":"돌다 → 도세요","en":"turn → please turn"},{"ko":"만들다 → 만들 거예요","en":"make → will make"}],"tags":["irregular","conjugation"],"sourceRefs":[{"file":"lesson 8.pptx","slides":[48,49,50,51,52,53,56,57,58,59,60]}]}
+  ],
+  "expressions": [
+    {"id":"e8-excuse","korean":"저기요. 말씀 좀 묻겠습니다.","meaningEn":"Excuse me. May I ask you something?","meaningZh":"不好意思，我想问一下。","situation":"asking a stranger","register":"formal polite","sourceRefs":[{"file":"lesson 8.pptx","slide":27}]},
+    {"id":"e8-how-get","korean":"여기서 ___까지 어떻게 가요/갑니까?","meaningEn":"How do I get from here to ___?","meaningZh":"从这里到___怎么走？","situation":"directions","register":"polite/formal variants","sourceRefs":[{"file":"lesson 8.pptx","slides":[27,45,63]}]},
+    {"id":"e8-subway","korean":"지하철 1호선을 타고 시청역에서 내리세요.","meaningEn":"Take subway line 1 and get off at City Hall Station.","meaningZh":"坐地铁1号线，在市厅站下车。","situation":"directions","register":"honorific polite","sourceRefs":[{"file":"lesson 8.pptx","slides":[27,46]}]}
+  ],
+  "culture": [
+    {"id":"c8-speech-context","title":"Speech level follows situation","category":"language-culture","summary":"The teacher’s formal-speech mini lesson frames Korean as situation-oriented: public/formal settings favor deferential style, while family and close relationships use less formal styles. This should be taught as context-sensitive choice rather than a one-dimensional ‘formal vs informal’ toggle.","languageConnection":["-ㅂ니다/-습니다","-ㅂ니까/-습니까","-아요/어요"],"relatedLessons":[3,8,9,10],"tags":["speech-level","pragmatics"],"sourceRefs":[{"file":"KBL formal speech level(ST).pptx","notes":"formal/public vs informal settings; six speech levels"}]}
+  ],
+  "practice": [
+    {"id":"p8-001","type":"typing","prompt":"Ask formally: ‘Where is a post office around here?’","answers":["이 근처에 우체국이 어디 있습니까?"],"displayAnswer":"이 근처에 우체국이 어디 있습니까?","explanation":"The Lesson 8 dialogue uses the deferential question ending -습니까? with a stranger.","conceptIds":["g8-formal"],"difficulty":2},
+    {"id":"p8-002","type":"multiple-choice","prompt":"Choose the place word meaning ‘over there, away from both speaker and listener.’","choices":["여기","거기","저기"],"answers":["저기"],"displayAnswer":"저기","explanation":"The demonstrative map contrasts 여기/거기/저기 by relative location.","conceptIds":["g8-demonstratives"],"difficulty":1},
+    {"id":"p8-003","type":"typing","prompt":"Say ‘Turn right there.’","answers":["거기서 오른쪽으로 도세요."],"displayAnswer":"거기서 오른쪽으로 도세요.","explanation":"(으)로 marks direction; 돌다 becomes 도세요 in the teacher’s ㄹ-irregular pattern.","conceptIds":["g8-direction-ro","g8-l-irregular"],"difficulty":2},
+    {"id":"p8-004","type":"multiple-choice","prompt":"Which sentence seeks agreement?","choices":["서울 날씨가 좋지요?","서울 날씨가 좋습니까?","서울 날씨가 좋아요."],"answers":["서울 날씨가 좋지요?"],"displayAnswer":"서울 날씨가 좋지요?","explanation":"-지요? is the Lesson 8 agreement-seeking ending.","conceptIds":["g8-jiyo"],"difficulty":1}
+  ]
+}
