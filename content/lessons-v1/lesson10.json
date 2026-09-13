@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson 10(ST).pptx.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides, dialogues, or artwork. Explanations and practice below are transformed/original."
+  },
+  "lesson": {
+    "id": "lesson-10",
+    "number": 10,
+    "titleKo": "교수님 연구실에서",
+    "titleEn": "At a Professor's Office",
+    "theme": "Academic interaction, desire, background/contrast, reasons, and noun modification",
+    "situations": ["visiting a professor", "describing academic background", "making a polite refusal", "explaining a reason", "describing people/things with verb modifiers"],
+    "goals": ["Use -(으)ㄴ데/는데 to provide background or contrast", "Express desire with -고 싶다", "Use sentence-final -(으)ㄴ데요/는데요 for indirect polite interaction", "Give reasons with -아/어서", "Create present verb noun modifiers with -는"],
+    "teacherFocus": ["동안 for duration", "formal vs informal speech endings", "indirect refusal with -는데요", "reason -아/어서", "relative-clause word order and 이/가 inside noun modifiers"],
+    "connections": ["connectors", "speech-honorifics", "noun-modifiers", "tense-aspect", "real-life"],
+    "sourceRefs": [{"type":"teacher-ppt","file":"lesson 10(ST).pptx","slides":[2,3,4,5,11,12,13,22,24,25,31,32,34,35,40,41,57,58,59,65,68,71,73,77,78,81,82,90,92,95,96,100,101,102,103,111,112,117]}]
+  },
+  "vocabulary": [
+    {"id":"v10-professor","korean":"교수님","meaningEn":"professor (honorific title)","meaningZh":"教授","pos":"noun/title","hanja":"敎授","originType":"sino-korean","tags":["school","honorific"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[2,3]}]},
+    {"id":"v10-culture","korean":"문화","meaningEn":"culture","meaningZh":"文化","pos":"noun","hanja":"文化","originType":"sino-korean","tags":["academic"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slide":4}]},
+    {"id":"v10-major","korean":"전공","meaningEn":"major; field of study","meaningZh":"专业","pos":"noun/verb base","hanja":"專攻","originType":"sino-korean","tags":["academic"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[7,8]}]},
+    {"id":"v10-office","korean":"연구실","meaningEn":"professor's office; research room","meaningZh":"研究室","pos":"noun","hanja":"硏究室","originType":"sino-korean","tags":["academic","place"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[4,66]}]},
+    {"id":"v10-duration","korean":"동안","meaningEn":"during; for (a duration)","meaningZh":"期间；长达","pos":"bound noun","originType":"native-korean","tags":["time"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[4,11,12]}]},
+    {"id":"v10-want","korean":"-고 싶다","meaningEn":"to want to do","meaningZh":"想做……","pos":"expression","tags":["desire"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[4,13,22]}]},
+    {"id":"v10-see-humble","korean":"뵙다","meaningEn":"to see/meet (humble)","meaningZh":"拜见（谦敬）","pos":"verb","tags":["honorific","humble"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[4,9]}]},
+    {"id":"v10-traffic","korean":"교통","meaningEn":"traffic; transportation","meaningZh":"交通","pos":"noun","hanja":"交通","originType":"sino-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[5,69,70]}]},
+    {"id":"v10-congested","korean":"막히다","meaningEn":"to be blocked; congested","meaningZh":"堵塞","pos":"verb","tags":["transportation"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[5,68,70]}]},
+    {"id":"v10-comfortable","korean":"편하다","meaningEn":"to be comfortable; convenient","meaningZh":"舒服；方便","pos":"adjective","hanja":"便","originType":"sino-korean+하다","tags":["description"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[5,68]}]},
+    {"id":"v10-directly","korean":"직접","meaningEn":"directly; in person","meaningZh":"直接","pos":"adverb/noun","hanja":"直接","originType":"sino-korean","tags":["adverb"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slide":6}]},
+    {"id":"v10-sorry","korean":"죄송하다","meaningEn":"to be sorry","meaningZh":"抱歉","pos":"adjective","tags":["courtesy"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[4,68,69]}]}
+  ],
+  "grammar": [
+    {"id":"g10-neunde","pattern":"A-(으)ㄴ데 / V-는데 / N인데","name":"Background, contrast, and setup","meaning":"Connects a clause that provides background, contrast, or justification for what follows.","formation":["adjective stem + -(으)ㄴ데","verb stem + -는데","noun + 인데","past forms attach tense before -는데"],"usage":["background/situation","contrast","justifying a request or proposal"],"examples":[{"ko":"한국어는 재미있는데 어려워요.","en":"Korean is interesting, but it is difficult."},{"ko":"시간이 없는데 택시를 타세요.","en":"Since you don't have time / given that you don't have time, take a taxi."}],"commonMistakes":["Do not force one English translation; the relationship can be background, contrast, or setup depending on context."],"tags":["connector","discourse"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[31,32,33,34,35,36,37,38,39,40,41,50,51,52,53,54,55,56]}]},
+    {"id":"g10-desire","pattern":"V-고 싶다 / V-고 싶어 하다","name":"Expressing desire","meaning":"-고 싶다 expresses the speaker's desire; the lesson presents -고 싶어 하다 for describing a third person's desire.","examples":[{"ko":"수영하고 싶어요.","en":"I want to swim."},{"ko":"민수 씨는 영화를 보고 싶어 해요.","en":"Minsu wants to watch a movie."}],"tags":["desire","modality"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[13,14,15,16,17,22]}]},
+    {"id":"g10-sentence-neundeyo","pattern":"A-(으)ㄴ데요 / V-는데요 / N인데요","name":"Indirect polite sentence ending","meaning":"Presents background and leaves the listener to infer the speaker's intention; often softens disagreement or refusal.","usage":["polite indirect response","soft disagreement/refusal","giving context without stating the conclusion directly"],"examples":[{"ko":"오늘 바쁜데요...","en":"I'm busy today... (implying a polite refusal)"},{"ko":"지금 안 계시는데요.","en":"He/She isn't here right now..."}],"commonMistakes":["The politeness effect comes from leaving part of the intended meaning implicit; it is not merely a decorative ending."],"tags":["speech-level","pragmatics","indirectness"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[57,58,59,60,61,62,63,64,65,66,67]}]},
+    {"id":"g10-reason-aseo","pattern":"A/V-아/어서","name":"Cause or reason","meaning":"Connects a reason/cause to a following result.","examples":[{"ko":"차가 많이 막혀서 늦었습니다.","en":"I was late because traffic was badly congested."},{"ko":"머리가 아파서 약을 먹었어요.","en":"I took medicine because my head hurt."}],"tags":["connector","reason"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[68,71,72,73,74,75,77,78,81,82,83,84,85,86]}]},
+    {"id":"g10-present-modifier","pattern":"V-는 + N","name":"Present verb noun-modifying form","meaning":"Turns a verb clause into a modifier placed before a noun; Korean does not use English relative pronouns such as who/that/which.","formation":["verb stem + -는 + noun","ㄹ-final verbs drop ㄹ before -는","있다/없다 → 있는/없는","이다/아니다 → 인/아닌; honorific 이신/아니신"],"examples":[{"ko":"노래하는 사람","en":"a person who is singing"},{"ko":"내가 읽는 신문","en":"the newspaper that I read"},{"ko":"방에 계시는 분","en":"the person who is in the room (honorific)"}],"commonMistakes":["Inside the relative clause, the teacher emphasizes 이/가 rather than 은/는 for the embedded subject."],"tags":["noun-modifier","relative-clause"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[90,91,92,93,94,95,96,98,99,100,101,102,103,111,112,113,114,115]}]},
+    {"id":"g10-formal-speech","pattern":"-습니다/-ㅂ니다; -(으)십니까?; -(으)십시오; -(으)ㅂ시다","name":"Formal polite endings in academic/public interaction","meaning":"The PPT reviews formal statement, question, command, and suggestion forms used in more formal interaction.","examples":[{"ko":"내일 뵙겠습니다.","en":"I will see you tomorrow."},{"ko":"밥 먹읍시다.","en":"Let's eat."}],"tags":["speech-level","formal"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[24,25,26,27,28,29,30]}]}
+  ],
+  "expressions": [
+    {"id":"e10-major-question","korean":"전공이 뭐예요?","meaningEn":"What is your major?","meaningZh":"你的专业是什么？","situation":"academic","register":"polite","sourceRefs":[{"file":"lesson 10(ST).pptx","slide":8}]},
+    {"id":"e10-how-long","korean":"얼마 동안 배웠어요?","meaningEn":"How long did you study/learn it?","meaningZh":"学了多久？","situation":"duration","register":"polite","sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[11,12]}]},
+    {"id":"e10-see-you","korean":"내일 뵙겠습니다.","meaningEn":"I will see you tomorrow.","meaningZh":"明天见（谦敬/正式）","situation":"formal farewell","register":"formal-humble","sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[3,9]}]},
+    {"id":"e10-apology","korean":"늦어서 죄송합니다.","meaningEn":"I'm sorry I'm late.","meaningZh":"抱歉我迟到了。","situation":"apology","register":"formal-polite","sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[68,78]}]}
+  ],
+  "culture": [
+    {"id":"c10-professor-interaction","title":"Indirectness in polite interaction","category":"language-culture","summary":"The teacher's examples use formal endings, humble forms, and sentence-final -는데요 to make requests/refusals less direct in professor-facing interactions.","languageConnection":["뵙다","-습니다","-는데요"],"relatedLessons":[8,9,10],"tags":["politeness","academic"],"sourceRefs":[{"file":"lesson 10(ST).pptx","slides":[2,3,57,59,65]}]}
+  ],
+  "practice": [
+    {"id":"p10-001","type":"multiple-choice","prompt":"You want to politely imply that you cannot go to a movie because you are busy today. Which response best matches the lesson's indirect style?","choices":["오늘 바쁜데요...","오늘 바빠요! 가요.","오늘은 영화예요."],"answers":["오늘 바쁜데요..."],"displayAnswer":"오늘 바쁜데요...","explanation":"Sentence-final -는데요 can present your situation and let the listener infer the refusal.","conceptIds":["g10-sentence-neundeyo"],"difficulty":2,"tags":["pragmatics"]},
+    {"id":"p10-002","type":"typing","prompt":"Complete: 한국어는 재미있___ 어려워요. (Use the Lesson 10 connector.)","answers":["는데"],"displayAnswer":"한국어는 재미있는데 어려워요.","explanation":"재미있다 behaves with -는데 in this lesson.","conceptIds":["g10-neunde"],"difficulty":2,"tags":["connector"]},
+    {"id":"p10-003","type":"multiple-choice","prompt":"Which means 'the person who is singing'?","choices":["노래하는 사람","노래한 사람","노래하고 사람"],"answers":["노래하는 사람"],"displayAnswer":"노래하는 사람","explanation":"Present verb modifiers use V-는 + N.","conceptIds":["g10-present-modifier"],"difficulty":2,"tags":["noun-modifier"]},
+    {"id":"p10-004","type":"sentence-build","prompt":"Build a sentence: 'I want to study Korean.'","answers":["한국어를 공부하고 싶어요."],"displayAnswer":"한국어를 공부하고 싶어요.","explanation":"Attach -고 싶어요 to the verb stem phrase.","conceptIds":["g10-desire"],"difficulty":1,"tags":["desire"]}
+  ]
+}
