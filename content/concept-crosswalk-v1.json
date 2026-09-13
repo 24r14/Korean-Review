@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "status": "migration aid; does not change existing lesson-local IDs",
+  "purpose": "Map lesson-local grammar IDs to stable canonical concepts before the v2 renderer is wired to the new content model.",
+  "mappings": [
+    {"lessonId":"lesson-10","localId":"g10-neunde","canonicalIds":["concept-neunde"]},
+    {"lessonId":"lesson-10","localId":"g10-sentence-neundeyo","canonicalIds":["concept-neundeyo-final"]},
+    {"lessonId":"lesson-10","localId":"g10-reason-aseo","canonicalIds":["concept-reason-aseo"]},
+    {"lessonId":"lesson-10","localId":"g10-present-modifier","canonicalIds":["concept-verb-present-modifier"]},
+    {"lessonId":"lesson-10","localId":"g10-formal-speech","canonicalIds":["concept-formal-deferential"]},
+
+    {"lessonId":"lesson-11","localId":"g11-progressive","canonicalIds":["concept-progressive-go-itda"]},
+    {"lessonId":"lesson-11","localId":"g11-raeyo","canonicalIds":["concept-intention-raeyo"]},
+    {"lessonId":"lesson-11","localId":"g11-ina-bakke","canonicalIds":["concept-ina-quantity","concept-bakke"],"note":"One lesson-local comparison card intentionally maps to two canonical concepts."},
+    {"lessonId":"lesson-11","localId":"g11-lkkayo","canonicalIds":["concept-proposal-kkayo"]},
+
+    {"lessonId":"lesson-12","localId":"g12-sequential-aseo","canonicalIds":["concept-sequence-aseo"]},
+    {"lessonId":"lesson-12","localId":"g12-conjectural-get","canonicalIds":["concept-conjecture-get"]},
+    {"lessonId":"lesson-12","localId":"g12-h-irregular","canonicalIds":["concept-irregular-h"]},
+    {"lessonId":"lesson-12","localId":"g12-past-modifier","canonicalIds":["concept-verb-past-modifier"]},
+
+    {"lessonId":"lesson-13","localId":"g13-lgeyo","canonicalIds":["concept-promise-lgeyo"]},
+    {"lessonId":"lesson-13","localId":"g13-ttaemune","canonicalIds":["concept-reason-ttemune"]},
+    {"lessonId":"lesson-13","localId":"g13-intentional-get","canonicalIds":["concept-intentional-get"]},
+
+    {"lessonId":"lesson-14","localId":"g14-iraseo","canonicalIds":["concept-reason-iraseo"]},
+    {"lessonId":"lesson-14","localId":"g14-jimothada","canonicalIds":["concept-inability-ji-mot"]},
+    {"lessonId":"lesson-14","localId":"g14-ge","canonicalIds":["concept-adverb-ge"]},
+    {"lessonId":"lesson-14","localId":"g14-jimaseyo","canonicalIds":["concept-prohibition-ji-maseyo"]},
+    {"lessonId":"lesson-14","localId":"g14-jimalgo","canonicalIds":["concept-contrastive-command-ji-malgo"]},
+    {"lessonId":"lesson-14","localId":"g14-reu-irregular","canonicalIds":["concept-irregular-reu"]},
+    {"lessonId":"lesson-14","localId":"g14-prices","canonicalIds":["concept-money-large-numbers"]}
+  ],
+  "unmappedNeedsRegistryEntry": [
+    {"lessonId":"lesson-10","localId":"g10-desire","suggestedCanonicalId":"concept-desire-go-sipda","reason":"-고 싶다/-고 싶어 하다 deserves its own modality concept."},
+    {"lessonId":"lesson-11","localId":"g11-range","suggestedCanonicalId":"concept-range-particles","reason":"부터~까지 / 에서~까지 belongs in the new sentence-particles system."},
+    {"lessonId":"lesson-12","localId":"g12-neyo","suggestedCanonicalId":"concept-reaction-neyo","reason":"-네요 is a recurring discourse/reaction ending rather than a one-lesson detail."},
+    {"lessonId":"lesson-12","localId":"g12-ordinals","suggestedCanonicalId":"concept-ordinal","reason":"Ordinal formation is part of the cross-lesson number system."},
+    {"lessonId":"lesson-13","localId":"g13-benefactive","suggestedCanonicalId":"concept-benefactive-juda","reason":"Benefactive -아/어 주다 links requests, favors, gratitude, and future real-life interaction."},
+    {"lessonId":"lesson-13","localId":"g13-obligation","suggestedCanonicalId":"concept-obligation-aya-doeda","reason":"Obligation/necessity should connect to future modality and comparison pages."}
+  ],
+  "nextMigrationBatch": "Create exact crosswalks for Lessons 1-9, then add the six missing canonical concepts above before modifying lesson JSON files."
+}
