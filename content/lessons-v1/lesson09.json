@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson 9(ST).pptx; honorific mini lesson is a supplemental teacher source.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides or textbook artwork."
+  },
+  "lesson": {
+    "id":"lesson-9",
+    "number":9,
+    "titleKo":"생일",
+    "titleEn":"Birthday",
+    "theme":"Dates, age, giving/receiving, adjective noun modifiers, honorifics, and contrast",
+    "situations":["talking about birthdays and dates","giving and receiving gifts","asking age respectfully","describing nouns with adjectives","contrasting two clauses"],
+    "goals":["Read Korean dates with Sino-Korean numbers","Use Native Korean age forms","Distinguish place 에/에서 and person 한테/한테서/께","Modify nouns with adjectives","Use common honorific nouns/verbs/particles","Connect contrasting clauses with -지만"],
+    "teacherFocus":["year-month-day order","Native Korean age forms","recipient/source particles","adjective noun modifiers including irregulars","honorific vocabulary and 께서","tense behavior with -지만"],
+    "connections":["numbers","sentence-particles","noun-modifiers","speech-honorifics","connectors"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson 9(ST).pptx","slides":[2,3,4,5,6,8,10,14,18,19,21,25,30,31,32,36,37,38,40,41,57,58,59,60,61,62,66,67]},{"type":"teacher-ppt","file":"KBL honorifics mini lesson(ST).pptx","notes":"supplemental honorific system"}]
+  },
+  "vocabulary": [
+    {"id":"v9-birthday","korean":"생일","meaningEn":"birthday","meaningZh":"生日","pos":"noun","hanja":"生日","originType":"sino-korean","tags":["birthday"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[1,4]}]},
+    {"id":"v9-gift","korean":"선물","meaningEn":"gift; present","meaningZh":"礼物","pos":"noun","hanja":"膳物","originType":"sino-korean","tags":["gift"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":4}]},
+    {"id":"v9-letter","korean":"편지","meaningEn":"letter","meaningZh":"信","pos":"noun","hanja":"便紙","originType":"sino-korean","tags":["communication"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":4}]},
+    {"id":"v9-card","korean":"카드","meaningEn":"card","meaningZh":"卡片","pos":"noun","originType":"loanword","tags":["gift","communication"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":4}]},
+    {"id":"v9-phone-number","korean":"전화번호","meaningEn":"telephone number","meaningZh":"电话号码","pos":"noun","hanja":"電話番號","originType":"sino-korean","tags":["communication"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":4}]},
+    {"id":"v9-photo","korean":"사진","meaningEn":"photograph","meaningZh":"照片","pos":"noun","hanja":"寫眞","originType":"sino-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":4}]},
+    {"id":"v9-congratulate","korean":"축하하다","meaningEn":"to congratulate","meaningZh":"祝贺","pos":"verb","hanja":"祝賀","originType":"sino-korean+하다","tags":["birthday"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":4}]},
+    {"id":"v9-healthy","korean":"건강하다","meaningEn":"to be healthy","meaningZh":"健康","pos":"adjective","hanja":"健康","originType":"sino-korean+하다","tags":["health"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[5,58]}]},
+    {"id":"v9-joyful","korean":"즐겁다","meaningEn":"to be joyful; pleasant","meaningZh":"愉快","pos":"adjective","originType":"native-korean","tags":["description","irregular"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[5,57]}]},
+    {"id":"v9-sweater","korean":"스웨터","meaningEn":"sweater","meaningZh":"毛衣","pos":"noun","originType":"loanword","tags":["clothing"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[5,58]}]},
+    {"id":"v9-gloves","korean":"장갑","meaningEn":"gloves","meaningZh":"手套","pos":"noun","hanja":"掌匣","originType":"sino-korean","tags":["clothing"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[5,58]}]},
+    {"id":"v9-hat","korean":"모자","meaningEn":"hat","meaningZh":"帽子","pos":"noun","hanja":"帽子","originType":"sino-korean","tags":["clothing"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[3,5]}]},
+    {"id":"v9-short","korean":"짧다","meaningEn":"to be short (length)","meaningZh":"短","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[5,37]}]},
+    {"id":"v9-long","korean":"길다","meaningEn":"to be long","meaningZh":"长","pos":"adjective","originType":"native-korean","tags":["description","irregular"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[5,38]}]},
+    {"id":"v9-age","korean":"나이 / 연세","meaningEn":"age / age (honorific)","meaningZh":"年龄 / 年龄（敬语）","pos":"noun","tags":["honorific","age"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[6,58]}]},
+    {"id":"v9-house-hon","korean":"집 / 댁","meaningEn":"home / home (honorific)","meaningZh":"家 / 府上（敬语）","pos":"noun","tags":["honorific"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":6}]},
+    {"id":"v9-birthday-hon","korean":"생일 / 생신","meaningEn":"birthday / birthday (honorific)","meaningZh":"生日 / 寿辰（敬语）","pos":"noun","tags":["honorific","birthday"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[6,57]}]},
+    {"id":"v9-name-hon","korean":"이름 / 성함","meaningEn":"name / name (honorific)","meaningZh":"名字 / 姓名（敬语）","pos":"noun","tags":["honorific"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":6}]},
+    {"id":"v9-die-hon","korean":"죽다 / 돌아가시다","meaningEn":"to die / to pass away (honorific)","meaningZh":"死 / 去世（敬语）","pos":"verb","tags":["honorific"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":6}]},
+    {"id":"v9-give-hon","korean":"주다 / 드리다","meaningEn":"to give / to give humbly to a respected person","meaningZh":"给 / 奉上（谦敬）","pos":"verb","tags":["honorific","giving"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[6,58]}]},
+    {"id":"v9-eat-hon","korean":"먹다 / 드시다","meaningEn":"to eat / to eat (honorific)","meaningZh":"吃 / 用餐（敬语）","pos":"verb","tags":["honorific"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":6}]},
+    {"id":"v9-sleep-hon","korean":"자다 / 주무시다","meaningEn":"to sleep / to sleep (honorific)","meaningZh":"睡 / 就寝（敬语）","pos":"verb","tags":["honorific"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":6}]},
+    {"id":"v9-word-hon","korean":"말 / 말씀","meaningEn":"words/speech / words/speech (honorific)","meaningZh":"话 / 话语（敬语）","pos":"noun","tags":["honorific"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":6}]},
+    {"id":"v9-person-counter-hon","korean":"명 / 분","meaningEn":"person counter / honorific person counter","meaningZh":"名 / 位（敬称量词）","pos":"counter","tags":["honorific","counter"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slide":6}]}
+  ],
+  "grammar": [
+    {"id":"g9-dates","pattern":"YYYY년 M월 D일","name":"Korean dates","meaning":"Dates use Sino-Korean numbers and are ordered from larger to smaller units: year → month → day.","examples":[{"ko":"2024년 2월 16일이에요.","en":"It is February 16, 2024."},{"ko":"오늘은 며칠이에요?","en":"What day of the month is it today?"}],"commonMistakes":["June and October are conventionally 유월 and 시월 rather than 육월 and 십월 in the teacher materials."],"tags":["numbers","date"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[8,9,10,11,12,13,14,15]}]},
+    {"id":"g9-age","pattern":"Native Korean number + 살","name":"Age with Native Korean numbers","meaning":"Age is expressed with Native Korean numbers plus 살 in this lesson.","examples":[{"ko":"몇 살이에요?","en":"How old are you?"},{"ko":"올해 일흔 다섯이세요.","en":"She is seventy-five this year."}],"tags":["numbers","age"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[16,17,18,19,20,58]}]},
+    {"id":"g9-recipient-source","pattern":"Place 에/에서; Person 한테/한테서/께","name":"Goal/source for places and people","meaning":"에 marks a place goal; 에서 marks a place source. 한테 marks a person recipient/goal, 한테서 a person source; 께 is the honorific recipient form shown by the teacher.","examples":[{"ko":"학교에 갔어요.","en":"I went to school."},{"ko":"한국에서 편지가 왔어요.","en":"A letter came from Korea."},{"ko":"리사한테 꽃과 카드를 줬어요.","en":"I gave Lisa flowers and a card."},{"ko":"마이클한테서 받았어요.","en":"I received it from Michael."}],"tags":["particle","giving","source-goal"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[21,22,23,24,25,26,27,28,29,31,32]}]},
+    {"id":"g9-adj-modifier","pattern":"A-(으)ㄴ + N","name":"Adjective noun-modifying form","meaning":"Places a descriptive adjective before a noun in a noun-modifying form.","formation":["consonant-ending adjective stem + 은","vowel-ending stem + ㄴ","있다/없다-family adjectives take -는 in the teacher lesson"],"examples":[{"ko":"좋은 가방","en":"a good bag"},{"ko":"큰 옷","en":"big clothes"},{"ko":"재미있는 드라마","en":"an interesting drama"}],"tags":["noun-modifier","adjective"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[36,37,38,40,41]}]},
+    {"id":"g9-adj-irregular","pattern":"ㅂ/ㄹ irregular adjective modifiers","name":"Irregular adjective modifiers","meaning":"Selected irregular stems change when adjective noun modifiers are formed.","examples":[{"ko":"어렵다 → 어려운 시험","en":"difficult → a difficult exam"},{"ko":"길다 → 긴 머리","en":"long → long hair"},{"ko":"멀다 → 먼 길","en":"far → a long/far road"}],"tags":["noun-modifier","irregular"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[37,38,39]}]},
+    {"id":"g9-honorific-system","pattern":"honorific noun/verb/particle forms","name":"Honorific expressions","meaning":"Korean can honor a respected referent through special vocabulary, particles, counters, and subject-honorific forms.","examples":[{"ko":"할머니께 무슨 선물 드렸어요?","en":"What gift did you give your grandmother?"},{"ko":"할머니께서 아주 좋아하셨어요.","en":"Grandmother liked it very much."},{"ko":"할머니 연세가 어떻게 되세요?","en":"How old is your grandmother?"}],"tags":["honorific","pragmatics"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[6,57,58]},{"file":"KBL honorifics mini lesson(ST).pptx","notes":"honorific verbs/nouns/particles"}]},
+    {"id":"g9-jiman","pattern":"A/V-지만; N이지만","name":"Clausal connective -지만","meaning":"Connects contrasting clauses with ‘but/although.’","examples":[{"ko":"저는 대학생이지만 제 동생은 고등학생이에요.","en":"I am a college student, but my younger sibling is a high-school student."},{"ko":"생일 파티에는 못 갔지만 선물은 샀어요.","en":"I couldn’t go to the birthday party, but I bought a gift."}],"commonMistakes":["The PPT contrasts -고 and -지만: with -지만, tense is marked in the relevant clause when the event is past."],"tags":["connector","contrast"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[59,60,61,62,63,64,65]}]}
+  ],
+  "expressions": [
+    {"id":"e9-date","korean":"오늘은 며칠이에요?","meaningEn":"What day of the month is it today?","meaningZh":"今天几号？","situation":"date","register":"polite informal","sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[8,9]}]},
+    {"id":"e9-age","korean":"몇 살이에요?","meaningEn":"How old are you?","meaningZh":"几岁？","situation":"age","register":"polite informal","sourceRefs":[{"file":"lesson 9(ST).pptx","slide":20}]},
+    {"id":"e9-age-hon","korean":"연세가 어떻게 되세요?","meaningEn":"How old are you/he/she? (honorific)","meaningZh":"您多大年纪？","situation":"respectful age question","register":"honorific polite","sourceRefs":[{"file":"lesson 9(ST).pptx","slide":58}]},
+    {"id":"e9-from-whom","korean":"누구한테서 받았어요?","meaningEn":"Who did you receive it from?","meaningZh":"你从谁那里收到的？","situation":"giving/receiving","register":"polite informal","sourceRefs":[{"file":"lesson 9(ST).pptx","slide":28}]}
+  ],
+  "culture": [
+    {"id":"c9-honorific-vocab","title":"Respect can change the word itself","category":"language-culture","summary":"The lesson presents honorific Korean not only as an ending change but also as vocabulary and particle choices: 나이→연세, 집→댁, 생일→생신, 이름→성함, 주다→드리다, 자다→주무시다, 이/가→께서, 명→분.","languageConnection":["연세","댁","생신","성함","드리다","주무시다","께서","분"],"relatedLessons":[3,8,9,10,12],"tags":["honorifics","pragmatics"],"sourceRefs":[{"file":"lesson 9(ST).pptx","slides":[6,57,58]}]}
+  ],
+  "practice": [
+    {"id":"p9-001","type":"typing","prompt":"Write December 25 in Korean date form.","answers":["12월 25일","십이월 이십오일"],"displayAnswer":"12월 25일 / 십이월 이십오일","explanation":"Dates use Sino-Korean numbers; the teacher example uses 십이월 이십오일.","conceptIds":["g9-dates"],"difficulty":1},
+    {"id":"p9-002","type":"multiple-choice","prompt":"Choose the correct source particle: ‘I received it ___ Michael.’","choices":["마이클한테","마이클한테서","마이클에"],"answers":["마이클한테서"],"displayAnswer":"마이클한테서","explanation":"한테서 marks a person source in this lesson.","conceptIds":["g9-recipient-source"],"difficulty":1},
+    {"id":"p9-003","type":"typing","prompt":"Make 길다 modify 머리 (‘long hair’).","answers":["긴 머리"],"displayAnswer":"긴 머리","explanation":"Final ㄹ drops before the noun-modifying ㄴ in this teacher pattern.","conceptIds":["g9-adj-irregular"],"difficulty":2},
+    {"id":"p9-004","type":"multiple-choice","prompt":"Which is the honorific word for 생일?","choices":["생신","성함","연세"],"answers":["생신"],"displayAnswer":"생신","explanation":"The teacher honorific vocabulary list pairs 생일 with 생신.","conceptIds":["g9-honorific-system"],"difficulty":1},
+    {"id":"p9-005","type":"typing","prompt":"Combine: ‘I couldn’t go to the party. I bought a gift.’ using -지만.","answers":["파티에는 못 갔지만 선물은 샀어요.","생일 파티에는 못 갔지만 선물은 샀어요."],"displayAnswer":"생일 파티에는 못 갔지만 선물은 샀어요.","explanation":"-지만 links contrasting clauses, with past marking in the first clause here.","conceptIds":["g9-jiman"],"difficulty":2}
+  ]
+}
