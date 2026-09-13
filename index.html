@@ -77,6 +77,14 @@
   .dict-search-row{display:flex;gap:8px;margin-bottom:8px;}
   .dict-search-row input{flex:1;padding:9px 12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:13.5px;background:#FBFCFB;}
   .dict-search-row .btn-primary{padding:9px 16px;white-space:nowrap;}
+  .dict-search-row #toggleKbBtn{white-space:nowrap;padding:9px 12px;}
+  .hangul-kb{display:none;background:var(--card-bg);border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:14px;}
+  .hangul-kb.active{display:block;}
+  .hangul-kb-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:5px;}
+  .hangul-kb-row button{flex:1 1 30px;min-width:30px;padding:7px 0;border:1px solid var(--line);border-radius:6px;background:#FBFCFB;font-family:'Noto Serif KR';font-size:14px;cursor:pointer;}
+  .hangul-kb-row button:hover{border-color:var(--celadon);background:#F0F6F1;}
+  .hangul-kb-row button.kb-wide{flex:1 1 auto;font-family:'Inter';font-size:12px;font-weight:600;color:var(--ink-soft);}
+  .kb-hint{font-size:11px;color:var(--ink-soft);margin-top:2px;}
 
   .card-row{background:var(--card-bg);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:8px;box-shadow:var(--shadow);display:flex;align-items:flex-start;gap:14px;}
   .card-row .stamp{flex-shrink:0;}
@@ -98,6 +106,7 @@
   .stamp .dots{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
   .stamp .dot{width:5px;height:5px;border-radius:50%;background:var(--line);}
   .stamp .dot.on{background:var(--stamp-red);}
+  .vocab-thumb{width:44px;height:44px;border-radius:8px;object-fit:cover;flex-shrink:0;border:1px solid var(--line);}
 
   /* ---- Modal ---- */
   .modal-bg{display:none;position:fixed;inset:0;background:rgba(27,43,34,0.35);align-items:center;justify-content:center;z-index:50;padding:20px;}
@@ -117,15 +126,17 @@
   /* ---- Flashcard / SRS ---- */
   .review-stage{display:flex;flex-direction:column;align-items:center;gap:18px;padding:20px 0 40px;}
   .progress-line{font-size:12px;color:var(--ink-soft);}
-  .flip-card{width:100%;max-width:460px;min-height:230px;perspective:1200px;cursor:pointer;}
-  .flip-inner{position:relative;width:100%;height:230px;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.4,.2,.2,1);}
+  .flip-card{width:100%;max-width:480px;min-height:320px;perspective:1200px;cursor:pointer;}
+  .flip-inner{position:relative;width:100%;height:320px;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.4,.2,.2,1);}
   .flip-card.flipped .flip-inner{transform:rotateY(180deg);}
-  .flip-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:16px;background:var(--card-bg);border:1px solid var(--line);box-shadow:0 6px 24px rgba(27,43,34,0.10);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;}
+  .flip-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:16px;background:var(--card-bg);border:1px solid var(--line);box-shadow:0 6px 24px rgba(27,43,34,0.10);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;overflow-y:auto;}
   .flip-face.back{transform:rotateY(180deg);}
-  .flip-face .tag{position:absolute;top:14px;left:16px;font-size:11px;color:var(--celadon);font-weight:600;letter-spacing:.03em;}
+  .flip-face .tag{position:sticky;top:0;align-self:flex-start;font-size:11px;color:var(--celadon);font-weight:600;letter-spacing:.03em;background:var(--card-bg);}
   .flip-face .big{font-family:'Noto Serif KR';font-weight:700;font-size:26px;}
+  .flip-face .big.long{font-size:15px;font-family:'Inter';font-weight:500;line-height:1.55;text-align:left;color:var(--ink);}
   .flip-face .small{font-size:14px;color:var(--ink-soft);margin-top:10px;}
-  .flip-face .ex{font-size:12px;color:#8C9A90;margin-top:14px;font-family:'Newsreader';font-style:italic;max-width:90%;}
+  .flip-face .ex{font-size:12px;color:#8C9A90;margin-top:14px;font-family:'Newsreader';font-style:italic;max-width:90%;white-space:pre-line;}
+  .flip-face .ex.long{max-width:100%;text-align:left;}
   .hint{font-size:12px;color:#96A69B;}
 
   .rate-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
@@ -156,6 +167,7 @@
   .quiz-opts button.wrong{background:#F6DCD2;border-color:var(--stamp-red);}
   .quiz-opts button:disabled{cursor:default;}
   .quiz-progress{font-size:12px;color:var(--ink-soft);margin-bottom:10px;text-align:center;}
+  .quiz-full-answer{margin-top:14px;padding:12px 14px;background:#F4F8F5;border-radius:9px;font-size:12.5px;color:var(--ink-soft);text-align:left;line-height:1.5;}
   .quiz-result{text-align:center;padding:40px 20px;}
   .quiz-result .score{font-family:'Noto Serif KR';font-size:40px;font-weight:700;color:var(--celadon-deep);}
 
@@ -208,7 +220,18 @@
     <section class="view active" id="view-browse">
       <div class="dict-search-row">
         <input type="text" id="dictSearchInput" placeholder="Look up any word (even outside the textbook) in Naver Dictionary…">
+        <button class="btn-ghost" id="toggleKbBtn" title="Korean keyboard" type="button">⌨️ 한글</button>
         <button class="btn-primary" id="dictSearchBtn">Look up ↗</button>
+      </div>
+      <div class="hangul-kb" id="hangulKb">
+        <div class="hangul-kb-row" id="kbConsonants"></div>
+        <div class="hangul-kb-row" id="kbVowels"></div>
+        <div class="hangul-kb-row">
+          <button class="kb-wide" data-action="space" type="button">Space</button>
+          <button class="kb-wide" data-action="back" type="button">⌫ Backspace</button>
+          <button class="kb-wide" data-action="clear" type="button">Clear</button>
+        </div>
+        <div class="kb-hint">No Korean keyboard needed — click letters to spell the word, they'll combine automatically.</div>
       </div>
       <div class="section-label">Vocabulary<button class="add-btn" id="addVocabBtn">+ Add vocabulary</button></div>
       <div id="vocabList"></div>
@@ -262,8 +285,10 @@
     <input id="vocabMeaning" placeholder="e.g. school">
     <label>Word origin (optional — great for memorization)</label>
     <input id="vocabOrigin" placeholder="e.g. Sino-Korean 學校 · or Loanword: English &quot;bus&quot;">
-    <label>Example sentence (optional)</label>
-    <textarea id="vocabExample" placeholder="e.g. 저는 학교에 가요."></textarea>
+    <label>Image URL (optional)</label>
+    <input id="vocabImage" placeholder="Paste a link to an image (helps memory)">
+    <label>Example sentence(s) — one per line, we'll rotate through them</label>
+    <textarea id="vocabExample" placeholder="e.g. 저는 학교에 가요.&#10;학교가 멀어요."></textarea>
     <div class="modal-actions">
       <button class="btn-ghost" onclick="closeModal('vocabModal')">Cancel</button>
       <button class="btn-primary" id="saveVocabBtn">Save</button>
@@ -282,8 +307,8 @@
     <input id="grammarPattern" placeholder="e.g. -（으）려고 하다">
     <label>Explanation</label>
     <textarea id="grammarExplain" placeholder="e.g. Expresses intention to do something — &quot;plan to...&quot;"></textarea>
-    <label>Example sentence (optional)</label>
-    <textarea id="grammarExample" placeholder="e.g. 저는 한국에 가려고 해요."></textarea>
+    <label>Example sentence(s) — one per line, we'll rotate through them</label>
+    <textarea id="grammarExample" placeholder="e.g. 저는 한국에 가려고 해요.&#10;내일 친구를 만나려고 해요."></textarea>
     <div class="modal-actions">
       <button class="btn-ghost" onclick="closeModal('grammarModal')">Cancel</button>
       <button class="btn-primary" id="saveGrammarBtn">Save</button>
@@ -298,7 +323,7 @@
     <p class="desc">Everyone using this site can share the same vocabulary and grammar by pulling it from a shared Google Sheet. Your own flashcard progress and any personal notes always stay local to your browser — only the base content is shared.</p>
     <ol class="steps">
       <li>In Google Sheets, create one spreadsheet with 3 tabs named <b>Lessons</b>, <b>Vocabulary</b>, <b>Grammar</b>.</li>
-      <li><b>Lessons</b> tab needs a column <code>name</code>. <b>Vocabulary</b> needs <code>lesson, korean, pos, meaning, origin, example</code> (<code>origin</code> is optional — e.g. "Sino-Korean 學校" or "Loanword: English bus"). <b>Grammar</b> needs <code>lesson, pattern, explain, example</code>.</li>
+      <li><b>Lessons</b> tab needs a column <code>name</code>. <b>Vocabulary</b> needs <code>lesson, korean, pos, meaning, origin, example, image</code> (<code>origin</code> and <code>image</code> are optional; put more than one example per cell on separate lines within the cell — press Alt+Enter in Google Sheets to add a line break inside a cell). <b>Grammar</b> needs <code>lesson, pattern, explain, example</code> (same multi-line trick works for <code>example</code>).</li>
       <li>File → Share → Publish to web. For each of the 3 tabs, choose that tab and "Comma-separated values (.csv)", then copy the link.</li>
       <li>Paste the 3 links below and save. Anyone you share edit access to the Sheet with can add content, and it shows up here next time the site loads.</li>
     </ol>
@@ -378,7 +403,7 @@ async function loadSharedContent(){
     shared.vocab = vocabRows.filter(r=>r.korean && r.korean.trim()).map(r=>({
       id: slugId('v', r.lesson||'', r.korean),
       lessonId: slugId(r.lesson||''),
-      korean: (r.korean||'').trim(), pos: (r.pos||'').trim(), meaning: (r.meaning||'').trim(), origin: (r.origin||'').trim(), example: (r.example||'').trim(),
+      korean: (r.korean||'').trim(), pos: (r.pos||'').trim(), meaning: (r.meaning||'').trim(), origin: (r.origin||'').trim(), example: (r.example||'').trim(), image: (r.image||'').trim(),
       shared: true
     }));
     shared.grammar = grammarRows.filter(r=>r.pattern && r.pattern.trim()).map(r=>({
@@ -548,16 +573,21 @@ function masteryLevel(srs){
   return 3;
 }
 
+function getExamples(text){
+  if(!text) return [];
+  return text.split(/\n+/).map(s=>s.trim()).filter(Boolean);
+}
 function vocabRowHtml(v){
+  const exs = getExamples(v.example);
   return `<div class="card-row">
-    ${stampHtml(v.id)}
+    ${v.image ? `<img class="vocab-thumb" src="${escapeHtml(v.image)}" alt="" loading="lazy" onerror="this.style.display='none'">` : stampHtml(v.id)}
     <div class="content">
       <span class="front">${escapeHtml(v.korean)}</span><span class="pos">${escapeHtml(v.pos||'')}</span>${!v.shared?'<span class="mine-badge">mine</span>':''}
       <button class="speak-btn" data-say="${escapeHtml(v.korean)}" title="Pronounce">🔊</button>
       <a class="dict-link" href="${naverDictUrl(v.korean)}" target="_blank" rel="noopener" title="Look up in Naver Dictionary">🔍</a>
       <div class="back">${escapeHtml(v.meaning)} <span style="opacity:.55">· ${escapeHtml(lessonName(v.lessonId))}</span></div>
       ${v.origin? `<div class="origin-tag">${escapeHtml(v.origin)}</div>` : ''}
-      ${v.example? `<div class="example">${escapeHtml(v.example)}</div>` : ''}
+      ${exs.map(ex=>`<div class="example">${escapeHtml(ex)}</div>`).join('')}
     </div>
     ${!v.shared ? `<div class="actions"><button id="editv-${v.id}">Edit</button><button id="delv-${v.id}">Delete</button></div>` : ''}
   </div>`;
@@ -581,13 +611,118 @@ function runDictSearch(){
 }
 document.getElementById('dictSearchBtn').onclick = runDictSearch;
 document.getElementById('dictSearchInput').addEventListener('keydown', (e)=>{ if(e.key==='Enter') runDictSearch(); });
+
+/* ============ Hangul virtual keyboard ============ */
+const KB_CHO = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+const KB_JUNG = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ'];
+const KB_JONG = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+const KB_COMPOUND_JONG = {'ㄱㅅ':'ㄳ','ㄴㅈ':'ㄵ','ㄴㅎ':'ㄶ','ㄹㄱ':'ㄺ','ㄹㅁ':'ㄻ','ㄹㅂ':'ㄼ','ㄹㅅ':'ㄽ','ㄹㅌ':'ㄾ','ㄹㅍ':'ㄿ','ㄹㅎ':'ㅀ','ㅂㅅ':'ㅄ'};
+const KB_SPLIT_JONG = {'ㄳ':['ㄱ','ㅅ'],'ㄵ':['ㄴ','ㅈ'],'ㄶ':['ㄴ','ㅎ'],'ㄺ':['ㄹ','ㄱ'],'ㄻ':['ㄹ','ㅁ'],'ㄼ':['ㄹ','ㅂ'],'ㄽ':['ㄹ','ㅅ'],'ㄾ':['ㄹ','ㅌ'],'ㄿ':['ㄹ','ㅍ'],'ㅀ':['ㄹ','ㅎ'],'ㅄ':['ㅂ','ㅅ']};
+let kbState = { cho:null, jung:null, jong:null };
+let kbBuffer = '';
+let kbTargetInput = null;
+
+function kbCurrentChar(){
+  if(kbState.cho===null) return '';
+  if(kbState.jung===null) return kbState.cho;
+  const c = KB_CHO.indexOf(kbState.cho), j = KB_JUNG.indexOf(kbState.jung);
+  if(c<0 || j<0) return kbState.cho;
+  const f = kbState.jong ? KB_JONG.indexOf(kbState.jong) : 0;
+  return String.fromCharCode(0xAC00 + (c*21+j)*28 + Math.max(f,0));
+}
+function kbRender(){
+  if(!kbTargetInput) return;
+  kbTargetInput.value = kbBuffer + kbCurrentChar();
+}
+function kbCommitCurrent(){ kbBuffer += kbCurrentChar(); }
+function kbConsonant(c){
+  if(kbState.cho===null){ kbState = {cho:c,jung:null,jong:null}; }
+  else if(kbState.jung===null){ kbCommitCurrent(); kbState = {cho:c,jung:null,jong:null}; }
+  else if(kbState.jong===null){
+    if(c!=='ㄸ' && c!=='ㅃ' && c!=='ㅉ' && KB_JONG.includes(c)){ kbState.jong = c; }
+    else { kbCommitCurrent(); kbState = {cho:c,jung:null,jong:null}; }
+  } else {
+    const combo = kbState.jong + c;
+    if(KB_COMPOUND_JONG[combo]){ kbState.jong = KB_COMPOUND_JONG[combo]; }
+    else { kbCommitCurrent(); kbState = {cho:c,jung:null,jong:null}; }
+  }
+  kbRender();
+}
+function kbVowel(v){
+  if(kbState.cho===null){ kbCommitCurrent(); kbBuffer += v; }
+  else if(kbState.jung===null){ kbState.jung = v; }
+  else if(kbState.jong===null){
+    kbCommitCurrent(); kbState = {cho:'ㅇ',jung:v,jong:null};
+  } else if(KB_SPLIT_JONG[kbState.jong]){
+    const [keep,move] = KB_SPLIT_JONG[kbState.jong];
+    kbState.jong = keep;
+    kbCommitCurrent();
+    kbState = {cho:move,jung:v,jong:null};
+  } else {
+    const moved = kbState.jong;
+    kbState.jong = null;
+    kbCommitCurrent();
+    kbState = {cho:moved,jung:v,jong:null};
+  }
+  kbRender();
+}
+function kbBackspace(){
+  if(kbState.jong){ kbState.jong=null; }
+  else if(kbState.jung){ kbState.jung=null; }
+  else if(kbState.cho){ kbState.cho=null; }
+  else { kbBuffer = kbBuffer.slice(0,-1); }
+  kbRender();
+}
+function kbSpace(){ kbCommitCurrent(); kbBuffer += ' '; kbState={cho:null,jung:null,jong:null}; kbRender(); }
+function kbClear(){ kbBuffer=''; kbState={cho:null,jung:null,jong:null}; kbRender(); }
+
+(function initHangulKeyboard(){
+  const consRow = document.getElementById('kbConsonants');
+  const vowRow = document.getElementById('kbVowels');
+  KB_CHO.forEach(c=>{
+    const btn = document.createElement('button');
+    btn.type='button'; btn.textContent=c;
+    btn.onclick = ()=>kbConsonant(c);
+    consRow.appendChild(btn);
+  });
+  KB_JUNG.forEach(v=>{
+    const btn = document.createElement('button');
+    btn.type='button'; btn.textContent=v;
+    btn.onclick = ()=>kbVowel(v);
+    vowRow.appendChild(btn);
+  });
+  document.querySelectorAll('.hangul-kb [data-action]').forEach(btn=>{
+    btn.onclick = ()=>{
+      if(btn.dataset.action==='space') kbSpace();
+      if(btn.dataset.action==='back') kbBackspace();
+      if(btn.dataset.action==='clear') kbClear();
+    };
+  });
+  const dictInput = document.getElementById('dictSearchInput');
+  const toggleBtn = document.getElementById('toggleKbBtn');
+  const panel = document.getElementById('hangulKb');
+  toggleBtn.onclick = ()=>{
+    panel.classList.toggle('active');
+    if(panel.classList.contains('active')){
+      kbTargetInput = dictInput;
+      kbBuffer = dictInput.value;
+      kbState = {cho:null,jung:null,jong:null};
+    }
+  };
+  // if the person types directly with a real keyboard, resync our buffer
+  dictInput.addEventListener('keydown', ()=>{
+    kbBuffer = dictInput.value;
+    kbState = {cho:null,jung:null,jong:null};
+  });
+})();
 function grammarRowHtml(g){
+  const exs = getExamples(g.example);
   return `<div class="card-row">
     ${stampHtml(g.id)}
     <div class="content">
       <span class="front">${escapeHtml(g.pattern)}</span>${!g.shared?'<span class="mine-badge">mine</span>':''}
       <div class="back">${escapeHtml(g.explain)} <span style="opacity:.55">· ${escapeHtml(lessonName(g.lessonId))}</span></div>
-      ${g.example? `<div class="example">${escapeHtml(g.example)}</div>` : ''}
+      ${exs.map(ex=>`<div class="example">${escapeHtml(ex)}</div>`).join('')}
     </div>
     ${!g.shared ? `<div class="actions"><button id="editg-${g.id}">Edit</button><button id="delg-${g.id}">Delete</button></div>` : ''}
   </div>`;
@@ -596,7 +731,7 @@ function grammarRowHtml(g){
 document.getElementById('addVocabBtn').onclick = () => {
   editingVocabId = null;
   document.getElementById('vocabModalTitle').textContent = 'Add vocabulary';
-  ['vocabKorean','vocabPos','vocabMeaning','vocabOrigin','vocabExample'].forEach(id=>document.getElementById(id).value='');
+  ['vocabKorean','vocabPos','vocabMeaning','vocabOrigin','vocabImage','vocabExample'].forEach(id=>document.getElementById(id).value='');
   if(!ensureLessonExists()) return;
   if(currentLessonId!=='all') document.getElementById('vocabLessonSelect').value = currentLessonId;
   openModal('vocabModal');
@@ -609,6 +744,7 @@ function openVocabEdit(id){
   document.getElementById('vocabPos').value = v.pos||'';
   document.getElementById('vocabMeaning').value = v.meaning;
   document.getElementById('vocabOrigin').value = v.origin||'';
+  document.getElementById('vocabImage').value = v.image||'';
   document.getElementById('vocabExample').value = v.example||'';
   document.getElementById('vocabLessonSelect').value = v.lessonId;
   openModal('vocabModal');
@@ -620,12 +756,13 @@ document.getElementById('saveVocabBtn').onclick = () => {
   const lessonId = document.getElementById('vocabLessonSelect').value;
   const pos = document.getElementById('vocabPos').value.trim();
   const origin = document.getElementById('vocabOrigin').value.trim();
+  const image = document.getElementById('vocabImage').value.trim();
   const example = document.getElementById('vocabExample').value.trim();
   if(editingVocabId){
     const v = local.vocab.find(x=>x.id===editingVocabId);
-    Object.assign(v, { korean, pos, meaning, origin, example, lessonId });
+    Object.assign(v, { korean, pos, meaning, origin, image, example, lessonId });
   } else {
-    local.vocab.push({ id: uid(), lessonId, korean, pos, meaning, origin, example });
+    local.vocab.push({ id: uid(), lessonId, korean, pos, meaning, origin, image, example });
   }
   saveLocal(); closeModal('vocabModal'); rebuildMergedData(); refreshAll();
 };
@@ -700,7 +837,7 @@ function setReviewModeUI(){
 
 function getCardPool(){
   const vocabCards = allVocab.filter(v => currentLessonId==='all' || v.lessonId===currentLessonId)
-    .map(v => ({ type:'vocab', id:v.id, lessonId:v.lessonId, front:v.korean, sub:v.pos, back:v.meaning, origin:v.origin, example:v.example }));
+    .map(v => ({ type:'vocab', id:v.id, lessonId:v.lessonId, front:v.korean, sub:v.pos, back:v.meaning, origin:v.origin, example:v.example, image:v.image }));
   const grammarCards = allGrammar.filter(g => currentLessonId==='all' || g.lessonId===currentLessonId)
     .map(g => ({ type:'grammar', id:g.id, lessonId:g.lessonId, front:g.pattern, sub:'', back:g.explain, example:g.example }));
   return vocabCards.concat(grammarCards);
@@ -727,21 +864,24 @@ function renderReviewStage(){
     return;
   }
   const card = reviewQueue[reviewIndex];
+  const exs = getExamples(card.example);
+  const pickedEx = exs.length ? exs[Math.floor(Math.random()*exs.length)] : '';
   stage.innerHTML = `
     <div class="progress-line">Card ${reviewIndex+1} / ${reviewQueue.length} · ${lessonName(card.lessonId)}</div>
     <div class="flip-card" id="flipCard">
       <div class="flip-inner">
         <div class="flip-face front">
           <span class="tag">${card.type==='vocab'?'Vocabulary':'Grammar'}</span>
+          ${card.image ? `<img src="${escapeHtml(card.image)}" alt="" style="max-width:100%;max-height:110px;border-radius:10px;margin-bottom:10px;object-fit:cover;" onerror="this.style.display='none'">` : ''}
           <div class="big">${escapeHtml(card.front)}</div>
           ${card.sub? `<div class="small">${escapeHtml(card.sub)}</div>`:''}
           ${card.type==='vocab' ? `<button class="speak-btn" data-say="${escapeHtml(card.front)}" style="font-size:18px;margin-top:10px;" title="Pronounce">🔊</button>` : ''}
         </div>
         <div class="flip-face back">
-          <span class="tag">Meaning</span>
-          <div class="big" style="font-size:19px;">${escapeHtml(card.back)}</div>
+          <span class="tag">${card.type==='grammar' ? 'Explanation' : 'Meaning'}</span>
+          <div class="big ${card.back.length>60?'long':''}" style="${card.back.length>60?'':'font-size:19px;'}">${escapeHtml(card.back)}</div>
           ${card.origin? `<div class="origin-tag" style="margin-top:6px;">${escapeHtml(card.origin)}</div>`:''}
-          ${card.example? `<div class="ex">${escapeHtml(card.example)}</div>`:''}
+          ${pickedEx? `<div class="ex ${pickedEx.length>40?'long':''}">${escapeHtml(pickedEx)}</div>`:''}
         </div>
       </div>
     </div>
@@ -811,19 +951,23 @@ function startQuiz(){
   renderQuiz();
 }
 
+function truncateText(t, max){
+  if(!t) return t;
+  return t.length > max ? t.slice(0, max).trim() + '…' : t;
+}
 function buildQuestion(card, pool){
-  const askKorean = Math.random() < 0.5;
+  const askKorean = card.type === 'grammar' ? true : Math.random() < 0.5;
   const distractorsPool = pool.filter(c => c.id!==card.id && c.type===card.type);
   const distractors = distractorsPool.sort(()=>Math.random()-0.5).slice(0,3).map(c=>c.back);
   while(distractors.length < 3){ distractors.push(card.back + ' '); }
   const options = distractors.concat([card.back]).sort(()=>Math.random()-0.5);
   if(askKorean){
-    return { qtag: card.type==='vocab'?'Vocabulary → pick the meaning':'Grammar → pick the explanation', qtext: card.front, options, answer: card.back, sourceCardId: card.id };
+    return { qtag: card.type==='vocab'?'Vocabulary → pick the meaning':'Grammar → pick the explanation', qtext: card.front, options, answer: card.back, sourceCardId: card.id, truncateOpts: card.type==='grammar' };
   } else {
     const distractorsFront = distractorsPool.sort(()=>Math.random()-0.5).slice(0,3).map(c=>c.front);
     while(distractorsFront.length < 3){ distractorsFront.push(card.front + ' '); }
     const optionsFront = distractorsFront.concat([card.front]).sort(()=>Math.random()-0.5);
-    return { qtag: card.type==='vocab'?'Meaning → pick the word':'Explanation → pick the pattern', qtext: card.back, options: optionsFront, answer: card.front, sourceCardId: card.id };
+    return { qtag: card.type==='vocab'?'Meaning → pick the word':'Explanation → pick the pattern', qtext: card.back, options: optionsFront, answer: card.front, sourceCardId: card.id, truncateOpts: false };
   }
 }
 
@@ -847,8 +991,9 @@ function renderQuiz(){
       <div class="qtag">${q.qtag}</div>
       <div class="qtext">${escapeHtml(q.qtext)}</div>
       <div class="quiz-opts">
-        ${q.options.map((opt,i)=>`<button data-i="${i}">${escapeHtml(opt)}</button>`).join('')}
+        ${q.options.map((opt,i)=>`<button data-i="${i}">${escapeHtml(q.truncateOpts ? truncateText(opt, 90) : opt)}</button>`).join('')}
       </div>
+      <div class="quiz-full-answer" id="quizFullAnswer" style="display:none;"></div>
     </div>
   `;
   const buttons = stage.querySelectorAll('.quiz-opts button');
@@ -860,10 +1005,15 @@ function renderQuiz(){
       if(isCorrect){ btn.classList.add('correct'); quizState.correct++; }
       else {
         btn.classList.add('wrong');
-        buttons.forEach(b=>{ if(b.textContent===q.answer) b.classList.add('correct'); });
+        buttons.forEach(b=>{ if(b.dataset.i == q.options.indexOf(q.answer)) b.classList.add('correct'); });
+      }
+      if(q.truncateOpts){
+        const full = document.getElementById('quizFullAnswer');
+        full.style.display = 'block';
+        full.textContent = q.answer;
       }
       rateCardSilently(q.sourceCardId, isCorrect ? 3 : 1);
-      setTimeout(()=>{ quizState.index++; renderQuiz(); }, 900);
+      setTimeout(()=>{ quizState.index++; renderQuiz(); }, q.truncateOpts ? 1800 : 900);
     };
   });
 }
