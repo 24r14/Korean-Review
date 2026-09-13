@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson 12(ST).pptx and lesson 12.pptx where overlapping teacher materials were available.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides or images."
+  },
+  "lesson": {
+    "id":"lesson-12",
+    "number":12,
+    "titleKo":"가족",
+    "titleEn":"Family",
+    "theme":"Family background, sequence, conjecture, spontaneous reactions, colors, clothing, and past noun modifiers",
+    "situations":["describing family background","telling a sequence of actions","reacting to new information","describing colors/clothing","talking about past experiences with noun modifiers"],
+    "goals":["Use -아/어서 for tightly connected sequential actions","Distinguish sequential and causal -아/어서","Use conjectural -겠-","Use -네요 for spontaneous reactions","Conjugate selected ㅎ-irregular adjectives","Use past verb noun modifiers -(으)ㄴ + N"],
+    "teacherFocus":["ordinal numbers","family/kinship vocabulary","sequential -아/어서 vs -고","conjectural -겠- including past conjecture","-네요 and -겠네요","ㅎ-irregular color adjectives","present vs past noun modifiers"],
+    "connections":["connectors","tense-aspect","noun-modifiers","irregulars","speech-honorifics","numbers"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson 12(ST).pptx","slides":[2,4,5,8,9,14,15,16,18,19,20,25,26,31,33,50,51,52,54,57,62,65,66,67,74,75,76,77,78,79,80,82,83,84,85,86,87,91,96,97,98,99,112,113,114,115,116,117,118,119,120,121,122]}]
+  },
+  "vocabulary": [
+    {"id":"v12-family","korean":"가족","meaningEn":"family","meaningZh":"家庭；家人","pos":"noun","hanja":"家族","originType":"sino-korean","tags":["family"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[2,5]}]},
+    {"id":"v12-siblings","korean":"형제","meaningEn":"siblings; brothers","meaningZh":"兄弟姐妹","pos":"noun","hanja":"兄弟","originType":"sino-korean","tags":["family"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slide":5}]},
+    {"id":"v12-youngest","korean":"막내","meaningEn":"youngest child/person in a group","meaningZh":"老幺；最小的成员","pos":"noun","originType":"native-korean","tags":["family"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slide":5}]},
+    {"id":"v12-be-born","korean":"태어나다","meaningEn":"to be born","meaningZh":"出生","pos":"verb","originType":"native-korean","tags":["life-history"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[2,4]}]},
+    {"id":"v12-grow-up","korean":"자라다","meaningEn":"to grow up","meaningZh":"长大","pos":"verb","originType":"native-korean","tags":["life-history"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[2,4]}]},
+    {"id":"v12-marry","korean":"결혼하다","meaningEn":"to marry","meaningZh":"结婚","pos":"verb","hanja":"結婚","originType":"sino-korean+하다","tags":["family"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[2,4]}]},
+    {"id":"v12-resemble","korean":"닮다","meaningEn":"to resemble","meaningZh":"长得像；相似","pos":"verb","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[4,65]}]},
+    {"id":"v12-clothes","korean":"옷","meaningEn":"clothes","meaningZh":"衣服","pos":"noun","originType":"native-korean","tags":["clothing"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[8,85]}]},
+    {"id":"v12-wear-clothes","korean":"입다","meaningEn":"to put on/wear clothes","meaningZh":"穿（衣服）","pos":"verb","originType":"native-korean","tags":["clothing"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[8,85,116]}]},
+    {"id":"v12-wear-shoes","korean":"신다","meaningEn":"to put on/wear shoes or socks","meaningZh":"穿（鞋/袜）","pos":"verb","originType":"native-korean","tags":["clothing"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[8,87,116]}]},
+    {"id":"v12-red","korean":"빨갛다","meaningEn":"to be red","meaningZh":"红","pos":"adjective","originType":"native-korean","tags":["color","ㅎ-irregular"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[9,77,80,82]}]},
+    {"id":"v12-yellow","korean":"노랗다","meaningEn":"to be yellow","meaningZh":"黄","pos":"adjective","originType":"native-korean","tags":["color","ㅎ-irregular"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[9,78,80,82]}]},
+    {"id":"v12-blue","korean":"파랗다","meaningEn":"to be blue","meaningZh":"蓝","pos":"adjective","originType":"native-korean","tags":["color","ㅎ-irregular"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[9,80,82]}]},
+    {"id":"v12-white","korean":"하얗다","meaningEn":"to be white","meaningZh":"白","pos":"adjective","originType":"native-korean","tags":["color","ㅎ-irregular"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[9,75,76,80,82]}]}
+  ],
+  "grammar": [
+    {"id":"g12-sequential-aseo","pattern":"V-아/어서","name":"Sequential -아/어서","meaning":"Links two tightly connected actions in chronological order; the teacher contrasts it with looser sequence using -고.","examples":[{"ko":"아침에 일어나서 운동했어요.","en":"I got up in the morning and then exercised."},{"ko":"서점에 가서 사전을 샀어요.","en":"I went to the bookstore and then bought a dictionary."}],"commonMistakes":["The PPT does not place past/future tense marking in the first sequential -아/어서 clause: 가서, not 갔어서, in the lesson examples.","The teacher presents tightly related sequence as having the same subject across the two clauses."],"contrast":[{"with":"-고","note":"-고 can simply list separate actions; sequential -아/어서 presents the first action as closely leading into the second."},{"with":"causal -아/어서","note":"Same form, but causal use expresses reason/cause rather than chronological sequence."}],"tags":["connector","sequence"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[18,19,20,21,23,24,25,26,27,28,31,33,43,44,45,46,48]}]},
+    {"id":"g12-conjectural-get","pattern":"A/V-겠-","name":"Conjectural -겠-","meaning":"Expresses the speaker's guess/conjecture; the lesson also shows polite forms such as 알겠어요/모르겠어요 and past conjecture -았/었겠어요.","examples":[{"ko":"피곤하겠어요.","en":"You must be tired."},{"ko":"맛있겠어요!","en":"It looks like it will be delicious / It must be delicious."},{"ko":"좋았겠어요!","en":"It must have been nice."}],"commonMistakes":["Do not confuse this conjectural use with the intentional -겠- taught later in Lesson 13."],"tags":["modality","conjecture"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[50,51,52,53,54,55,56,57,62,63]}]},
+    {"id":"g12-neyo","pattern":"stem + -네요","name":"Spontaneous reaction -네요","meaning":"Marks a spontaneous reaction, realization, admiration, sympathy, or surprise after noticing new information.","examples":[{"ko":"사진이 참 잘 나왔네요.","en":"The photo came out really well!"},{"ko":"벌써 네 시네요!","en":"It's already four o'clock!"},{"ko":"피곤하겠네요!","en":"You must be tired!"}],"tags":["sentence-ending","reaction","pragmatics"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[65,66,67,68,69,70,71,72,73,74]}]},
+    {"id":"g12-h-irregular","pattern":"ㅎ-irregular adjective conjugation","name":"Irregular predicates ending in ㅎ","meaning":"Selected color and demonstrative adjectives drop final ㅎ before certain vowel/noun-modifying forms; the teacher contrasts these with regular 좋다/많다/싫다.","examples":[{"ko":"하얗다 → 하얘요 / 하얀","en":"white → is white / white + noun"},{"ko":"노랗다 → 노래요 / 노란","en":"yellow → is yellow / yellow + noun"},{"ko":"그렇다 → 그래요 / 그런","en":"to be so → is so / such"}],"commonMistakes":["Not every ㅎ-final adjective is irregular; the PPT explicitly lists 좋다, 많다, 싫다 as regular patterns."],"tags":["irregular","adjective","color"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[75,76,77,78,79,80,82,83]}]},
+    {"id":"g12-past-modifier","pattern":"V-(으)ㄴ + N","name":"Past/completed verb noun-modifying form","meaning":"Modifies a noun with a past/completed action.","formation":["consonant-ending verb stem + 은","vowel-ending stem + ㄴ"],"examples":[{"ko":"어제 본 영화","en":"the movie I watched yesterday"},{"ko":"제가 전화한 사람","en":"the person I called"},{"ko":"남자 친구가 저한테 준 꽃","en":"the flowers my boyfriend gave me"}],"commonMistakes":["With clothing verbs such as 입다/신다, the past-form modifier can describe the resulting state: 입은 셔츠 = the shirt someone is wearing."],"tags":["noun-modifier","past"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[96,97,98,99,112,113,114,115,116,117,118]}]},
+    {"id":"g12-ordinals","pattern":"Native number + 번째 / kinship + 째","name":"Ordinal numbers","meaning":"The lesson uses 첫 번째, 두 번째, 세 번째... for ordinal listing and shows 째 in kinship-order expressions.","examples":[{"ko":"첫 번째 시험","en":"the first test"},{"ko":"둘째 딸","en":"the second daughter"}],"tags":["numbers","ordinal"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[14,15,16]}]}
+  ],
+  "expressions": [
+    {"id":"e12-origin","korean":"어디서 오셨어요?","meaningEn":"Where are you from? / Where did you come from?","meaningZh":"你从哪里来？","situation":"background","register":"honorific-polite","sourceRefs":[{"file":"lesson 12(ST).pptx","slide":2}]},
+    {"id":"e12-age-honorific","korean":"연세가 어떻게 되세요?","meaningEn":"How old are you/is the person? (honorific)","meaningZh":"您多大年纪？","situation":"age","register":"honorific-polite","sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[65]}]},
+    {"id":"e12-reaction","korean":"좋겠어요.","meaningEn":"That must be nice / You must be happy.","meaningZh":"那一定很好。","situation":"reaction/conjecture","register":"polite","sourceRefs":[{"file":"lesson 12(ST).pptx","slides":[2,54]}]}
+  ],
+  "culture": [
+    {"id":"c12-family-address","title":"Extending family terms beyond literal relatives","category":"language-culture","summary":"The teacher notes that Korean family/address terms can extend to older people, friends' parents, older peers, and service interactions depending on relationship and context.","languageConnection":["할아버지/할머니","아버님/어머님","언니/오빠","형/누나","이모","아주머니/아저씨"],"relatedLessons":[4,9,12],"tags":["family","address-terms","culture"],"sourceRefs":[{"file":"lesson 12(ST).pptx","slide":119}]}
+  ],
+  "practice": [
+    {"id":"p12-001","type":"multiple-choice","prompt":"Which sentence best means 'I went to the bookstore and then bought a book'?","choices":["서점에 가서 책을 샀어요.","서점에 갔어서 책을 샀어요.","서점에 가겠어요 책을 샀어요."],"answers":["서점에 가서 책을 샀어요."],"displayAnswer":"서점에 가서 책을 샀어요.","explanation":"Sequential -아/어서 links the first action to the next, without a past marker in the first clause in the lesson pattern.","conceptIds":["g12-sequential-aseo"],"difficulty":2,"tags":["sequence"]},
+    {"id":"p12-002","type":"multiple-choice","prompt":"Your friend says they slept only three hours. Which reaction fits Lesson 12?","choices":["피곤하겠어요.","피곤할래요.","피곤하지 마세요."],"answers":["피곤하겠어요."],"displayAnswer":"피곤하겠어요.","explanation":"Conjectural -겠- expresses the speaker's guess: 'You must be tired.'","conceptIds":["g12-conjectural-get"],"difficulty":2,"tags":["conjecture"]},
+    {"id":"p12-003","type":"typing","prompt":"Complete the noun modifier: 노랗다 → ___ 바나나","answers":["노란"],"displayAnswer":"노란 바나나","explanation":"노랗다 is one of the ㅎ-irregular color adjectives in this lesson.","conceptIds":["g12-h-irregular"],"difficulty":2,"tags":["irregular","color"]},
+    {"id":"p12-004","type":"multiple-choice","prompt":"Which means 'the movie I watched yesterday'?","choices":["어제 본 영화","어제 보는 영화","어제 볼 영화"],"answers":["어제 본 영화"],"displayAnswer":"어제 본 영화","explanation":"Past/completed verb modifiers use -(으)ㄴ + noun.","conceptIds":["g12-past-modifier"],"difficulty":2,"tags":["noun-modifier"]}
+  ]
+}
