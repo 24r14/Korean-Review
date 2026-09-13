@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "content pipeline active; files are not yet wired into the live UI",
+  "status": "content pipeline active; source-grounded packs exist for Lessons 1-6; files are not yet wired into the live UI",
   "schema": "../content-schema-v1.json",
   "packs": [
     {
@@ -23,6 +23,27 @@
       "source": "lesson3.pptx",
       "coverage": ["lesson metadata", "vocabulary", "grammar", "expressions", "culture/pragmatics", "original practice"],
       "qa": "ready for content review"
+    },
+    {
+      "lessonId": "lesson-4",
+      "file": "lesson04.json",
+      "source": "lesson4(ST).pptx",
+      "coverage": ["lesson metadata", "family vocabulary", "numbers and counters", "grammar", "expressions", "culture/pragmatics", "original practice"],
+      "qa": "ready for content review"
+    },
+    {
+      "lessonId": "lesson-5",
+      "file": "lesson05.json",
+      "source": "lesson5(ST).pptx",
+      "coverage": ["lesson metadata", "vocabulary", "location/time/purpose grammar", "expressions", "original practice"],
+      "qa": "ready for content review"
+    },
+    {
+      "lessonId": "lesson-6",
+      "file": "lesson06.json",
+      "source": "lesson6(ST).pptx",
+      "coverage": ["lesson metadata", "transportation/weather vocabulary", "past and negation grammar", "expressions", "original practice"],
+      "qa": "ready for content review"
     }
   ],
   "pipelineRules": [
@@ -33,6 +54,6 @@
     "Course and Explore should eventually reference the same concept IDs rather than duplicating explanations.",
     "Before scaling, check vocabulary meanings, Hanja, grammar labels, and sourceRefs for accuracy."
   ],
-  "nextBatch": ["lesson-4", "lesson-5", "lesson-6"],
-  "laterBatch": ["lesson-7", "lesson-8", "lesson-9", "lesson-10", "lesson-11", "lesson-12", "lesson-13", "lesson-14"]
+  "nextBatch": ["lesson-7", "lesson-8", "lesson-9"],
+  "laterBatch": ["lesson-10", "lesson-11", "lesson-12", "lesson-13", "lesson-14"]
 }
