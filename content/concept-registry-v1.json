@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "status": "canonical concept architecture draft; not yet wired into the live UI",
+  "purpose": "Provide stable cross-lesson concept IDs so Course, Explore, Practice, mistakes, flashcards, and future Media Lab content can point to the same Korean concept instead of duplicating explanations.",
+  "sourcePolicy": {
+    "teacherCore": "Lesson appearances are grounded in the Lesson 1-14 teacher PPT curriculum and the existing system-map-v1.json.",
+    "enrichment": "Broader linguistic organization, Chinese/Hanja aids, passive/causative expansion, and future media links must be labeled as enrichment when they go beyond the teacher PPTs.",
+    "migration": "Existing lesson-local IDs remain valid during migration. Add canonicalConceptId later rather than breaking the current lesson packs."
+  },
+  "concepts": [
+    {"id":"concept-number-sino","system":"system-numbers","type":"number-system","labelKo":"한자어 수","labelEn":"Sino-Korean numbers","lessonAppearances":[1,4,9,14],"notes":"Used for dates and large numbers/prices in the current course progression."},
+    {"id":"concept-number-native","system":"system-numbers","type":"number-system","labelKo":"고유어 수","labelEn":"Native Korean numbers","lessonAppearances":[4,9],"notes":"Used with counters and age in the teacher materials."},
+    {"id":"concept-counter","system":"system-numbers","type":"number-system","labelKo":"단위 명사 / counters","labelEn":"Counters","lessonAppearances":[4],"notes":"Includes counter-form changes 한/두/세/네/스무."},
+    {"id":"concept-time","system":"system-numbers","type":"number-system","labelKo":"시간 말하기","labelEn":"Telling time","lessonAppearances":[5],"notes":"Mixed system: Native Korean hours and Sino-Korean minutes in the course."},
+    {"id":"concept-date","system":"system-numbers","type":"number-system","labelKo":"날짜","labelEn":"Dates","lessonAppearances":[9],"notes":"Year-month-day order and forms such as 유월/시월 are teacher-emphasized."},
+    {"id":"concept-age","system":"system-numbers","type":"number-system","labelKo":"나이 / 연세","labelEn":"Age","lessonAppearances":[9],"notes":"Native Korean numbers plus 살; honorific vocabulary connects this to speech/honorifics."},
+    {"id":"concept-money-large-numbers","system":"system-numbers","type":"number-system","labelKo":"가격과 큰 수","labelEn":"Money and large numbers","lessonAppearances":[14],"notes":"Sino-Korean place values through 만-based price/fare reading."},
+
+    {"id":"concept-present-polite","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-아요/어요","labelEn":"Present polite style","lessonAppearances":[2],"notes":"Foundation for stem + ending conjugation."},
+    {"id":"concept-past","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-았/었어요","labelEn":"Past tense","lessonAppearances":[6],"notes":"Includes common contractions in the teacher materials."},
+    {"id":"concept-future-geoyeyo","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-(으)ㄹ 거예요","labelEn":"Future plan / probability","lessonAppearances":[7],"notes":"Teacher materials distinguish intention/plan, probability, and scheduled events expressed in present tense."},
+    {"id":"concept-progressive-go-itda","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-고 있다","labelEn":"Progressive aspect","lessonAppearances":[11],"notes":"Includes -고 있었어요 and honorific -고 계세요."},
+    {"id":"concept-intention-raeyo","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-(으)ㄹ래요","labelEn":"Intention / preference","lessonAppearances":[11,13],"notes":"Less formal; can ask the listener's intention. Lesson 13 contrasts it with -(으)ㄹ게요."},
+    {"id":"concept-proposal-kkayo","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-(으)ㄹ까요?","labelEn":"Proposal / opinion / supposition","lessonAppearances":[11,14],"notes":"Teacher materials present multiple functions: shall I/we, asking opinion, choice, and supposition."},
+    {"id":"concept-conjecture-get","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-겠-","labelEn":"Conjectural -겠-","lessonAppearances":[12,13],"notes":"Lesson 12 develops guess/conjecture and past conjecture; Lesson 13 contrasts conjectural and intentional uses."},
+    {"id":"concept-promise-lgeyo","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-(으)ㄹ게요","labelEn":"Promise / willingness / assurance","lessonAppearances":[13],"notes":"Teacher materials restrict the subject to first person and do not use this form as a question."},
+    {"id":"concept-intentional-get","system":"system-tense-aspect-modality","type":"grammar","labelKo":"-겠-","labelEn":"Intentional / formal -겠-","lessonAppearances":[13],"notes":"Formal/courteous volition and fixed expressions; must be kept distinct from conjectural -겠-."},
+
+    {"id":"concept-connector-go","system":"system-connectors-reasons","type":"grammar","labelKo":"-고","labelEn":"Clausal connective -고","lessonAppearances":[7,12],"notes":"Connects predicates/actions; Lesson 12 contrasts it with tightly linked sequential -아/어서."},
+    {"id":"concept-contrast-jiman","system":"system-connectors-reasons","type":"grammar","labelKo":"-지만","labelEn":"Contrast -지만","lessonAppearances":[9],"notes":"Teacher materials contrast its tense behavior with -고."},
+    {"id":"concept-neunde","system":"system-connectors-reasons","type":"grammar","labelKo":"-(으)ㄴ데 / -는데","labelEn":"Background / contrast / setup","lessonAppearances":[10,11,14],"notes":"Do not force a single English translation; teacher materials show background, contrast, and justification/setup functions."},
+    {"id":"concept-neundeyo-final","system":"system-speech-honorifics","type":"pragmatics","labelKo":"-(으)ㄴ데요 / -는데요","labelEn":"Indirect sentence-final -는데요","lessonAppearances":[10,11,13,14],"notes":"Provides background and can soften refusal/disagreement by leaving the listener to infer the conclusion."},
+    {"id":"concept-reason-aseo","system":"system-connectors-reasons","type":"grammar","labelKo":"-아/어서","labelEn":"Causal -아/어서","lessonAppearances":[10,12,13,14],"notes":"Cause/reason use."},
+    {"id":"concept-sequence-aseo","system":"system-connectors-reasons","type":"grammar","labelKo":"-아/어서","labelEn":"Sequential -아/어서","lessonAppearances":[12],"notes":"Tightly linked chronological sequence; teacher materials contrast it with -고 and causal -아/어서."},
+    {"id":"concept-reason-ttemune","system":"system-connectors-reasons","type":"grammar","labelKo":"N 때문에","labelEn":"Because of N","lessonAppearances":[13,14],"notes":"Noun-based cause; Lesson 14 places it beside -아/어서 and N(이)라서."},
+    {"id":"concept-reason-iraseo","system":"system-connectors-reasons","type":"grammar","labelKo":"N(이)라서","labelEn":"Because it is N","lessonAppearances":[14],"notes":"Copular/noun reason form, including 아니라서."},
+
+    {"id":"concept-adj-modifier","system":"system-noun-modifiers","type":"grammar","labelKo":"A-(으)ㄴ + N","labelEn":"Adjective noun modifier","lessonAppearances":[9,12],"notes":"Includes irregular adjective forms."},
+    {"id":"concept-verb-present-modifier","system":"system-noun-modifiers","type":"grammar","labelKo":"V-는 + N","labelEn":"Present verb noun modifier","lessonAppearances":[10,12],"notes":"Teacher materials emphasize relative-clause word order and embedded subject 이/가."},
+    {"id":"concept-verb-past-modifier","system":"system-noun-modifiers","type":"grammar","labelKo":"V-(으)ㄴ + N","labelEn":"Past/completed verb noun modifier","lessonAppearances":[12,14],"notes":"Lesson 12 includes result-state readings with clothing verbs."},
+
+    {"id":"concept-subject-honorific-si","system":"system-speech-honorifics","type":"grammar","labelKo":"-(으)시-","labelEn":"Subject honorific","lessonAppearances":[3,4,9,11],"notes":"Includes honorific progressive -고 계세요 in Lesson 11."},
+    {"id":"concept-honorific-lexicon","system":"system-speech-honorifics","type":"pragmatics","labelKo":"높임말 어휘","labelEn":"Honorific/humble vocabulary","lessonAppearances":[4,9,10,12,13],"notes":"Examples include 연세, 댁, 생신, 성함, 드리다, 드시다, 주무시다, 뵙다."},
+    {"id":"concept-formal-deferential","system":"system-speech-honorifics","type":"speech-level","labelKo":"하십시오체 / formal polite","labelEn":"Formal/deferential polite speech","lessonAppearances":[8,10,13],"notes":"Public/academic interactions use formal statement/question/command/suggestion endings in the teacher materials."},
+    {"id":"concept-service-pragmatics","system":"system-speech-honorifics","type":"pragmatics","labelKo":"서비스 상황 표현","labelEn":"Service interaction pragmatics","lessonAppearances":[14],"notes":"Includes taxi/airport expressions and 수고하세요 / 수고하셨어요 distinctions taught in Lesson 14."},
+
+    {"id":"concept-negation-an","system":"system-negation-inability","type":"grammar","labelKo":"안 + A/V","labelEn":"Short-form negation with 안","lessonAppearances":[6],"notes":"Simple negation."},
+    {"id":"concept-inability-mot","system":"system-negation-inability","type":"grammar","labelKo":"못 + V","labelEn":"Short-form inability with 못","lessonAppearances":[6,13,14],"notes":"Inability/cannot rather than simple not."},
+    {"id":"concept-inability-ji-mot","system":"system-negation-inability","type":"grammar","labelKo":"V-지 못하다","labelEn":"Long-form inability","lessonAppearances":[14],"notes":"Teacher materials describe it as slightly more formal than 못 + V."},
+    {"id":"concept-prohibition-ji-maseyo","system":"system-negation-inability","type":"grammar","labelKo":"V-지 마세요","labelEn":"Negative command / prohibition","lessonAppearances":[14],"notes":"Do not confuse with inability -지 못하다."},
+    {"id":"concept-contrastive-command-ji-malgo","system":"system-negation-inability","type":"grammar","labelKo":"X-지 말고 Y-(으)세요","labelEn":"Don't X; do Y instead","lessonAppearances":[14],"notes":"Alternative/advice structure taught after -지 마세요."},
+    {"id":"concept-bakke","system":"system-negation-inability","type":"grammar","labelKo":"N밖에 + negative","labelEn":"Only / nothing but","lessonAppearances":[11],"notes":"Quantity is presented as smaller than expectation and requires a negative predicate in the lesson."},
+    {"id":"concept-ina-quantity","system":"system-negation-inability","type":"grammar","labelKo":"N(이)나","labelEn":"As many/much as","lessonAppearances":[11],"notes":"Teacher materials present quantity as larger than expectation or surprising."},
+
+    {"id":"concept-irregular-d","system":"system-irregulars","type":"conjugation-family","labelKo":"ㄷ 불규칙","labelEn":"ㄷ irregular","lessonAppearances":[5],"notes":"Course examples include 듣다/걷다."},
+    {"id":"concept-irregular-b","system":"system-irregulars","type":"conjugation-family","labelKo":"ㅂ 불규칙","labelEn":"ㅂ irregular","lessonAppearances":[6,9,11],"notes":"Appears across polite forms, modifiers, and -(으)ㄹ까요 forms."},
+    {"id":"concept-irregular-l","system":"system-irregulars","type":"conjugation-family","labelKo":"ㄹ 탈락 / ㄹ 불규칙","labelEn":"ㄹ deletion patterns","lessonAppearances":[7,8,10,11,12],"notes":"Best taught by trigger endings rather than as a single memorized form."},
+    {"id":"concept-irregular-h","system":"system-irregulars","type":"conjugation-family","labelKo":"ㅎ 불규칙","labelEn":"ㅎ irregular","lessonAppearances":[12],"notes":"Teacher materials focus on color/demonstrative adjectives and contrast regular 좋다/많다/싫다."},
+    {"id":"concept-irregular-reu","system":"system-irregulars","type":"conjugation-family","labelKo":"르 불규칙","labelEn":"르 irregular","lessonAppearances":[14],"notes":"Course examples include 부르다, 모르다, 빠르다, 다르다, 자르다, 고르다."},
+
+    {"id":"concept-wordbuilding-hada","system":"system-word-building","type":"word-building","labelKo":"N + 하다","labelEn":"Noun + 하다 word building","lessonAppearances":[2,5,6],"notes":"Also important for negation placement in Lesson 6."},
+    {"id":"concept-adverb-ge","system":"system-word-building","type":"word-building","labelKo":"A-게","labelEn":"Adjective to adverb with -게","lessonAppearances":[14],"notes":"Teacher materials describe manner/way: adjective stem + 게 modifies a following verb."},
+
+    {"id":"concept-location-e","system":"system-location-movement","type":"particle","labelKo":"에","labelEn":"Location/destination 에","lessonAppearances":[3,5,9],"notes":"Static location with 있다/없다 and destination/goal uses must be distinguished from 에서."},
+    {"id":"concept-location-eseo","system":"system-location-movement","type":"particle","labelKo":"에서","labelEn":"Activity/source 에서","lessonAppearances":[5,6,9],"notes":"Activity location and source/from uses appear at different points in the course."},
+    {"id":"concept-ro-means-direction","system":"system-location-movement","type":"particle","labelKo":"(으)로","labelEn":"Means / instrument / direction (으)로","lessonAppearances":[6,8,13],"notes":"Teacher materials use it for transportation/instrument, direction, and destination toward an office."},
+    {"id":"concept-purpose-reo","system":"system-location-movement","type":"grammar","labelKo":"V-(으)러 가다/오다","labelEn":"Go/come in order to V","lessonAppearances":[5,6,10],"notes":"Purpose of movement."}
+  ],
+  "relationships": [
+    {"from":"concept-conjecture-get","to":"concept-intentional-get","type":"same-form-different-function","note":"Same -겠- morphology, different discourse function; explicitly contrasted across Lessons 12-13."},
+    {"from":"concept-intention-raeyo","to":"concept-promise-lgeyo","type":"contrast","note":"Intention/assertion vs listener-oriented promise/willingness; Lesson 13 directly compares them."},
+    {"from":"concept-intention-raeyo","to":"concept-proposal-kkayo","type":"contrast","note":"Speaker/listener intention vs shared proposal/opinion; Lesson 11 compares them."},
+    {"from":"concept-reason-aseo","to":"concept-sequence-aseo","type":"same-form-different-function","note":"Lesson 12 explicitly distinguishes causal and sequential readings."},
+    {"from":"concept-reason-aseo","to":"concept-reason-iraseo","type":"contrast","note":"Predicate reason vs noun/copular reason."},
+    {"from":"concept-reason-iraseo","to":"concept-reason-ttemune","type":"contrast","note":"Because it is N vs because of N; Lesson 14 compares all three reason strategies."},
+    {"from":"concept-inability-mot","to":"concept-inability-ji-mot","type":"short-long-form","note":"Two ways to express inability in this course progression."},
+    {"from":"concept-inability-ji-mot","to":"concept-prohibition-ji-maseyo","type":"do-not-confuse","note":"Cannot do vs don't do."},
+    {"from":"concept-adj-modifier","to":"concept-verb-present-modifier","type":"progression","note":"Adjective modifiers precede present verb modifiers in the course."},
+    {"from":"concept-verb-present-modifier","to":"concept-verb-past-modifier","type":"progression","note":"Present relative-clause form precedes past/completed form."},
+    {"from":"concept-number-native","to":"concept-number-sino","type":"parallel-systems","note":"Explore should teach selection by context, not as two isolated memorization lists."}
+  ],
+  "futureEnrichmentNotTeacherCore": [
+    {"id":"future-passive-system","label":"Passive system","note":"The current PPT set contains isolated passive-related material such as 보이다, but not a full passive morphology unit. A full passive Explore page must be labeled enrichment rather than teacher-core."},
+    {"id":"future-causative-system","label":"Causative system","note":"A full causative morphology system is not established by the current Lesson 1-14 PPT set. Future coverage should be clearly marked as enrichment/outside-course expansion."},
+    {"id":"future-hanja-word-families","label":"Hanja word families","note":"Useful for Chinese-speaking learners, but Hanja etymology must be independently verified before public display."}
+  ]
+}
