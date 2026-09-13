@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from the teacher Lesson 3 PPT and rewritten into structured study data.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids; only high-confidence items are filled.",
+    "copyright": "No full slide text or slide images should be republished in the public site."
+  },
+  "lesson": {
+    "id": "lesson-3",
+    "number": 3,
+    "titleKo": "위치와 교실 표현",
+    "titleEn": "Locations and Classroom Korean",
+    "theme": "Campus locations, existence/possession, topic shifting, connectors, and introductory honorifics",
+    "situations": [
+      "asking where a place or object is",
+      "describing relative position",
+      "saying what you have or do not have",
+      "shifting topics in conversation",
+      "speaking respectfully to or about a teacher"
+    ],
+    "goals": [
+      "Use [place]에 있어요/없어요 for existence",
+      "Use N이/가 있어요/없어요 for possession",
+      "Use location nouns such as 앞, 뒤, 옆, 위, 아래, 안, 밖",
+      "Use 은/는 and 은요?/는요? to shift the topic",
+      "Use 누구/누가 in basic identity questions",
+      "Use 그리고, 그런데, 그래서 to connect discourse",
+      "Recognize and form the honorific ending -(으)세요"
+    ],
+    "teacherFocus": [
+      "campus and classroom place vocabulary",
+      "distinction between existence and possession with 있다/없다",
+      "topic-shifting use of 은/는",
+      "honorific suffix -(으)시- and polite honorific ending -(으)세요",
+      "honorific 있다 forms: 있으세요 for possession and 계세요 for existence"
+    ],
+    "connections": ["sentence-particles", "speech-honorifics", "connectors", "real-life"],
+    "sourceRefs": [{"type":"teacher-ppt","file":"lesson3.pptx","slides":[2,3,4,5,6,7,8,9,10,17,23,24,29,30,31,37,38,39,40,41,43,45,46,47,53,54,56,57,58,59,60,63,64,65,66,69,70,71]}]
+  },
+  "vocabulary": [
+    {"id":"v3-above","korean":"위","meaningEn":"above; on top of","meaningZh":"上面","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-below","korean":"아래","meaningEn":"below; under","meaningZh":"下面","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-beside","korean":"옆","meaningEn":"beside; next to","meaningZh":"旁边","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-between","korean":"사이","meaningEn":"between; interval","meaningZh":"之间","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-front","korean":"앞","meaningEn":"front; in front of","meaningZh":"前面","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-behind","korean":"뒤","meaningEn":"back; behind","meaningZh":"后面","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-right","korean":"오른쪽","meaningEn":"right side","meaningZh":"右边","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-left","korean":"왼쪽","meaningEn":"left side","meaningZh":"左边","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-inside","korean":"안","meaningEn":"inside","meaningZh":"里面","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-outside","korean":"밖","meaningEn":"outside","meaningZh":"外面","pos":"location noun","originType":"native-korean","tags":["location"],"sourceRefs":[{"file":"lesson3.pptx","slide":3}]},
+    {"id":"v3-library","korean":"도서관","meaningEn":"library","meaningZh":"图书馆","pos":"noun","hanja":"圖書館","originType":"sino-korean","tags":["campus"],"sourceRefs":[{"file":"lesson3.pptx","slide":4}]},
+    {"id":"v3-cafeteria","korean":"식당","meaningEn":"cafeteria; restaurant","meaningZh":"食堂；餐厅","pos":"noun","hanja":"食堂","originType":"sino-korean","tags":["campus","food"],"sourceRefs":[{"file":"lesson3.pptx","slide":4}]},
+    {"id":"v3-school","korean":"학교","meaningEn":"school","meaningZh":"学校","pos":"noun","hanja":"學校","originType":"sino-korean","tags":["campus"],"sourceRefs":[{"file":"lesson3.pptx","slide":4}]},
+    {"id":"v3-university","korean":"대학교","meaningEn":"university","meaningZh":"大学","pos":"noun","hanja":"大學校","originType":"sino-korean","tags":["campus"],"sourceRefs":[{"file":"lesson3.pptx","slide":4}]},
+    {"id":"v3-dorm","korean":"기숙사","meaningEn":"dormitory","meaningZh":"宿舍","pos":"noun","hanja":"寄宿舍","originType":"sino-korean","tags":["campus"],"sourceRefs":[{"file":"lesson3.pptx","slide":4}]},
+    {"id":"v3-building","korean":"빌딩","meaningEn":"building","meaningZh":"大楼","pos":"noun","originType":"loanword","tags":["campus"],"sourceRefs":[{"file":"lesson3.pptx","slide":5}]},
+    {"id":"v3-bookstore","korean":"서점","meaningEn":"bookstore","meaningZh":"书店","pos":"noun","hanja":"書店","originType":"sino-korean","tags":["campus","place"],"sourceRefs":[{"file":"lesson3.pptx","slide":5}]},
+    {"id":"v3-student-center","korean":"학생회관","meaningEn":"student center","meaningZh":"学生会馆；学生活动中心","pos":"noun","hanja":"學生會館","originType":"sino-korean","tags":["campus"],"sourceRefs":[{"file":"lesson3.pptx","slide":5}]},
+    {"id":"v3-postoffice","korean":"우체국","meaningEn":"post office","meaningZh":"邮局","pos":"noun","hanja":"郵遞局","originType":"sino-korean","tags":["place"],"sourceRefs":[{"file":"lesson3.pptx","slide":5}]},
+    {"id":"v3-house","korean":"집","meaningEn":"house; home","meaningZh":"家；房子","pos":"noun","originType":"native-korean","tags":["place"],"sourceRefs":[{"file":"lesson3.pptx","slide":5}]},
+    {"id":"v3-book","korean":"책","meaningEn":"book","meaningZh":"书","pos":"noun","hanja":"冊","originType":"sino-korean","tags":["classroom"],"sourceRefs":[{"file":"lesson3.pptx","slide":6}]},
+    {"id":"v3-desk","korean":"책상","meaningEn":"desk","meaningZh":"书桌","pos":"noun","hanja":"冊床","originType":"sino-korean","tags":["classroom"],"sourceRefs":[{"file":"lesson3.pptx","slide":6}]},
+    {"id":"v3-bag","korean":"가방","meaningEn":"bag","meaningZh":"包","pos":"noun","originType":"loanword/lexicalized","tags":["classroom"],"sourceRefs":[{"file":"lesson3.pptx","slide":6}]},
+    {"id":"v3-chair","korean":"의자","meaningEn":"chair","meaningZh":"椅子","pos":"noun","hanja":"椅子","originType":"sino-korean","tags":["classroom"],"sourceRefs":[{"file":"lesson3.pptx","slide":6}]},
+    {"id":"v3-clock","korean":"시계","meaningEn":"clock; watch","meaningZh":"钟；手表","pos":"noun","hanja":"時計","originType":"sino-korean","tags":["classroom"],"sourceRefs":[{"file":"lesson3.pptx","slide":6}]},
+    {"id":"v3-classroom","korean":"교실","meaningEn":"classroom","meaningZh":"教室","pos":"noun","hanja":"敎室","originType":"sino-korean","tags":["classroom"],"sourceRefs":[{"file":"lesson3.pptx","slide":6}]},
+    {"id":"v3-computer","korean":"컴퓨터","meaningEn":"computer","meaningZh":"电脑","pos":"noun","originType":"loanword","tags":["classroom"],"sourceRefs":[{"file":"lesson3.pptx","slide":6}]},
+    {"id":"v3-exist-have","korean":"있다","meaningEn":"to exist; to have","meaningZh":"有；在","pos":"adjective/existential predicate","originType":"native-korean","tags":["existence","possession"],"sourceRefs":[{"file":"lesson3.pptx","slides":[7,9,38,39,40]}]},
+    {"id":"v3-not-exist","korean":"없다","meaningEn":"to not exist; to not have","meaningZh":"没有；不在","pos":"adjective/existential predicate","originType":"native-korean","tags":["existence","possession"],"sourceRefs":[{"file":"lesson3.pptx","slides":[7,9,39,40]}]},
+    {"id":"v3-go","korean":"가다","meaningEn":"to go","meaningZh":"去","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson3.pptx","slide":7}]},
+    {"id":"v3-greet","korean":"인사하다","meaningEn":"to greet","meaningZh":"打招呼","pos":"verb","hanja":"人事","originType":"sino-korean+하다","tags":["action","word-building"],"sourceRefs":[{"file":"lesson3.pptx","slide":7}]},
+    {"id":"v3-read","korean":"읽다","meaningEn":"to read","meaningZh":"读","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson3.pptx","slide":7}]},
+    {"id":"v3-everyday","korean":"매일","meaningEn":"every day","meaningZh":"每天","pos":"adverb/noun","hanja":"每日","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson3.pptx","slide":7}]},
+    {"id":"v3-hard","korean":"열심히","meaningEn":"diligently; hard","meaningZh":"努力地；认真地","pos":"adverb","originType":"lexicalized","tags":["manner"],"sourceRefs":[{"file":"lesson3.pptx","slide":7}]},
+    {"id":"v3-so","korean":"그래서","meaningEn":"so; therefore","meaningZh":"所以","pos":"conjunction","originType":"native-korean","tags":["connector"],"sourceRefs":[{"file":"lesson3.pptx","slides":[7,45,46]}]},
+    {"id":"v3-but","korean":"그런데","meaningEn":"but; by the way","meaningZh":"但是；不过；话说","pos":"conjunction","originType":"native-korean","tags":["connector"],"sourceRefs":[{"file":"lesson3.pptx","slides":[7,45,47]}]},
+    {"id":"v3-time","korean":"시간","meaningEn":"time","meaningZh":"时间","pos":"noun","hanja":"時間","originType":"sino-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-boyfriend","korean":"남자 친구","meaningEn":"boyfriend","meaningZh":"男朋友","pos":"noun","tags":["people"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-class","korean":"수업","meaningEn":"class; lesson","meaningZh":"课程","pos":"noun","hanja":"授業","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-money","korean":"돈","meaningEn":"money","meaningZh":"钱","pos":"noun","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-question","korean":"질문","meaningEn":"question","meaningZh":"问题","pos":"noun","hanja":"質問","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-homework","korean":"숙제","meaningEn":"homework","meaningZh":"作业","pos":"noun","hanja":"宿題","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-dictionary","korean":"사전","meaningEn":"dictionary","meaningZh":"词典","pos":"noun","hanja":"辭典","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-econ","korean":"경제학","meaningEn":"economics","meaningZh":"经济学","pos":"noun","hanja":"經濟學","originType":"sino-korean","tags":["school","major"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-umbrella","korean":"우산","meaningEn":"umbrella","meaningZh":"雨伞","pos":"noun","hanja":"雨傘","originType":"sino-korean","tags":["object"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-major","korean":"전공","meaningEn":"major; field of study","meaningZh":"专业","pos":"noun","hanja":"專攻","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-textbook","korean":"교과서","meaningEn":"textbook","meaningZh":"教科书","pos":"noun","hanja":"敎科書","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson3.pptx","slide":8}]},
+    {"id":"v3-who","korean":"누구","meaningEn":"who","meaningZh":"谁","pos":"question word","originType":"native-korean","tags":["question"],"sourceRefs":[{"file":"lesson3.pptx","slides":[8,41,43]}]}
+  ],
+  "grammar": [
+    {"id":"g3-location","pattern":"[place]에 있어요/없어요","name":"Existence at a location","meaning":"States where a person or thing exists or does not exist.","formation":["place + 에 + 있다/없다"],"examples":[{"ko":"학교가 먼시에 있어요.","en":"The school is in Muncie."},{"ko":"학생회관에 있어요.","en":"It is in the student center."}],"commonMistakes":["For this existence pattern, the PPT uses 에 as the location particle."],"tags":["location","existence","particle"],"sourceRefs":[{"file":"lesson3.pptx","slides":[9,10,16,20,31,40]}]},
+    {"id":"g3-topic-shift","pattern":"N은/는 ... / N은요?·는요?","name":"Changing the topic","meaning":"Uses 은/는 to move the conversation to a new topic; N은요?/는요? can mean ‘What about N?’","examples":[{"ko":"기숙사는 어디 있어요?","en":"What about the dormitory—where is it?"},{"ko":"서점은요?","en":"What about the bookstore?"}],"contrast":[{"with":"g1-topic","note":"Lesson 3 extends the Lesson 1 topic/contrast particle into conversation-level topic shifting."}],"tags":["topic","discourse","particle"],"sourceRefs":[{"file":"lesson3.pptx","slides":[29,30]}]},
+    {"id":"g3-possession","pattern":"N이/가 있어요/없어요","name":"Possession with 있다/없다","meaning":"Expresses having or not having something.","formation":["possessed noun + 이/가 + 있어요/없어요"],"examples":[{"ko":"질문이 있어요.","en":"I have a question."},{"ko":"영어 사전이 없어요.","en":"I do not have an English dictionary."}],"contrast":[{"with":"g3-location","note":"Possession uses N이/가 + 있다/없다, while existence uses [place]에 + 있다/없다."}],"tags":["possession","existence"],"sourceRefs":[{"file":"lesson3.pptx","slides":[37,38,39,40]}]},
+    {"id":"g3-who","pattern":"누구 → 누가 before 가","name":"Who as subject","meaning":"누구 asks ‘who’; when followed by subject particle 가, the form appears as 누가.","examples":[{"ko":"리사가 누구예요?","en":"Who is Lisa?"},{"ko":"누가 한국어 선생님이에요?","en":"Who is the Korean teacher?"}],"tags":["question","subject"],"sourceRefs":[{"file":"lesson3.pptx","slides":[41,42,43,44]}]},
+    {"id":"g3-connectors","pattern":"그리고 / 그런데 / 그래서","name":"Sentence connectors","meaning":"Connects whole sentences as addition, contrast/topic shift, or result.","formation":["그리고 = and","그런데 = but/by the way","그래서 = so/therefore"],"examples":[{"ko":"오늘은 수업이 없어요. 그래서 친구를 만나요.","en":"There is no class today, so I meet a friend."}],"tags":["connector","discourse"],"sourceRefs":[{"file":"lesson3.pptx","slides":[45,46,47,48]}]},
+    {"id":"g3-honorific","pattern":"-(으)세요 = -(으)시- + -어요","name":"Honorific polite ending","meaning":"Adds respect toward the honored subject/listener in a polite sentence.","formation":["after consonant stem: -으세요","after vowel stem: -세요"],"examples":[{"ko":"한국어 반 선생님이 누구세요?","en":"Who is the Korean-class teacher?"},{"ko":"사장님, 오늘 뭐 하세요?","en":"Boss/manager, what are you doing today?"}],"commonMistakes":["Politeness and honorific marking are related but not identical; the PPT explicitly derives -세요 from -(으)시- + -어요."],"tags":["honorific","polite","speech-level"],"sourceRefs":[{"file":"lesson3.pptx","slides":[53,54,56,57,58,59,60,63,64,65,70]}]},
+    {"id":"g3-honorific-exist","pattern":"있다 → 있으세요 / 계세요","name":"Honorific forms of 있다","meaning":"The PPT distinguishes honorific possession and honorific existence.","formation":["possession: 있다 → 있으세요","existence: 있다 → 계세요"],"examples":[{"ko":"선생님, 책이 있으세요?","en":"Teacher, do you have a book?"},{"ko":"선생님이 집에 계세요.","en":"The teacher is at home."}],"tags":["honorific","possession","existence"],"sourceRefs":[{"file":"lesson3.pptx","slide":66}]}
+  ],
+  "expressions": [
+    {"id":"e3-where","korean":"___이/가 어디에 있어요?","meaningEn":"Where is ___?","meaningZh":"___在哪里？","situation":"asking location","register":"polite informal","sourceRefs":[{"file":"lesson3.pptx","slides":[10,11,12,13,14,15]}]},
+    {"id":"e3-whatabout","korean":"___은요?/는요?","meaningEn":"What about ___?","meaningZh":"那___呢？","situation":"topic shift","register":"polite informal","sourceRefs":[{"file":"lesson3.pptx","slide":30}]},
+    {"id":"e3-have-question","korean":"질문이 있어요.","meaningEn":"I have a question.","meaningZh":"我有一个问题。","situation":"classroom","register":"polite informal","sourceRefs":[{"file":"lesson3.pptx","slides":[38,39]}]},
+    {"id":"e3-time-honorific","korean":"내일 시간 있으세요?","meaningEn":"Do you have time tomorrow?","meaningZh":"您明天有时间吗？","situation":"respectful question","register":"honorific polite","sourceRefs":[{"file":"lesson3.pptx","slides":[68,69]}]}
+  ],
+  "culture": [
+    {"id":"c3-honorific-intro","title":"Why honorific marking appears early","category":"language-culture","summary":"The teacher PPT introduces honorific expressions alongside social factors such as age, family relationship, social status, and degree of intimacy. The site should present this as a relationship-sensitive language system rather than a simple ‘formal vs informal’ switch.","languageConnection":["-(으)시-","-(으)세요","있으세요","계세요"],"relatedLessons":[3,8,9,10,11,12,13,14],"tags":["honorifics","pragmatics"],"sourceRefs":[{"file":"lesson3.pptx","slides":[49,50,51,52,53,54]}]}
+  ],
+  "practice": [
+    {"id":"p3-001","type":"typing","prompt":"Say ‘The bag is next to the desk.’","answers":["가방이 책상 옆에 있어요.","가방은 책상 옆에 있어요."],"displayAnswer":"가방이 책상 옆에 있어요.","explanation":"The location pattern is [place]에 있어요; 옆 functions as the relative-location noun.","conceptIds":["g3-location","v3-beside"],"difficulty":1},
+    {"id":"p3-002","type":"multiple-choice","prompt":"Which means ‘What about the bookstore?’","choices":["서점은요?","서점이 아니에요?","서점도 없어요?"],"answers":["서점은요?"],"displayAnswer":"서점은요?","explanation":"The Lesson 3 PPT introduces 은요?/는요? as a compact topic-shift question.","conceptIds":["g3-topic-shift"],"difficulty":1},
+    {"id":"p3-003","type":"typing","prompt":"Say ‘I have a question.’","answers":["질문이 있어요.","질문이 있어요"],"displayAnswer":"질문이 있어요.","explanation":"Possession is N이/가 있어요/없어요.","conceptIds":["g3-possession"],"difficulty":1},
+    {"id":"p3-004","type":"multiple-choice","prompt":"Choose the respectful existence form for ‘The teacher is at home.’","choices":["선생님이 집에 있어요.","선생님이 집에 계세요.","선생님이 집에 있으세요."],"answers":["선생님이 집에 계세요."],"displayAnswer":"선생님이 집에 계세요.","explanation":"The PPT distinguishes 계세요 for honorific existence from 있으세요 for honorific possession.","conceptIds":["g3-honorific-exist"],"difficulty":2},
+    {"id":"p3-005","type":"typing","prompt":"Change 누구 + subject particle 가 into the form used in ‘Who is the Korean teacher?’","answers":["누가"],"displayAnswer":"누가","explanation":"Lesson 3 explicitly shows 누구 + 가 → 누가.","conceptIds":["g3-who"],"difficulty":1},
+    {"id":"p3-006","type":"multiple-choice","prompt":"Choose the connector that means ‘so/therefore.’","choices":["그리고","그런데","그래서"],"answers":["그래서"],"displayAnswer":"그래서","explanation":"The PPT groups 그래서 with sentence connectors and gives it the result meaning ‘so.’","conceptIds":["g3-connectors"],"difficulty":1},
+    {"id":"p3-007","type":"typing","prompt":"Make 하다 respectful and polite with the Lesson 3 honorific ending.","answers":["하세요"],"displayAnswer":"하세요","explanation":"A vowel-ending stem takes -세요; 하다 gives 하세요 in the teacher’s examples.","conceptIds":["g3-honorific"],"difficulty":2}
+  ]
+}
