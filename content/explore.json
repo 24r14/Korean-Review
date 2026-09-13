@@ -1,0 +1,139 @@
+{
+  "grammarGuide": [
+    {
+      "id": "tense-aspect",
+      "title": "Tense & aspect · 시제와 상",
+      "level": "Foundation",
+      "summary": "Korean tense is carried mainly by the predicate ending. Aspect adds information such as whether an action is in progress or completed.",
+      "items": [
+        {"label":"Present / general","pattern":"-아요/어요","example":"한국어를 공부해요. — I study Korean / I am studying Korean."},
+        {"label":"Past","pattern":"-았/었어요","example":"어제 공부했어요. — I studied yesterday."},
+        {"label":"Future / plan","pattern":"-(으)ㄹ 거예요","example":"내일 공부할 거예요. — I will study tomorrow."},
+        {"label":"Progressive","pattern":"-고 있다","example":"지금 공부하고 있어요. — I am studying now."}
+      ],
+      "note": "English tense labels are useful as a starting point, but Korean endings also carry intention, politeness, evidential meaning, and discourse nuance."
+    },
+    {
+      "id": "negation",
+      "title": "Negation · 부정",
+      "level": "Foundation",
+      "summary": "Korean has short and long forms of negation, and it distinguishes not doing something from being unable to do it.",
+      "items": [
+        {"label":"Not","pattern":"안 + predicate","example":"오늘 학교에 안 가요. — I am not going to school today."},
+        {"label":"Not","pattern":"-지 않다","example":"커피를 마시지 않아요. — I do not drink coffee."},
+        {"label":"Cannot","pattern":"못 + predicate","example":"오늘 운동을 못 해요. — I cannot exercise today."},
+        {"label":"Cannot","pattern":"-지 못하다","example":"어제 잠을 자지 못했어요. — I could not sleep yesterday."}
+      ]
+    },
+    {
+      "id": "passive-causative",
+      "title": "Passive & causative · 피동과 사동",
+      "level": "Growing",
+      "summary": "What English calls voice appears in Korean through several passive and causative patterns rather than one single ending.",
+      "items": [
+        {"label":"Passive","pattern":"이/히/리/기 or lexical passive","example":"문이 열렸어요. — The door opened / was opened."},
+        {"label":"Change into a state","pattern":"-아/어지다","example":"날씨가 따뜻해졌어요. — The weather became warm."},
+        {"label":"Causative","pattern":"이/히/리/기/우/구/추","example":"아이를 앉혔어요. — I made / had the child sit."},
+        {"label":"Analytic causative","pattern":"-게 하다","example":"학생들이 말하게 했어요. — I had the students speak."}
+      ],
+      "note": "Passive and causative forms are partly lexical, so learning them with common verbs is more reliable than memorizing one mechanical rule."
+    },
+    {
+      "id": "honorifics",
+      "title": "Honorifics & speech levels · 높임말",
+      "level": "Essential culture + grammar",
+      "summary": "Korean grammar encodes social relationships. Subject honorifics and sentence endings are related but separate choices.",
+      "items": [
+        {"label":"Subject honorific","pattern":"-(으)시-","example":"선생님이 오세요. — The teacher is coming."},
+        {"label":"Polite everyday","pattern":"해요체","example":"어디 가세요? — Where are you going?"},
+        {"label":"Formal polite","pattern":"합니다체","example":"감사합니다. — Thank you."},
+        {"label":"Casual","pattern":"해체","example":"뭐 해? — What are you doing?"}
+      ],
+      "note": "Age, familiarity, role, and setting can all affect speech style; there is no single English equivalent."
+    },
+    {
+      "id": "connectors",
+      "title": "Connecting ideas · 연결어미",
+      "level": "Foundation → Growing",
+      "summary": "Connectors show sequence, contrast, reason, condition, and more. Learning the relationship between clauses is often more useful than translating one word at a time.",
+      "items": [
+        {"label":"And / sequence","pattern":"-고","example":"밥을 먹고 공부해요. — I eat and then study."},
+        {"label":"Reason / sequence","pattern":"-아/어서","example":"비가 와서 집에 있었어요. — It rained, so I stayed home."},
+        {"label":"Reason","pattern":"-(으)니까","example":"늦었으니까 빨리 가요. — We are late, so let’s hurry."},
+        {"label":"Because of noun","pattern":"N 때문에","example":"시험 때문에 바빠요. — I am busy because of the test."}
+      ]
+    }
+  ],
+  "culture": [
+    {
+      "category": "Food",
+      "title": "김치 · Kimchi",
+      "emoji": "🥬",
+      "summary": "A broad family of fermented vegetable dishes. Napa-cabbage kimchi is famous, but there are many regional and seasonal varieties.",
+      "language": "김치 is commonly served as 반찬, a side dish shared with a meal."
+    },
+    {
+      "category": "Food",
+      "title": "비빔밥 · Bibimbap",
+      "emoji": "🍚",
+      "summary": "Rice mixed with vegetables and other toppings, often with gochujang. The name literally points to mixing: 비비다 means to mix/rub and 밥 means cooked rice/meal.",
+      "language": "Useful words: 밥 rice/meal · 고추장 red-pepper paste · 비비다 to mix."
+    },
+    {
+      "category": "Food",
+      "title": "불고기 · Bulgogi",
+      "emoji": "🥩",
+      "summary": "Thinly sliced marinated meat, usually beef, cooked by grilling or pan-cooking. The modern dish has many household and restaurant variations.",
+      "language": "불 means fire and 고기 means meat."
+    },
+    {
+      "category": "Food",
+      "title": "떡볶이 · Tteokbokki",
+      "emoji": "🌶️",
+      "summary": "A popular snack built around chewy rice cakes, commonly served in a spicy-sweet sauce. It is strongly associated with casual street-food culture.",
+      "language": "떡 rice cake · 볶다 to stir-fry; the modern dish is usually saucier than the literal name suggests."
+    },
+    {
+      "category": "Food",
+      "title": "김밥 · Gimbap",
+      "emoji": "🍙",
+      "summary": "Rice and assorted fillings rolled in dried seaweed and sliced into pieces. Fillings vary widely, from vegetables and egg to tuna or meat.",
+      "language": "김 dried seaweed · 밥 rice/meal."
+    },
+    {
+      "category": "Food",
+      "title": "미역국 · Seaweed soup",
+      "emoji": "🥣",
+      "summary": "A soup made with seaweed that is especially associated with birthdays in Korea and is also eaten in everyday meals.",
+      "language": "생일 birthday · 미역 seaweed · 국 soup."
+    },
+    {
+      "category": "Everyday culture",
+      "title": "반찬 and shared dishes",
+      "emoji": "🥢",
+      "summary": "Korean meals often include several side dishes placed in the center of the table. The exact arrangement depends on home, restaurant, region, and occasion.",
+      "language": "반찬 means side dish; 같이 먹어요 means ‘let’s eat together.’"
+    },
+    {
+      "category": "Language culture",
+      "title": "Names, titles, and respect",
+      "emoji": "🙇",
+      "summary": "Using a person’s name, title, kinship term, or 씨 depends on relationship and context. Korean often avoids repeatedly using ‘you’ where English would use it.",
+      "language": "선생님, 교수님, 사장님 and family-style terms can function as forms of address."
+    },
+    {
+      "category": "Holidays",
+      "title": "설날 and 추석",
+      "emoji": "🎎",
+      "summary": "설날 is Lunar New Year and 추석 is a major harvest holiday. Family gatherings, food, travel, and ancestral or family traditions vary by household.",
+      "language": "새해 복 많이 받으세요 is a common New Year greeting."
+    },
+    {
+      "category": "Class connection",
+      "title": "전화 etiquette",
+      "emoji": "☎️",
+      "summary": "Telephone Korean uses conventional expressions such as 여보세요 and polite requests for asking to speak to someone. The exact level of politeness changes with relationship and setting.",
+      "language": "여보세요 → 누구세요? → ___ 씨 좀 바꿔 주세요 → 안녕히 계세요 / 끊을게요."
+    }
+  ]
+}
