@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A collaborative Korean review notebook for KLEAR learners.">
+  <meta name="description" content="A Korean learning and review workspace for KLEAR learners.">
   <title>복습장 · Korean Review</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,15 +15,17 @@
   <aside class="sidebar">
     <div>
       <div class="brand">복습장</div>
-      <div class="brand-sub">Korean review notebook</div>
+      <div class="brand-sub">Korean learning workspace</div>
     </div>
-    <div class="sync-status" id="syncStatus">Loading shared library…</div>
+    <div class="sync-status" id="syncStatus">Loading course content…</div>
+    <div class="side-label">Lessons</div>
     <nav class="nav-list" id="lessonList" aria-label="Lessons"></nav>
     <div class="sidebar-actions">
-      <button class="btn subtle" id="addLessonBtn">+ Personal lesson</button>
-      <button class="btn subtle" id="importBtn">Import</button>
       <button class="btn subtle" id="appearanceBtn">Appearance</button>
-      <button class="btn subtle" id="settingsBtn">Advanced</button>
+      <button class="btn subtle" id="globalSearchBtn">Search</button>
+      <button class="btn subtle" id="importBtn">Import</button>
+      <button class="btn subtle" id="feedbackBtn">Feedback</button>
+      <button class="btn subtle wide" id="settingsBtn">Advanced</button>
     </div>
   </aside>
 
@@ -34,33 +36,34 @@
         <div class="muted" id="pageSubtitle">A small plan for your next Korean study session.</div>
       </div>
       <div class="top-actions">
-        <button class="btn ghost" id="globalSearchBtn">⌕ Search</button>
+        <span class="streak" id="streakBadge">0 day streak</span>
       </div>
     </header>
 
     <div class="tabs" role="tablist">
       <button class="tab active" data-view="today">Today</button>
-      <button class="tab" data-view="learn">Learn basics</button>
+      <button class="tab" data-view="lesson">Lesson</button>
       <button class="tab" data-view="browse">Browse</button>
+      <button class="tab" data-view="practice">Practice</button>
       <button class="tab" data-view="review">Flashcards</button>
       <button class="tab" data-view="quiz">Quiz</button>
+      <button class="tab" data-view="mistakes">Mistakes</button>
+      <button class="tab" data-view="basics">Beginner</button>
     </div>
 
     <div id="banner"></div>
-
     <section class="view active" id="view-today"></section>
-    <section class="view" id="view-learn"></section>
+    <section class="view" id="view-lesson"></section>
     <section class="view" id="view-browse"></section>
+    <section class="view" id="view-practice"></section>
     <section class="view" id="view-review"></section>
     <section class="view" id="view-quiz"></section>
+    <section class="view" id="view-mistakes"></section>
+    <section class="view" id="view-basics"></section>
   </main>
 </div>
 
-<div class="modal-bg" id="modalBg" aria-hidden="true">
-  <div class="modal" id="modal"></div>
-</div>
-
+<div class="modal-bg" id="modalBg" aria-hidden="true"><div class="modal" id="modal"></div></div>
 <script src="app.js"></script>
-<script src="quiz-fix.js"></script>
 </body>
 </html>
