@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from the teacher Lesson 2 PPT and rewritten into structured study data.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids; only high-confidence items are filled.",
+    "copyright": "No full slide text or slide images should be republished in the public site."
+  },
+  "lesson": {
+    "id": "lesson-2",
+    "number": 2,
+    "titleKo": "한국어 수업과 일상 동작",
+    "titleEn": "Korean Class and Everyday Actions",
+    "theme": "Predicate conjugation, present-tense actions and descriptions, objects, and everyday check-ins",
+    "situations": [
+      "talking about Korean class",
+      "saying what you are doing",
+      "describing food, school, and people",
+      "asking how someone is doing"
+    ],
+    "goals": [
+      "Conjugate common verbs and adjectives in polite present style",
+      "Use 을/를 with direct objects",
+      "Recognize common contractions and vowel deletion",
+      "Ask 뭐 해요? and 어때요?",
+      "Use 요즘 어떻게 지내요? for a polite check-in",
+      "Connect two sentences with 그리고"
+    ],
+    "teacherFocus": [
+      "verbs and adjectives are predicates in Korean",
+      "dictionary form vs stem + ending",
+      "-아요/어요/해요 selection",
+      "common surface contractions",
+      "object particles 을/를",
+      "adjectives do not require an extra English-style be verb"
+    ],
+    "connections": ["sentence-particles", "tense-aspect", "word-building"],
+    "sourceRefs": [{"type":"teacher-ppt","file":"lesson 2.pptx","slides":[2,3,4,5,6,7,8,9,10,11,13,14,15,21,23,24,25,29,30,33,51,58,59,60,62]}]
+  },
+  "vocabulary": [
+    {"id":"v2-eat","korean":"먹다","meaningEn":"to eat","meaningZh":"吃","pos":"verb","originType":"native-korean","tags":["action","food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+    {"id":"v2-drink","korean":"마시다","meaningEn":"to drink","meaningZh":"喝","pos":"verb","originType":"native-korean","tags":["action","food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+    {"id":"v2-sit","korean":"앉다","meaningEn":"to sit","meaningZh":"坐","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+    {"id":"v2-know","korean":"알다","meaningEn":"to know","meaningZh":"知道","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+    {"id":"v2-meet","korean":"만나다","meaningEn":"to meet","meaningZh":"见面","pos":"verb","originType":"native-korean","tags":["action","people"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+    {"id":"v2-see","korean":"보다","meaningEn":"to see; watch; look at","meaningZh":"看","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+    {"id":"v2-do","korean":"하다","meaningEn":"to do","meaningZh":"做","pos":"verb","originType":"native-korean","tags":["action","word-building"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+    {"id":"v2-study","korean":"공부하다","meaningEn":"to study","meaningZh":"学习","pos":"verb","hanja":"工夫","originType":"sino-korean+하다","tags":["school","word-building"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[6,7]}]},
+    {"id":"v2-homework-do","korean":"숙제하다","meaningEn":"to do homework","meaningZh":"做作业","pos":"verb","hanja":"宿題","originType":"sino-korean+하다","tags":["school","word-building"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[6,7]}]},
+    {"id":"v2-get-along","korean":"지내다","meaningEn":"to spend time; get along; be doing","meaningZh":"过（日子）；相处","pos":"verb","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[6,29,58,59]}]},
+    {"id":"v2-write","korean":"쓰다","meaningEn":"to write","meaningZh":"写","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson 2.pptx","slide":6}]},
+
+    {"id":"v2-big","korean":"크다","meaningEn":"to be big","meaningZh":"大","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 2.pptx","slide":8}]},
+    {"id":"v2-good","korean":"좋다","meaningEn":"to be good; to like in some constructions","meaningZh":"好","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 2.pptx","slide":8}]},
+    {"id":"v2-cheap","korean":"싸다","meaningEn":"to be cheap","meaningZh":"便宜","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 2.pptx","slide":8}]},
+    {"id":"v2-okay","korean":"괜찮다","meaningEn":"to be okay; fine","meaningZh":"没关系；还不错","pos":"adjective","originType":"native-korean","tags":["description","daily-life"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[8,59]}]},
+    {"id":"v2-wide","korean":"넓다","meaningEn":"to be wide; spacious","meaningZh":"宽；宽敞","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 2.pptx","slide":8}]},
+    {"id":"v2-busy","korean":"바쁘다","meaningEn":"to be busy","meaningZh":"忙","pos":"adjective","originType":"native-korean","tags":["description","daily-life"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[8,57,59]}]},
+    {"id":"v2-delicious","korean":"맛있다","meaningEn":"to be delicious","meaningZh":"好吃","pos":"adjective","originType":"native-korean","tags":["food","description"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[8,52,53]}]},
+    {"id":"v2-many","korean":"많다","meaningEn":"to be many; much","meaningZh":"多","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[8,55]}]},
+    {"id":"v2-interesting","korean":"재미있다","meaningEn":"to be interesting; fun","meaningZh":"有意思；有趣","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[8,54]}]},
+    {"id":"v2-not-interesting","korean":"재미없다","meaningEn":"to be uninteresting; not fun","meaningZh":"没意思","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 2.pptx","slide":8}]},
+
+    {"id":"v2-library","korean":"도서관","meaningEn":"library","meaningZh":"图书馆","pos":"noun","hanja":"圖書館","originType":"sino-korean","tags":["place","school"],"sourceRefs":[{"file":"lesson 2.pptx","slide":9}]},
+    {"id":"v2-cafeteria","korean":"식당","meaningEn":"cafeteria; restaurant","meaningZh":"食堂；餐厅","pos":"noun","hanja":"食堂","originType":"sino-korean","tags":["place","food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":9}]},
+    {"id":"v2-school","korean":"학교","meaningEn":"school","meaningZh":"学校","pos":"noun","hanja":"學校","originType":"sino-korean","tags":["place","school"],"sourceRefs":[{"file":"lesson 2.pptx","slide":9}]},
+    {"id":"v2-tv","korean":"텔레비전 / 티비","meaningEn":"television / TV","meaningZh":"电视","pos":"noun","originType":"loanword","tags":["media"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-exam","korean":"시험","meaningEn":"exam; test","meaningZh":"考试","pos":"noun","hanja":"試驗","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-homework","korean":"숙제","meaningEn":"homework","meaningZh":"作业","pos":"noun","hanja":"宿題","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-juice","korean":"주스","meaningEn":"juice","meaningZh":"果汁","pos":"noun","originType":"loanword","tags":["food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-coffee","korean":"커피","meaningEn":"coffee","meaningZh":"咖啡","pos":"noun","originType":"loanword","tags":["food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-food","korean":"음식","meaningEn":"food","meaningZh":"食物","pos":"noun","hanja":"飮食","originType":"sino-korean","tags":["food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-friend","korean":"친구","meaningEn":"friend","meaningZh":"朋友","pos":"noun","hanja":"親舊","originType":"sino-korean","tags":["people"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-history","korean":"역사","meaningEn":"history","meaningZh":"历史","pos":"noun","hanja":"歷史","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson 2.pptx","slide":10}]},
+    {"id":"v2-breakfast","korean":"아침","meaningEn":"morning; breakfast","meaningZh":"早晨；早餐","pos":"noun","originType":"native-korean","tags":["time","food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":11}]},
+    {"id":"v2-lunch","korean":"점심","meaningEn":"lunch; noon","meaningZh":"午饭；中午","pos":"noun","hanja":"點心","originType":"sino-korean","tags":["time","food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":11}]},
+    {"id":"v2-dinner","korean":"저녁","meaningEn":"evening; dinner","meaningZh":"晚上；晚饭","pos":"noun","originType":"native-korean","tags":["time","food"],"sourceRefs":[{"file":"lesson 2.pptx","slide":11}]},
+    {"id":"v2-night","korean":"밤","meaningEn":"night","meaningZh":"夜晚","pos":"noun","originType":"native-korean","tags":["time"],"sourceRefs":[{"file":"lesson 2.pptx","slide":11}]},
+    {"id":"v2-male","korean":"남자","meaningEn":"man; male","meaningZh":"男人；男性","pos":"noun","hanja":"男子","originType":"sino-korean","tags":["people"],"sourceRefs":[{"file":"lesson 2.pptx","slide":13}]},
+    {"id":"v2-female","korean":"여자","meaningEn":"woman; female","meaningZh":"女人；女性","pos":"noun","hanja":"女子","originType":"sino-korean","tags":["people"],"sourceRefs":[{"file":"lesson 2.pptx","slide":13}]},
+    {"id":"v2-yesterday","korean":"어제","meaningEn":"yesterday","meaningZh":"昨天","pos":"noun/adverb","originType":"native-korean","tags":["time"],"sourceRefs":[{"file":"lesson 2.pptx","slide":13}]},
+    {"id":"v2-today","korean":"오늘","meaningEn":"today","meaningZh":"今天","pos":"noun/adverb","originType":"native-korean","tags":["time"],"sourceRefs":[{"file":"lesson 2.pptx","slide":13}]},
+    {"id":"v2-tomorrow","korean":"내일","meaningEn":"tomorrow","meaningZh":"明天","pos":"noun/adverb","hanja":"來日","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson 2.pptx","slide":13}]},
+    {"id":"v2-and","korean":"그리고","meaningEn":"and; and then","meaningZh":"而且；然后","pos":"conjunction","originType":"native-korean","tags":["connector"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[13,60]}]},
+    {"id":"v2-these-days","korean":"요즘","meaningEn":"these days","meaningZh":"最近","pos":"adverb/noun","originType":"native-korean","tags":["time","daily-life"],"sourceRefs":[{"file":"lesson 2.pptx","slide":14}]},
+    {"id":"v2-now","korean":"지금","meaningEn":"now","meaningZh":"现在","pos":"adverb/noun","hanja":"只今","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson 2.pptx","slide":14}]},
+    {"id":"v2-how","korean":"어떻게","meaningEn":"how","meaningZh":"怎么；如何","pos":"adverb","originType":"native-korean","tags":["question"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[14,58,59]}]},
+    {"id":"v2-well","korean":"잘","meaningEn":"well","meaningZh":"好好地；顺利地","pos":"adverb","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[14,58,59]}]},
+    {"id":"v2-very","korean":"아주","meaningEn":"very","meaningZh":"非常","pos":"adverb","originType":"native-korean","tags":["degree"],"sourceRefs":[{"file":"lesson 2.pptx","slide":14}]}
+  ],
+  "grammar": [
+    {"id":"g2-predicate","pattern":"stem + ending","name":"Korean predicate conjugation","meaning":"Korean verbs and adjectives appear with endings rather than standing alone in dictionary form.","examples":[{"ko":"영미가 저녁을 먹어요.","en":"Youngmi eats dinner."},{"ko":"비빔밥이 맛있어요.","en":"Bibimbap is delicious."}],"commonMistakes":["Do not insert an extra form of ‘to be’ before Korean adjectives."],"tags":["conjugation","predicate"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[3,4,5]}]},
+    {"id":"g2-present","pattern":"-아요/어요; 하다 → 해요","name":"Polite present style","meaning":"Forms a common polite present/non-past predicate ending.","formation":["stem with ㅏ/ㅗ → -아요","most other vowels → -어요","하다 → 해요"],"examples":[{"ko":"먹어요.","en":"(I/you/they) eat."},{"ko":"알아요.","en":"(I/you/they) know."},{"ko":"공부해요.","en":"(I/you/they) study."}],"tags":["present","polite","conjugation"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[15,16,17,19]}]},
+    {"id":"g2-surface-changes","pattern":"vowel deletion / contraction","name":"Common present-tense contractions","meaning":"Some stem + ending combinations reduce or contract in the surface form.","formation":["만나다 + 아요 → 만나요","보다 + 아요 → 봐요","마시다 + 어요 → 마셔요","크다 + 어요 → 커요"],"examples":[{"ko":"친구를 만나요.","en":"I meet a friend."},{"ko":"텔레비전을 봐요.","en":"I watch TV."},{"ko":"커피를 마셔요.","en":"I drink coffee."}],"commonMistakes":["Do not mechanically keep every vowel when the teacher pattern shows deletion or contraction."],"tags":["conjugation","contraction"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[21,22,23,24,25,26]}]},
+    {"id":"g2-object","pattern":"N을/를 + V","name":"Object particles","meaning":"Marks the direct object of an action verb.","formation":["consonant-ending noun + 을","vowel-ending noun + 를"],"examples":[{"ko":"한국어를 공부해요.","en":"I study Korean."},{"ko":"텔레비전을 봐요.","en":"I watch television."}],"tags":["particle","object"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[30,31,32]}]},
+    {"id":"g2-what-do","pattern":"뭐 해요?","name":"Ask what someone is doing","meaning":"A compact everyday question asking what someone does/is doing.","examples":[{"ko":"뭐 해요? 공부해요.","en":"What are you doing? I’m studying."}],"tags":["question","daily-life"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[33,34]}]},
+    {"id":"g2-opinion","pattern":"N이/가 어때요?","name":"Ask for an opinion or description","meaning":"Asks ‘How is N?’ or ‘What is N like?’","examples":[{"ko":"비빔밥이 어때요? 맛있어요.","en":"How is the bibimbap? It’s delicious."},{"ko":"한국어 수업이 어때요? 아주 재미있어요.","en":"How is Korean class? It’s very interesting."}],"tags":["question","description"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[51,52,54,56]}]},
+    {"id":"g2-checkin","pattern":"요즘 어떻게 지내요?","name":"Everyday check-in","meaning":"A polite way to ask how someone has been doing lately.","examples":[{"ko":"요즘 어떻게 지내요? 잘 지내요.","en":"How have you been lately? I’m doing well."}],"tags":["expression","daily-life"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[58,59]}]},
+    {"id":"g2-and","pattern":"S1. 그리고 S2.","name":"그리고","meaning":"Connects two sentences with ‘and/and then.’","examples":[{"ko":"유미는 한국 사람이에요. 그리고 11학년이에요.","en":"Yumi is Korean. And she is in 11th grade."}],"tags":["connector"],"sourceRefs":[{"file":"lesson 2.pptx","slides":[60,61]}]}
+  ],
+  "expressions": [
+    {"id":"e2-what-do","korean":"뭐 해요?","meaningEn":"What are you doing? / What do you do?","meaningZh":"你在做什么？","situation":"daily activity","register":"polite informal","sourceRefs":[{"file":"lesson 2.pptx","slides":[33,34]}]},
+    {"id":"e2-how-is","korean":"___이/가 어때요?","meaningEn":"How is ___? / What is ___ like?","meaningZh":"___怎么样？","situation":"asking opinion","register":"polite informal","sourceRefs":[{"file":"lesson 2.pptx","slides":[51,52,53,54,56]}]},
+    {"id":"e2-how-been","korean":"요즘 어떻게 지내요?","meaningEn":"How have you been lately?","meaningZh":"最近过得怎么样？","situation":"greeting/check-in","register":"polite informal","sourceRefs":[{"file":"lesson 2.pptx","slides":[58,59]}]},
+    {"id":"e2-doing-well","korean":"잘 지내요.","meaningEn":"I’m doing well.","meaningZh":"我过得很好。","situation":"greeting/check-in","register":"polite informal","sourceRefs":[{"file":"lesson 2.pptx","slides":[58,59,62]}]}
+  ],
+  "practice": [
+    {"id":"p2-001","type":"typing","prompt":"Conjugate 먹다 in the polite present style.","answers":["먹어요"],"displayAnswer":"먹어요","explanation":"The teacher PPT places 먹다 under -어요.","conceptIds":["g2-present"],"difficulty":1},
+    {"id":"p2-002","type":"multiple-choice","prompt":"Choose the natural form of 보다 + -아요.","choices":["보아요 only","봐요","보어요"],"answers":["봐요"],"displayAnswer":"봐요","explanation":"The PPT teaches 오 + 아 contraction in 보다 → 봐요.","conceptIds":["g2-surface-changes"],"difficulty":1},
+    {"id":"p2-003","type":"typing","prompt":"Say ‘I study Korean.’","answers":["한국어를 공부해요." ,"한국어를 공부해요"],"displayAnswer":"한국어를 공부해요.","explanation":"한국어 is the object, so the teacher pattern uses 를.","conceptIds":["g2-object","g2-present"],"difficulty":1},
+    {"id":"p2-004","type":"multiple-choice","prompt":"Which question asks for an opinion about Korean class?","choices":["한국어 수업이 어때요?","한국어를 뭐 해요?","한국어 수업이 아니에요?"],"answers":["한국어 수업이 어때요?"],"displayAnswer":"한국어 수업이 어때요?","explanation":"N이/가 어때요? asks what something is like.","conceptIds":["g2-opinion"],"difficulty":1},
+    {"id":"p2-005","type":"typing","prompt":"Write the teacher-PPT check-in ‘How have you been lately?’","answers":["요즘 어떻게 지내요?","요즘 어떻게 지내요"],"displayAnswer":"요즘 어떻게 지내요?","explanation":"This is presented as a common everyday check-in.","conceptIds":["g2-checkin"],"difficulty":1},
+    {"id":"p2-006","type":"sentence-build","prompt":"Connect these ideas with 그리고: ‘I study Korean. Tomorrow I take a Korean history exam.’","answers":["한국어를 공부해요. 그리고 내일은 한국 역사 시험을 봐요."],"displayAnswer":"한국어를 공부해요. 그리고 내일은 한국 역사 시험을 봐요.","explanation":"그리고 links the second sentence as an added event.","conceptIds":["g2-and"],"difficulty":2}
+  ]
+}
