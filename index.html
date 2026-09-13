@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="explore.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
 <body>
@@ -50,6 +51,7 @@
       <button class="tab" data-view="quiz">Quiz</button>
       <button class="tab" data-view="mistakes">Mistakes</button>
       <button class="tab" data-view="basics">Beginner</button>
+      <button class="tab" data-view="explore">Explore</button>
     </div>
 
     <div id="banner"></div>
@@ -61,11 +63,13 @@
     <section class="view" id="view-quiz"></section>
     <section class="view" id="view-mistakes"></section>
     <section class="view" id="view-basics"></section>
+    <section class="view" id="view-explore"></section>
   </main>
 </div>
 
 <div class="modal-bg" id="modalBg" aria-hidden="true"><div class="modal" id="modal"></div></div>
 <script src="app.js"></script>
 <script src="enhancements.js"></script>
+<script src="explore.js"></script>
 </body>
 </html>
