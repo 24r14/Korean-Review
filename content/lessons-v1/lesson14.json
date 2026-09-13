@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from ppt-lesson14(S).pptx.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides or artwork."
+  },
+  "lesson": {
+    "id":"lesson-14",
+    "number":14,
+    "titleKo":"공항에서",
+    "titleEn":"At the Airport",
+    "theme":"Taxi/airport interaction, prices, noun-based reasons, inability, adverbs, negative commands, and 르 irregulars",
+    "situations":["taking a taxi","paying a fare","meeting someone at the airport","declining invitations","giving advice/prohibitions","describing how an action is done"],
+    "goals":["Use N(이)라서 for 'because it is N'","Use -지 못하다 as a long-form inability expression","Form adverbs with A-게","Give negative commands with -지 마세요 and alternatives with -지 말고","Conjugate common 르-irregular predicates","Read larger Sino-Korean numbers and prices"],
+    "teacherFocus":["taxi/service expressions","Sino-Korean prices and large numbers","-아/어서 vs N(이)라서 vs N 때문에","못 vs -지 못하다","-지 마세요 / -지 말고","A-게 adverbs","르 irregular"],
+    "connections":["numbers","connectors","negation","irregulars","speech-honorifics","real-life"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"ppt-lesson14(S).pptx","slides":[2,3,4,5,8,9,10,11,12,14,18,19,20,23,25,27,28,29,30,31,32,35,38,39,41,42,46,47,48,49,53,55,57,58,59,60,63,66,67,69,70,71,72,73,74,75,76,77,82,83]}]
+  },
+  "vocabulary": [
+    {"id":"v14-airport","korean":"공항","meaningEn":"airport","meaningZh":"机场","pos":"noun","hanja":"空港","originType":"sino-korean","tags":["travel"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[1,3]}]},
+    {"id":"v14-driver","korean":"기사","meaningEn":"driver; technician/engineer depending on context","meaningZh":"司机；技师","pos":"noun","hanja":"技士","originType":"sino-korean","tags":["taxi","address-term"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,3,8]}]},
+    {"id":"v14-road","korean":"길","meaningEn":"road; street; way","meaningZh":"路","pos":"noun","originType":"native-korean","tags":["travel"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,3]}]},
+    {"id":"v14-customer","korean":"손님","meaningEn":"guest; customer","meaningZh":"客人；顾客","pos":"noun","originType":"native-korean","tags":["service"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,3]}]},
+    {"id":"v14-fare","korean":"택시비","meaningEn":"taxi fare","meaningZh":"出租车费","pos":"noun","tags":["taxi","money"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[4,46]}]},
+    {"id":"v14-exit","korean":"출구","meaningEn":"exit","meaningZh":"出口","pos":"noun","hanja":"出口","originType":"sino-korean","tags":["travel","place"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[4,46]}]},
+    {"id":"v14-stop","korean":"정류장","meaningEn":"(bus) stop","meaningZh":"车站；停靠站","pos":"noun","hanja":"停留場","originType":"sino-korean","tags":["transportation"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[4,46]}]},
+    {"id":"v14-contact","korean":"연락","meaningEn":"contact; communication","meaningZh":"联系","pos":"noun/verb base","hanja":"連絡","originType":"sino-korean","tags":["communication"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[3,39]}]},
+    {"id":"v14-arrive","korean":"도착하다","meaningEn":"to arrive","meaningZh":"到达","pos":"verb","hanja":"到着","originType":"sino-korean+하다","tags":["travel"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[5,46]}]},
+    {"id":"v14-thirsty","korean":"목이 마르다","meaningEn":"to be thirsty","meaningZh":"口渴","pos":"expression","originType":"native-korean","tags":["body","르-irregular"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[5,77]}]},
+    {"id":"v14-doze","korean":"졸다","meaningEn":"to doze off","meaningZh":"打瞌睡","pos":"verb","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[5,45,64]}]},
+    {"id":"v14-at-least","korean":"적어도","meaningEn":"at least","meaningZh":"至少","pos":"adverb","tags":["quantity"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,7]}]}
+  ],
+  "grammar": [
+    {"id":"g14-iraseo","pattern":"N(이)라서 / N이/가 아니라서","name":"Reason with a noun/copula","meaning":"Expresses 'because it is N'; the negative form in the lesson is N이/가 아니라서, 'because it is not N.'","formation":["consonant-ending noun + 이라서","vowel-ending noun + 라서","negative: N이/가 아니라서"],"examples":[{"ko":"학생이라서 돈이 없어요.","en":"Because I'm a student, I don't have money."},{"ko":"휴일이라서 길이 막혀요.","en":"Because it's a holiday, the road is congested."},{"ko":"한국 사람이 아니라서 한국말을 잘 못 해요.","en":"Because I'm not Korean, I can't speak Korean well."}],"contrast":[{"with":"A/V-아/어서","note":"Use -아/어서 after a verb/adjective predicate."},{"with":"N 때문에","note":"Use 때문에 for 'because of N'; N(이)라서 means 'because it is N.'"}],"tags":["reason","connector","copula"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[19,20,21,22,23,24,25,26,27,28,29,30]}]},
+    {"id":"g14-jimothada","pattern":"V-지 못하다","name":"Long-form inability","meaning":"Expresses inability to perform an action; the PPT presents it as slightly more formal than short 못 + verb.","formation":["verb stem + 지 못하다","past: -지 못했어요","future/prospective forms can attach after 못하다 as needed"],"examples":[{"ko":"매운 음식을 먹지 못해요.","en":"I can't eat spicy food."},{"ko":"파티에 가지 못했어요.","en":"I couldn't go to the party."}],"contrast":[{"with":"못 + V","note":"Both express inability; -지 못하다 is presented as a longer/slightly more formal form."}],"commonMistakes":["Do not confuse inability with simple 'not doing' (안/-지 않다)."],"tags":["negation","inability"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[31,32,33,34,35,36,37,38,39,40,41,42,43]}]},
+    {"id":"g14-ge","pattern":"A-게 + V","name":"Adverbial -게","meaning":"Turns many adjectives into adverbial modifiers describing how an action happens.","examples":[{"ko":"비빔밥을 맛있게 먹어요.","en":"I eat bibimbap deliciously/enjoyably."},{"ko":"크게 말해 주세요.","en":"Please speak loudly."},{"ko":"크리스마스 즐겁게 보내세요.","en":"Have an enjoyable Christmas."}],"tags":["adverb","word-building"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[47,48,49,50,51,52,53,54,55,56,57]}]},
+    {"id":"g14-jimaseyo","pattern":"V-지 마세요","name":"Negative command / prohibition","meaning":"Tells someone not to do an action.","examples":[{"ko":"운전하지 마세요.","en":"Please don't drive."},{"ko":"도서관에서 시끄럽게 얘기하지 마세요.","en":"Please don't talk loudly in the library."}],"tags":["command","negation","politeness"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[58,59,60,61,62,63,64,65,69]}]},
+    {"id":"g14-jimalgo","pattern":"X-지 말고 Y-(으)세요","name":"Don't X; do Y instead","meaning":"Combines a negative command with a positive alternative.","examples":[{"ko":"놀지 말고 공부하세요.","en":"Don't play; study instead."},{"ko":"커피를 마시지 말고 차를 드세요.","en":"Don't drink coffee; have tea instead."}],"tags":["command","alternative"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[66,67,68]}]},
+    {"id":"g14-reu-irregular","pattern":"르-irregular + 아/어","name":"르 irregular predicates","meaning":"When a 르-final stem is followed by 아/어, the ㅡ is deleted and an additional ㄹ appears on the preceding syllable.","examples":[{"ko":"부르다 → 불러요","en":"to sing → sing(s)"},{"ko":"모르다 → 몰라요","en":"to not know → don't know"},{"ko":"빠르다 → 빨라요","en":"to be fast → is fast"},{"ko":"자르다 → 잘라요","en":"to cut → cut(s)"},{"ko":"고르다 → 골라요","en":"to choose → choose(s)"}],"commonMistakes":["The irregular change described here is triggered by 아/어-type endings; formal -ㅂ니다 forms shown in the PPT are 부릅니다/모릅니다/빠릅니다."],"tags":["irregular","conjugation"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[70,71,72,73,74,75,76,77,78,79,80,81,82]}]},
+    {"id":"g14-prices","pattern":"Sino-Korean number + 원","name":"Prices and large Sino-Korean numbers","meaning":"Taxi fares and prices use Sino-Korean numbers; the lesson reviews 십, 백, 천, 만 and larger combinations.","examples":[{"ko":"79,000원","en":"79,000 won"},{"ko":"얼마 나왔어요?","en":"How much did the bill/fare come to?"}],"tags":["numbers","money"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[11,12,13,14,15,16,17,18]}]}
+  ],
+  "expressions": [
+    {"id":"e14-destination","korean":"어디까지 가세요?","meaningEn":"Where are you going? (How far/what destination?)","meaningZh":"您要去哪里？","situation":"taxi","register":"polite","sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,9]}]},
+    {"id":"e14-arrived","korean":"다 왔어요.","meaningEn":"We're here / We've arrived.","meaningZh":"到了。","situation":"taxi","register":"polite","sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,9]}]},
+    {"id":"e14-fare-question","korean":"얼마 나왔어요?","meaningEn":"How much did it come to?","meaningZh":"一共多少钱？","situation":"paying","register":"polite","sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,9,11]}]},
+    {"id":"e14-thanks-work","korean":"수고하세요 / 수고하셨어요 / 수고하셨습니다","meaningEn":"Thank you for your work / Keep up the good work / Thank you for what you just did","meaningZh":"辛苦了","situation":"service/work","register":"context-sensitive polite/formal","sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[2,9,10]}]},
+    {"id":"e14-why-here","korean":"여기 웬일이세요?","meaningEn":"What brings you here?","meaningZh":"您怎么会在这里？","situation":"unexpected encounter","register":"honorific-polite","sourceRefs":[{"file":"ppt-lesson14(S).pptx","slide":46}]}
+  ],
+  "culture": [
+    {"id":"c14-service-thanks","title":"수고하세요 is context-sensitive","category":"language-pragmatics","summary":"The teacher distinguishes 수고하세요 from 수고하셨어요/수고하셨습니다: the first can acknowledge ongoing work, while the latter thank someone for work just completed.","languageConnection":["수고하세요","수고하셨어요","수고하셨습니다"],"relatedLessons":[8,13,14],"tags":["service","politeness"],"sourceRefs":[{"file":"ppt-lesson14(S).pptx","slides":[9,10]}]}
+  ],
+  "practice": [
+    {"id":"p14-001","type":"multiple-choice","prompt":"Which means 'Because it is a holiday, the road is congested'?","choices":["휴일이라서 길이 막혀요.","휴일 때문에예요 길이 막혀요.","휴일이게 길이 막혀요."],"answers":["휴일이라서 길이 막혀요."],"displayAnswer":"휴일이라서 길이 막혀요.","explanation":"N(이)라서 means 'because it is N.'","conceptIds":["g14-iraseo"],"difficulty":2,"tags":["reason"]},
+    {"id":"p14-002","type":"typing","prompt":"Change 못 가요 to the long-form inability expression.","answers":["가지 못해요"],"displayAnswer":"가지 못해요","explanation":"Use verb stem + 지 못하다.","conceptIds":["g14-jimothada"],"difficulty":2,"tags":["negation"]},
+    {"id":"p14-003","type":"multiple-choice","prompt":"Which means 'Please speak loudly'?","choices":["크게 말해 주세요.","큰 말해 주세요.","크고 말해 주세요."],"answers":["크게 말해 주세요."],"displayAnswer":"크게 말해 주세요.","explanation":"A-게 turns the adjective into an adverb modifying the verb.","conceptIds":["g14-ge"],"difficulty":2,"tags":["adverb"]},
+    {"id":"p14-004","type":"typing","prompt":"Conjugate 모르다 in polite present tense.","answers":["몰라요"],"displayAnswer":"몰라요","explanation":"르 + 아/어 triggers the 르-irregular pattern: 모르다 → 몰라요.","conceptIds":["g14-reu-irregular"],"difficulty":2,"tags":["irregular"]},
+    {"id":"p14-005","type":"multiple-choice","prompt":"Which means 'Don't take a taxi; take the subway instead'?","choices":["택시를 타지 말고 지하철을 타세요.","택시를 못 타고 지하철을 타세요.","택시를 타지 못해요."],"answers":["택시를 타지 말고 지하철을 타세요."],"displayAnswer":"택시를 타지 말고 지하철을 타세요.","explanation":"-지 말고 rejects X and then gives Y as the alternative.","conceptIds":["g14-jimalgo"],"difficulty":2,"tags":["command"]}
+  ]
+}
