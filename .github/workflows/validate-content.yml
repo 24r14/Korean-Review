@@ -1,0 +1,32 @@
+name: Validate Korean content
+
+on:
+  push:
+    paths:
+      - 'content/**'
+      - 'scripts/validate-content.mjs'
+      - '.github/workflows/validate-content.yml'
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'scripts/validate-content.mjs'
+      - '.github/workflows/validate-content.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate lesson and concept JSON
+        run: node scripts/validate-content.mjs
