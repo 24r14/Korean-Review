@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson13(1).pptx; lesson13(2).pptx is an overlapping teacher source.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides or complete dialogues."
+  },
+  "lesson": {
+    "id":"lesson-13",
+    "number":13,
+    "titleKo":"전화",
+    "titleEn":"Telephone",
+    "theme":"Telephone etiquette, health, requests, obligation, promises, causes, and formal intention",
+    "situations":["calling someone","asking to speak to another person","describing illness","making a favor/request","explaining obligations","making promises","making an appointment by phone"],
+    "goals":["Use common Korean telephone expressions","Use -아/어 주다 and -아/어 주세요 for benefactive actions/requests","Express obligation with -아/어야 되다/하다","Use -(으)ㄹ게요 for first-person promise/willingness","Use N 때문에 for cause","Recognize intentional -겠- and contrast it with conjectural -겠-"],
+    "teacherFocus":["phone conversation flow","body parts and illness expressions","-(으)세요 vs -아/어 주세요","-아/어야 돼요 conjugation","-(으)ㄹ게요 restrictions","-아/어서 vs N 때문에","intentional -겠- and fixed courteous expressions"],
+    "connections":["speech-honorifics","connectors","tense-aspect","real-life","word-building"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson13(1).pptx","slides":[2,3,4,5,6,7,8,11,12,15,18,19,22,24,28,33,39,40,42,43,56,57,58,65,69,74,75,80,83,84,86,95,98,99,100,101,102,105,106,107]}]
+  },
+  "vocabulary": [
+    {"id":"v13-cold","korean":"감기","meaningEn":"a cold","meaningZh":"感冒","pos":"noun","hanja":"感氣","originType":"sino-korean","tags":["health"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[4,15]}]},
+    {"id":"v13-catch-cold","korean":"감기에 걸리다","meaningEn":"to catch/have a cold","meaningZh":"感冒","pos":"expression","tags":["health"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[2,3,15]}]},
+    {"id":"v13-phone-number","korean":"전화번호","meaningEn":"telephone number","meaningZh":"电话号码","pos":"noun","hanja":"電話番號","originType":"sino-korean","tags":["telephone"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[4,6]}]},
+    {"id":"v13-message","korean":"메시지","meaningEn":"message","meaningZh":"信息；留言","pos":"noun","originType":"loanword","tags":["telephone"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[4,97]}]},
+    {"id":"v13-health-care","korean":"몸조리","meaningEn":"taking care of one's health/recovery","meaningZh":"调养身体","pos":"noun","originType":"mixed","tags":["health"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[2,4]}]},
+    {"id":"v13-busy-line","korean":"통화중이다","meaningEn":"the line is busy; be on a call","meaningZh":"正在通话；占线","pos":"expression","hanja":"通話中","originType":"sino-korean+copula","tags":["telephone"],"sourceRefs":[{"file":"lesson13(1).pptx","slide":7}]},
+    {"id":"v13-help","korean":"돕다","meaningEn":"to help","meaningZh":"帮助","pos":"verb","originType":"native-korean","tags":["benefactive"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[3,17,24,31]}]},
+    {"id":"v13-borrow","korean":"빌리다","meaningEn":"to borrow","meaningZh":"借入","pos":"verb","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[3,43]}]},
+    {"id":"v13-lend","korean":"빌려주다","meaningEn":"to lend","meaningZh":"借给","pos":"verb","originType":"native-korean+주다","tags":["benefactive"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[3,33,65]}]},
+    {"id":"v13-hungry","korean":"배가 고프다","meaningEn":"to be hungry","meaningZh":"饿","pos":"expression","originType":"native-korean","tags":["body","health"],"sourceRefs":[{"file":"lesson13(1).pptx","slide":5}]},
+    {"id":"v13-noisy","korean":"시끄럽다","meaningEn":"to be noisy","meaningZh":"吵闹","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[5,81]}]},
+    {"id":"v13-hangup","korean":"끊다","meaningEn":"to hang up; cut off; stop","meaningZh":"挂断；切断","pos":"verb","originType":"native-korean","tags":["telephone"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[3,8]}]}
+  ],
+  "bodyVocabulary": [
+    {"korean":"머리","meaningEn":"head; hair","meaningZh":"头；头发"},{"korean":"눈","meaningEn":"eye(s)","meaningZh":"眼睛"},{"korean":"귀","meaningEn":"ear(s)","meaningZh":"耳朵"},{"korean":"코","meaningEn":"nose","meaningZh":"鼻子"},{"korean":"입","meaningEn":"mouth","meaningZh":"嘴"},{"korean":"이","meaningEn":"tooth/teeth","meaningZh":"牙齿"},{"korean":"목","meaningEn":"neck/throat","meaningZh":"脖子；喉咙"},{"korean":"어깨","meaningEn":"shoulder(s)","meaningZh":"肩膀"},{"korean":"팔","meaningEn":"arm(s)","meaningZh":"胳膊"},{"korean":"손","meaningEn":"hand(s)","meaningZh":"手"},{"korean":"허리","meaningEn":"waist/lower back","meaningZh":"腰"},{"korean":"다리","meaningEn":"leg(s)","meaningZh":"腿"},{"korean":"발","meaningEn":"foot/feet","meaningZh":"脚"}
+  ],
+  "grammar": [
+    {"id":"g13-benefactive","pattern":"V-아/어 주다","name":"Benefactive action","meaning":"Adds the meaning of doing an action for someone's benefit.","examples":[{"ko":"친구한테 빵을 사 줬어요.","en":"I bought bread for my friend."},{"ko":"전화해 주세요.","en":"Please call me."}],"contrast":[{"with":"-(으)세요","note":"Both can appear in requests, but -아/어 주세요 explicitly frames the requested action as a favor/benefit and the teacher presents it as more polite in this context."}],"commonMistakes":["Do not translate 주다 literally as 'give' in every benefactive construction."],"tags":["benefactive","request"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[18,19,22,23,24,28,29,30,31,32,33,34,35,36,37,38]}]},
+    {"id":"g13-obligation","pattern":"V/A-아/어야 되다 / 하다","name":"Obligation or necessity","meaning":"Expresses having to/must do or be something; the teacher notes -아/어야 하다 sounds slightly more formal.","examples":[{"ko":"매일 운동해야 돼요.","en":"I have to exercise every day."},{"ko":"다음 학기에 한국어 수업을 들어야 돼요.","en":"I have to take Korean next semester."}],"tags":["obligation","necessity"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[39,40,41,42,43,48,49,50,51,52,53,54,56]}]},
+    {"id":"g13-lgeyo","pattern":"V-(으)ㄹ게요","name":"Willingness, assurance, or promise","meaning":"Expresses the speaker's willingness/assurance/promise, often with the listener in mind.","formation":["consonant stem + 을게요","vowel/ㄹ-final stem + ㄹ게요"],"examples":[{"ko":"나중에 전화할게요.","en":"I'll call you later."},{"ko":"제가 빨래할게요.","en":"I'll do the laundry."}],"commonMistakes":["The PPT restricts the subject to first person.","The PPT states -(으)ㄹ게요 cannot be used as a question."],"contrast":[{"with":"-(으)ㄹ래요","note":"-ㄹ래요 expresses/asks intention or preference; -ㄹ게요 presents willingness/assurance/promise and cannot be used as a question in this lesson."}],"tags":["promise","intention"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[57,58,59,60,61,62,63,64,65,66,67,68,69,71,72,73]}]},
+    {"id":"g13-ttaemune","pattern":"N 때문에","name":"Cause with a noun","meaning":"Means 'because of N'; 때문에 must be preceded by a noun or noun phrase in this lesson.","examples":[{"ko":"비 때문에 길이 막혀요.","en":"The road is congested because of the rain."},{"ko":"한국어 수업 때문에 좀 바빴어요.","en":"I was a little busy because of Korean class."}],"contrast":[{"with":"-아/어서","note":"-아/어서 follows a verb/adjective clause; 때문에 follows a noun/noun phrase."}],"tags":["reason","connector"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[75,76,77,78,79,80,81,82,83,84]}]},
+    {"id":"g13-intentional-get","pattern":"stem + -겠-","name":"Intentional -겠-","meaning":"Expresses the speaker's intention/volition in formal or courteous contexts and appears in fixed expressions.","examples":[{"ko":"내일 다시 오겠습니다.","en":"I will come again tomorrow."},{"ko":"수업을 시작하겠습니다.","en":"We will begin class."},{"ko":"잘 먹겠습니다.","en":"Thank you for the food / I will eat well."}],"contrast":[{"with":"conjectural -겠-","note":"Lesson 12 conjectural -겠- means 'I guess/it must be'; Lesson 13 intentional -겠- means 'I will' or marks courteous/formal willingness."}],"commonMistakes":["The teacher notes intentional -겠- is not combined with past -았/었-.","In ordinary speech, -(으)ㄹ래요 may replace some intentional uses; courteous service/question forms such as 뭐 드시겠어요? remain important."],"tags":["modality","formal","intention"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[86,87,88,89,90,91,92,94,95,96,97,98,99,100,101,102,103,104]}]}
+  ],
+  "expressions": [
+    {"id":"e13-phone-hello","korean":"여보세요.","meaningEn":"Hello? (telephone greeting)","meaningZh":"喂（电话用语）","situation":"telephone","register":"standard phone expression","sourceRefs":[{"file":"lesson13(1).pptx","slides":[2,6,9,10]}]},
+    {"id":"e13-switch-person","korean":"OO 씨 좀 바꿔 주세요.","meaningEn":"May I speak to OO? / Please put OO on the phone.","meaningZh":"请让OO接电话。","situation":"telephone","register":"polite request","sourceRefs":[{"file":"lesson13(1).pptx","slides":[2,6,10,28,29]}]},
+    {"id":"e13-wait","korean":"잠깐만 기다리세요.","meaningEn":"Please wait a moment.","meaningZh":"请稍等。","situation":"telephone","register":"polite","sourceRefs":[{"file":"lesson13(1).pptx","slides":[6,10]}]},
+    {"id":"e13-call-later","korean":"나중에 / 이따가 전화할게요.","meaningEn":"I'll call later.","meaningZh":"我晚点再打电话。","situation":"telephone","register":"polite","sourceRefs":[{"file":"lesson13(1).pptx","slides":[7,62]}]},
+    {"id":"e13-take-care","korean":"몸조리 잘 하세요.","meaningEn":"Take good care of yourself / Get well.","meaningZh":"好好休养。","situation":"illness","register":"polite","sourceRefs":[{"file":"lesson13(1).pptx","slides":[2,11]}]},
+    {"id":"e13-excuse","korean":"실례지만...","meaningEn":"Excuse me, but...","meaningZh":"不好意思，请问……","situation":"courtesy","register":"polite","sourceRefs":[{"file":"lesson13(1).pptx","slides":[2,105]}]}
+  ],
+  "culture": [
+    {"id":"c13-phone-etiquette","title":"Telephone etiquette and indirect politeness","category":"language-culture","summary":"The teacher's phone dialogues rely on conventional openings, identity checks, polite requests to transfer the call, and relationship-sensitive closings rather than face-to-face greetings.","languageConnection":["여보세요","거기 OO 씨 집이지요?","OO 씨 좀 바꿔 주세요","잠깐만 기다리세요","끊을게요"],"relatedLessons":[8,10,13],"tags":["telephone","politeness"],"sourceRefs":[{"file":"lesson13(1).pptx","slides":[2,6,7,8,9,10,11,74,105]}]}
+  ],
+  "practice": [
+    {"id":"p13-v1-001","type":"multiple-choice","prompt":"Which is the conventional telephone greeting?","choices":["안녕하세요","여보세요","반갑습니다"],"answers":["여보세요"],"displayAnswer":"여보세요","explanation":"여보세요 is the phone greeting taught in Lesson 13.","conceptIds":["e13-phone-hello"],"difficulty":1,"tags":["telephone"]},
+    {"id":"p13-v1-002","type":"multiple-choice","prompt":"You promise: 'I'll call you later.' Which ending fits?","choices":["나중에 전화할게요.","나중에 전화할래요?","나중에 전화했어요."],"answers":["나중에 전화할게요."],"displayAnswer":"나중에 전화할게요.","explanation":"-(으)ㄹ게요 expresses first-person willingness/promise and is not a question in this lesson.","conceptIds":["g13-lgeyo"],"difficulty":2,"tags":["promise"]},
+    {"id":"p13-v1-003","type":"typing","prompt":"Complete: 비 ___ 길이 막혀요. (because of the rain)","answers":["때문에"],"displayAnswer":"비 때문에 길이 막혀요.","explanation":"N 때문에 follows a noun to express cause.","conceptIds":["g13-ttaemune"],"difficulty":1,"tags":["reason"]},
+    {"id":"p13-v1-004","type":"multiple-choice","prompt":"Which means 'Please help me' as a benefactive request?","choices":["도와 주세요.","도우세요.","도울게요?"],"answers":["도와 주세요."],"displayAnswer":"도와 주세요.","explanation":"돕다 combines with -아/어 주다 as 도와 주다; 주세요 makes the request.","conceptIds":["g13-benefactive"],"difficulty":2,"tags":["request"]}
+  ]
+}
