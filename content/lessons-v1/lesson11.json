@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson 11(ST).pptx.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids and should be QA-checked before public display.",
+    "copyright": "Do not republish full PPT slides, screenshots, or linked media."
+  },
+  "lesson": {
+    "id":"lesson-11",
+    "number":11,
+    "titleKo":"기숙사 생활",
+    "titleEn":"Dormitory Life",
+    "theme":"Ongoing actions, intentions/preferences, quantity expectations, and suggestions/speculation",
+    "situations":["talking about dorm life","asking what someone is doing","inviting someone or stating a preference","talking about unexpectedly large/small quantities","suggesting activities and making guesses"],
+    "goals":["Use -고 있다 for progressive actions","Use -(으)ㄹ래요 for intention/preference","Use (이)나 and 밖에 to express quantity against expectations","Use -(으)ㄹ까요? for proposals, offers, opinions, and supposition","Distinguish -(으)ㄹ래요 from -(으)ㄹ까요?"],
+    "teacherFocus":["-고 있어요/-고 있었어요/-고 계세요","less-formal -(으)ㄹ래요","부터/까지 and 에서/까지","(이)나 vs 밖에 and required negation with 밖에","four major uses of -(으)ㄹ까요?"],
+    "connections":["tense-aspect","speech-honorifics","numbers","sentence-particles","real-life"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson 11(ST).pptx","slides":[2,3,4,5,7,8,9,10,11,12,13,17,21,22,24,29,30,35,36,37,38,39,41,46,50,51,57,63,64,66,67,68,69,70,71,72,78,79]}]
+  },
+  "vocabulary": [
+    {"id":"v11-life","korean":"생활","meaningEn":"life; living","meaningZh":"生活","pos":"noun","hanja":"生活","originType":"sino-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slide":4}]},
+    {"id":"v11-tea","korean":"차","meaningEn":"tea","meaningZh":"茶","pos":"noun","hanja":"茶","originType":"sino-korean","tags":["food"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[2,4]}]},
+    {"id":"v11-kind","korean":"친절하다","meaningEn":"to be kind","meaningZh":"亲切；友善","pos":"adjective","hanja":"親切","originType":"sino-korean+하다","tags":["personality"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[3,4,6]}]},
+    {"id":"v11-goodnatured","korean":"착하다","meaningEn":"to be good-natured; kind-hearted","meaningZh":"善良","pos":"adjective","originType":"native-korean","tags":["personality"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[3,4,6]}]},
+    {"id":"v11-become","korean":"되다","meaningEn":"to become; turn out; work","meaningZh":"变成；结果；能用","pos":"verb","tags":["change-state"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[4,7]}]},
+    {"id":"v11-make-friends","korean":"사귀다","meaningEn":"to make friends; socialize","meaningZh":"交朋友；交往","pos":"verb","tags":["social"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[4,6]}]},
+    {"id":"v11-finish-intransitive","korean":"끝나다","meaningEn":"to end; be finished","meaningZh":"结束（自动）","pos":"verb","tags":["verb-pair"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[5,8]}]},
+    {"id":"v11-finish-transitive","korean":"끝내다","meaningEn":"to finish something","meaningZh":"结束某事","pos":"verb","tags":["verb-pair"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slide":8}]},
+    {"id":"v11-already","korean":"벌써","meaningEn":"already","meaningZh":"已经","pos":"adverb","tags":["time"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[5,35]}]},
+    {"id":"v11-difficult","korean":"힘들다","meaningEn":"to be difficult; exhausting","meaningZh":"辛苦；困难","pos":"adjective","originType":"native-korean","tags":["description"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[5,6]}]},
+    {"id":"v11-from","korean":"부터","meaningEn":"from (time/start point)","meaningZh":"从……开始","pos":"particle","tags":["time","particle"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[5,35,37]}]},
+    {"id":"v11-until","korean":"까지","meaningEn":"until; to; through","meaningZh":"到……为止","pos":"particle","tags":["time","place","particle"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[5,35,37]}]}
+  ],
+  "grammar": [
+    {"id":"g11-progressive","pattern":"V-고 있다","name":"Progressive aspect","meaning":"Expresses an action in progress or continuing action; the lesson limits it to verbs, not adjectives.","formation":["non-past: -고 있어요","past: -고 있었어요","honorific: -고 계세요 / -고 계셨어요"],"examples":[{"ko":"점심 먹고 있어요.","en":"I am eating lunch."},{"ko":"어머니는 영화를 보고 계세요.","en":"Mother is watching a movie."}],"tags":["aspect","progressive"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[11,12,13,14,15,16,17]}]},
+    {"id":"g11-raeyo","pattern":"V-(으)ㄹ래요","name":"Intention or preference","meaning":"Expresses the speaker's intention/preference in statements and can ask the listener's intention in questions; the teacher frames it as less formal than forms such as -겠-.","formation":["consonant stem + 을래요","vowel stem + ㄹ래요","ㄹ-final stems keep one ㄹ: 만들다 → 만들래요"],"examples":[{"ko":"뭐 먹을래요?","en":"What would you like to eat?"},{"ko":"불고기 먹을래요.","en":"I'll have / I want bulgogi."}],"contrast":[{"with":"-(으)ㄹ까요?","note":"-ㄹ래요 centers preference/intention; -ㄹ까요? asks for the listener's opinion or proposes something together."}],"tags":["intention","preference","speech-level"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[21,22,23,24,25,29,30,31,32,33,34,64,65]}]},
+    {"id":"g11-range","pattern":"N부터 N까지 / N에서 N까지","name":"From ... to ...","meaning":"The lesson contrasts 부터~까지 for time ranges and 에서~까지 for location ranges.","examples":[{"ko":"월요일부터 금요일까지 매일 수업이 있어요.","en":"I have class every day from Monday through Friday."}],"tags":["particle","range","time","place"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[35,37]}]},
+    {"id":"g11-ina-bakke","pattern":"N(이)나 vs N밖에 + negative","name":"Quantity above/below expectation","meaning":"(이)나 emphasizes a quantity as surprisingly large; 밖에 with a negative predicate emphasizes a quantity as smaller than expected.","formation":["consonant noun + 이나; vowel noun + 나","noun + 밖에 + negative predicate"],"examples":[{"ko":"아홉 과목이나 들었어요.","en":"I took as many as nine courses."},{"ko":"5분밖에 안 걸려요.","en":"It takes only five minutes."}],"commonMistakes":["밖에 normally requires a negative predicate in this lesson.","The PPT says to use 만 rather than 밖에 in commands."],"tags":["quantity","particle","expectation"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[35,66,67,68,69,70,71,72,73,75,76]}]},
+    {"id":"g11-lkkayo","pattern":"A/V-(으)ㄹ까요?","name":"Proposal, offer, opinion, or supposition","meaning":"Can propose an action, offer to do something, ask the listener's opinion, present alternatives, or ask for a guess about a state/event.","usage":["Shall we...?","Shall I...?","What do you think...?","Do you think...? / I wonder...?","A or B?"],"examples":[{"ko":"저녁 먹을까요?","en":"Shall we eat dinner?"},{"ko":"제가 나중에 전화 드릴까요?","en":"Shall I call you later?"},{"ko":"시험이 어려울까요?","en":"Do you think the test will be difficult?"}],"contrast":[{"with":"-(으)ㄹ래요","note":"-ㄹ까요? makes the listener's opinion central; -ㄹ래요 asks/expresses preference or intention."}],"tags":["proposal","offer","supposition"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[38,39,40,41,42,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61,62,63,64,65]}]}
+  ],
+  "expressions": [
+    {"id":"e11-how-person","korean":"어떤 사람이에요?","meaningEn":"What kind of person is he/she?","meaningZh":"他/她是怎样的人？","situation":"description","register":"polite","sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[3,9,10]}]},
+    {"id":"e11-one-cup","korean":"차 한 잔 하실래요?","meaningEn":"Would you like a cup of tea?","meaningZh":"要不要喝杯茶？","situation":"offer","register":"polite","sourceRefs":[{"file":"lesson 11(ST).pptx","slide":2}]},
+    {"id":"e11-worked-out","korean":"잘 됐네요.","meaningEn":"That's great / It worked out well.","meaningZh":"太好了；结果不错。","situation":"reaction","register":"polite","sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[2,7]}]}
+  ],
+  "culture": [
+    {"id":"c11-choice-negotiation","title":"Preference vs shared decision","category":"language-pragmatics","summary":"The lesson contrasts -ㄹ래요 with -ㄹ까요?: one foregrounds a person's preference/intention, while the other invites shared decision-making or the listener's judgment.","languageConnection":["먹을래요?","먹을까요?"],"relatedLessons":[7,11,13],"tags":["pragmatics","decision-making"],"sourceRefs":[{"file":"lesson 11(ST).pptx","slides":[64,65]}]}
+  ],
+  "practice": [
+    {"id":"p11-001","type":"multiple-choice","prompt":"Which means 'I am studying now'?","choices":["지금 공부하고 있어요.","지금 공부할래요.","지금 공부했어요."],"answers":["지금 공부하고 있어요."],"displayAnswer":"지금 공부하고 있어요.","explanation":"-고 있어요 marks an action in progress.","conceptIds":["g11-progressive"],"difficulty":1,"tags":["progressive"]},
+    {"id":"p11-002","type":"multiple-choice","prompt":"You want to ask a friend what they would like to eat. Which fits best?","choices":["뭐 먹을래요?","뭐 먹을까요?","뭐 먹고 있어요?"],"answers":["뭐 먹을래요?"],"displayAnswer":"뭐 먹을래요?","explanation":"-ㄹ래요 asks the listener's preference/intention.","conceptIds":["g11-raeyo"],"difficulty":2,"tags":["preference"]},
+    {"id":"p11-003","type":"typing","prompt":"Complete with the small-than-expected pattern: 5분___ 안 걸려요.","answers":["밖에"],"displayAnswer":"5분밖에 안 걸려요.","explanation":"밖에 combines with a negative predicate and presents the amount as smaller than expected.","conceptIds":["g11-ina-bakke"],"difficulty":2,"tags":["quantity"]},
+    {"id":"p11-004","type":"multiple-choice","prompt":"Which sounds like a shared suggestion: 'Shall we watch a movie?'","choices":["영화 볼까요?","영화 볼래요?","영화 보고 있어요?"],"answers":["영화 볼까요?"],"displayAnswer":"영화 볼까요?","explanation":"-ㄹ까요? proposes an action and asks for the listener's view.","conceptIds":["g11-lkkayo"],"difficulty":2,"tags":["proposal"]}
+  ]
+}
