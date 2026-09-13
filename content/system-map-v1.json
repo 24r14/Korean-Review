@@ -2,6 +2,19 @@
   "version": 1,
   "status": "content architecture draft; not wired into live UI",
   "purpose": "Cross-lesson knowledge map built from the Lesson 1-14 teacher-PPT curriculum. Course pages answer 'what is in this lesson?'; Explore system pages should answer 'how does this Korean system work across lessons?'.",
+  "aliases": {
+    "numbers":"system-numbers",
+    "tense-aspect":"system-tense-aspect-modality",
+    "speech-honorifics":"system-speech-honorifics",
+    "connectors":"system-connectors-reasons",
+    "noun-modifiers":"system-noun-modifiers",
+    "negation":"system-negation-inability",
+    "irregulars":"system-irregulars",
+    "word-building":"system-word-building",
+    "sentence-particles":"system-sentence-particles",
+    "real-life":"system-real-life-pragmatics",
+    "location-movement":"system-location-movement"
+  },
   "systems": [
     {
       "id":"system-numbers",
@@ -82,7 +95,7 @@
         {"lesson":1,"focus":"noun negation N이/가 아니에요"},
         {"lesson":6,"focus":"안 + A/V and 못 + action verb"},
         {"lesson":7,"focus":"negative questions"},
-        {"lesson":11,"focus":"밖에 + negative predicate"},
+        {"lesson":11,"focus":"밖에 + negative predicate and quantity expectation"},
         {"lesson":14,"focus":"V-지 못하다; V-지 마세요; V-지 말고"}
       ],
       "keyContrasts":["안 vs 못","못 + V vs V-지 못하다","simple negation vs inability","-지 못하다 vs -지 마세요 (inability vs command/prohibition)","-지 마세요 vs -지 말고 Y-(으)세요"],
@@ -127,6 +140,40 @@
         {"lesson":14,"focus":"airport/taxi destination and transit interactions"}
       ],
       "practiceIdeas":["campus map directions","choose 에/에서","route builder","taxi role-play"]
+    },
+    {
+      "id":"system-sentence-particles",
+      "title":"Particles & sentence roles",
+      "lessonProgression":[
+        {"lesson":1,"focus":"topic/subject/object basics and noun negation"},
+        {"lesson":2,"focus":"topic/subject/object practice and additive 도"},
+        {"lesson":3,"focus":"location 에 and subject marking with 있다/없다"},
+        {"lesson":4,"focus":"하고, 만, family/possession-related particle practice"},
+        {"lesson":5,"focus":"에 vs 에서"},
+        {"lesson":6,"focus":"에서...까지 and (으)로"},
+        {"lesson":9,"focus":"에/에서 for place goal/source; 한테/한테서/께 for person goal/source"},
+        {"lesson":11,"focus":"부터/까지, (이)나, 밖에, 만"},
+        {"lesson":12,"focus":"하고/(이)랑/과/와 and 까지"}
+      ],
+      "exploreSections":["topic 은/는 vs subject 이/가","object 을/를","location/destination/source particles","person recipient/source particles","additive 도 and exclusive 만","range particles 부터/에서...까지","quantity-sensitive 이나/밖에","particles inside noun-modifying clauses"],
+      "practiceIdeas":["mark sentence roles","choose 은/는 vs 이/가 in taught contexts","place vs person source/goal sorter","particle stacking drill"]
+    },
+    {
+      "id":"system-real-life-pragmatics",
+      "title":"Real-life Korean: context, indirectness & routines",
+      "lessonProgression":[
+        {"lesson":1,"focus":"self-introduction and address conventions"},
+        {"lesson":3,"focus":"asking where people/things are and relationship-sensitive forms"},
+        {"lesson":7,"focus":"making plans and responding to negative questions"},
+        {"lesson":8,"focus":"asking/giving directions in formal and informal styles"},
+        {"lesson":9,"focus":"birthday, age, giving/receiving, and honorific family interaction"},
+        {"lesson":10,"focus":"professor-facing formal speech and indirect refusal"},
+        {"lesson":11,"focus":"social invitations, preferences, proposals, and text-message style examples"},
+        {"lesson":13,"focus":"telephone routines, requests, health, gratitude, and promises"},
+        {"lesson":14,"focus":"taxi/airport exchanges, service expressions, inviting/declining, prohibition/advice"}
+      ],
+      "exploreSections":["telephone flow","service encounters","professor/authority interaction","inviting and declining","indirect refusal","giving thanks","relationship-sensitive address","textbook form vs situational choice"],
+      "practiceIdeas":["branching dialogue","choose the natural next turn","register repair","role-play with relationship/context cards"]
     }
   ],
   "designRule": "Explore should progressively disclose these systems and link every system explanation back to the lesson(s) where the learner encountered it. It should not load every lesson pack on initial page load."
