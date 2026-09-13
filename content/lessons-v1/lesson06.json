@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "status": "source-grounded draft; not wired into live UI",
+  "sourcePolicy": {
+    "coreContent": "Derived from lesson6(ST).pptx and rewritten into structured study data.",
+    "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids.",
+    "copyright": "Do not republish full PPT slides or textbook artwork."
+  },
+  "lesson": {
+    "id":"lesson-6",
+    "number":6,
+    "titleKo":"교통과 지난 일",
+    "titleEn":"Transportation and Past Activities",
+    "theme":"Distance, transportation, duration, weather descriptions, past tense, and negation",
+    "situations":["describing where you live","asking how long a trip takes","explaining transportation method","talking about past activities","saying you do not or cannot do something"],
+    "goals":["Use 에서...까지 for from/to ranges","Use (으)로 for transportation and instruments","Recognize common ㅂ-irregular adjectives","Form past tense with -았/었어요","Use short negation 안","Use 못 with action verbs for inability"],
+    "teacherFocus":["duration with 걸리다","transportation vocabulary","걸어서 as the walking expression","present vs past activity questions","N+하다 negation placement","difference between 안 and 못"],
+    "connections":["sentence-particles","tense-aspect","negation","irregulars","word-building"],
+    "sourceRefs":[{"type":"teacher-ppt","file":"lesson6(ST).pptx","slides":[2,3,4,5,6,7,10,12,13,16,18,19,23,24,25,26,31,32,33,35,38,40,48,51,52,53,54,57,58,59,60]}]
+  },
+  "vocabulary": [
+    {"id":"v6-weather","korean":"날씨","meaningEn":"weather","meaningZh":"天气","pos":"noun","originType":"native-korean","tags":["weather"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":3}]},
+    {"id":"v6-day","korean":"하루","meaningEn":"one day; a day","meaningZh":"一天","pos":"noun","originType":"native-korean","tags":["time"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":3}]},
+    {"id":"v6-pencil","korean":"연필","meaningEn":"pencil","meaningZh":"铅笔","pos":"noun","hanja":"鉛筆","originType":"sino-korean","tags":["object"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":3}]},
+    {"id":"v6-pen","korean":"볼펜","meaningEn":"ballpoint pen","meaningZh":"圆珠笔","pos":"noun","originType":"loanword","tags":["object"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":3}]},
+    {"id":"v6-weekend","korean":"주말","meaningEn":"weekend","meaningZh":"周末","pos":"noun","hanja":"週末","originType":"sino-korean","tags":["time"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":3}]},
+    {"id":"v6-middle-school","korean":"중학교","meaningEn":"middle school","meaningZh":"初中","pos":"noun","hanja":"中學校","originType":"sino-korean","tags":["school"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":3}]},
+    {"id":"v6-tennis-court","korean":"테니스장","meaningEn":"tennis court","meaningZh":"网球场","pos":"noun","originType":"loanword+sino-korean","tags":["sports","place"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[3,32]}]},
+    {"id":"v6-party","korean":"파티","meaningEn":"party","meaningZh":"聚会；派对","pos":"noun","originType":"loanword","tags":["social"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":3}]},
+    {"id":"v6-bus","korean":"버스","meaningEn":"bus","meaningZh":"公交车","pos":"noun","originType":"loanword","tags":["transportation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":4}]},
+    {"id":"v6-subway","korean":"지하철","meaningEn":"subway","meaningZh":"地铁","pos":"noun","hanja":"地下鐵","originType":"sino-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":4}]},
+    {"id":"v6-airplane","korean":"비행기","meaningEn":"airplane","meaningZh":"飞机","pos":"noun","hanja":"飛行機","originType":"sino-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":4}]},
+    {"id":"v6-bicycle","korean":"자전거","meaningEn":"bicycle","meaningZh":"自行车","pos":"noun","hanja":"自轉車","originType":"sino-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":4}]},
+    {"id":"v6-car","korean":"차","meaningEn":"car; vehicle","meaningZh":"车","pos":"noun","hanja":"車","originType":"sino-korean","tags":["transportation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":4}]},
+    {"id":"v6-taxi","korean":"택시","meaningEn":"taxi","meaningZh":"出租车","pos":"noun","originType":"loanword","tags":["transportation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":4}]},
+    {"id":"v6-speak","korean":"말하다","meaningEn":"to speak","meaningZh":"说话","pos":"verb","originType":"native-korean+하다","tags":["action","word-building"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":5}]},
+    {"id":"v6-take-time","korean":"걸리다","meaningEn":"to take (time)","meaningZh":"花费（时间）","pos":"verb","originType":"native-korean","tags":["time","duration"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[5,12,13]}]},
+    {"id":"v6-live","korean":"살다","meaningEn":"to live","meaningZh":"居住","pos":"verb","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[2,5,8]}]},
+    {"id":"v6-swim","korean":"수영하다","meaningEn":"to swim","meaningZh":"游泳","pos":"verb","hanja":"水泳","originType":"sino-korean+하다","tags":["sports","word-building"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":5}]},
+    {"id":"v6-not-know","korean":"모르다","meaningEn":"to not know","meaningZh":"不知道","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":5}]},
+    {"id":"v6-soccer","korean":"축구하다","meaningEn":"to play soccer","meaningZh":"踢足球","pos":"verb","hanja":"蹴球","originType":"sino-korean+하다","tags":["sports","word-building"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":5}]},
+    {"id":"v6-get-up","korean":"일어나다","meaningEn":"to get up","meaningZh":"起床","pos":"verb","originType":"native-korean","tags":["daily-life"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":5}]},
+    {"id":"v6-pool","korean":"수영장","meaningEn":"swimming pool","meaningZh":"游泳池","pos":"noun","hanja":"水泳場","originType":"sino-korean","tags":["sports","place"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[5,32]}]},
+    {"id":"v6-near","korean":"가깝다","meaningEn":"to be near; close","meaningZh":"近","pos":"adjective","originType":"native-korean","tags":["distance","irregular"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[6,27]}]},
+    {"id":"v6-far","korean":"멀다","meaningEn":"to be far","meaningZh":"远","pos":"adjective","originType":"native-korean","tags":["distance"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":6}]},
+    {"id":"v6-easy","korean":"쉽다","meaningEn":"to be easy","meaningZh":"容易","pos":"adjective","originType":"native-korean","tags":["description","irregular"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[6,27]}]},
+    {"id":"v6-difficult","korean":"어렵다","meaningEn":"to be difficult","meaningZh":"难","pos":"adjective","originType":"native-korean","tags":["description","irregular"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[6,27]}]},
+    {"id":"v6-hot","korean":"덥다","meaningEn":"to be hot (weather)","meaningZh":"热（天气）","pos":"adjective","originType":"native-korean","tags":["weather","irregular"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[6,25,27]}]},
+    {"id":"v6-cold","korean":"춥다","meaningEn":"to be cold (weather)","meaningZh":"冷（天气）","pos":"adjective","originType":"native-korean","tags":["weather","irregular"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[6,24,27]}]},
+    {"id":"v6-usually","korean":"보통","meaningEn":"usually","meaningZh":"通常","pos":"adverb","hanja":"普通","originType":"sino-korean","tags":["frequency"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":7}]},
+    {"id":"v6-little","korean":"조금 / 좀","meaningEn":"a little","meaningZh":"一点儿","pos":"adverb","originType":"native-korean","tags":["degree"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":7}]},
+    {"id":"v6-howlong","korean":"얼마나 / 얼마","meaningEn":"how long; how much","meaningZh":"多久；多少","pos":"question word","originType":"native-korean","tags":["question","duration"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[7,12]}]},
+    {"id":"v6-about","korean":"쯤","meaningEn":"approximately; about","meaningZh":"大约","pos":"particle/suffix","originType":"native-korean","tags":["approximation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[7,23]}]},
+    {"id":"v6-often","korean":"자주","meaningEn":"often","meaningZh":"经常","pos":"adverb","originType":"native-korean","tags":["frequency"],"sourceRefs":[{"file":"lesson6(ST).pptx","slide":7}]},
+    {"id":"v6-why","korean":"왜","meaningEn":"why","meaningZh":"为什么","pos":"question word","originType":"native-korean","tags":["question"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[7,59,60]}]}
+  ],
+  "grammar": [
+    {"id":"g6-range","pattern":"A에서 B까지","name":"From A to B","meaning":"Marks a starting point with 에서 and an endpoint with 까지.","examples":[{"ko":"집에서 학교까지 얼마나 걸려요?","en":"How long does it take from home to school?"}],"tags":["particle","distance","range"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[10,11,12]}]},
+    {"id":"g6-duration","pattern":"duration + 걸려요","name":"Time duration with 걸리다","meaning":"Says how much time an activity or trip takes.","examples":[{"ko":"10분 걸려요.","en":"It takes 10 minutes."},{"ko":"차로 한 시간쯤 걸려요.","en":"It takes about an hour by car."}],"tags":["time","duration"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[12,13,20,23]}]},
+    {"id":"g6-means","pattern":"N(으)로","name":"Means of transportation / instrument","meaning":"Marks the means, vehicle, language, or instrument used for an action.","formation":["noun + (으)로"],"examples":[{"ko":"택시로 가요.","en":"I go by taxi."},{"ko":"한국어로 말해요.","en":"I speak in Korean."},{"ko":"볼펜으로 쓰세요.","en":"Please write with a ballpoint pen."}],"commonMistakes":["The PPT separately highlights 걸어서 for going on foot."],"tags":["particle","means","instrument"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[16,17,18,19]}]},
+    {"id":"g6-b-irregular","pattern":"ㅂ → 우/오 before some vowel endings","name":"ㅂ-irregular adjectives","meaning":"Some ㅂ-final stems change before vowel-initial endings.","examples":[{"ko":"춥다 → 추워요","en":"cold → is cold"},{"ko":"덥다 → 더워요","en":"hot → is hot"},{"ko":"쉽다 → 쉬워요","en":"easy → is easy"},{"ko":"가깝다 → 가까워요","en":"near → is near"}],"contrast":[{"with":"좁다 / 넓다","note":"The PPT marks 좁아요/넓어요 as exceptions to the illustrated irregular pattern."}],"tags":["irregular","conjugation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[24,25,26,27]}]},
+    {"id":"g6-past","pattern":"-았/었어요; 하다 → 했어요","name":"Polite past tense","meaning":"Forms a polite past/completed predicate.","formation":["ㅏ/ㅗ stems → -았어요","most other vowels → -었어요","하다 → 했어요"],"examples":[{"ko":"학교 수영장에서 수영했어요.","en":"I swam at the school pool."},{"ko":"친구하고 같이 테니스 쳤어요.","en":"I played tennis with a friend."}],"tags":["past","tense"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[31,33,34,35]}]},
+    {"id":"g6-short-negation","pattern":"안 + A/V","name":"Short negation with 안","meaning":"Negates a verb or adjective with 안 placed before the predicate.","examples":[{"ko":"안 가요.","en":"I do not go."},{"ko":"안 좋아요.","en":"It is not good / I do not like it, depending on context."}],"commonMistakes":["With many N+하다 verbs, the PPT highlights placing 안 before 하다 rather than before the noun portion."],"tags":["negation"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[48,49,50,51]}]},
+    {"id":"g6-cannot","pattern":"못 + action verb","name":"Inability with 못","meaning":"Expresses inability or failure to carry out an action.","examples":[{"ko":"못 가요.","en":"I cannot go."},{"ko":"수영 못 해요.","en":"I cannot swim."}],"contrast":[{"with":"안","note":"안 is simple negation; 못 expresses inability with action verbs in this lesson."}],"tags":["negation","inability"],"sourceRefs":[{"file":"lesson6(ST).pptx","slides":[53,54]}]}
+  ],
+  "expressions": [
+    {"id":"e6-howlong","korean":"집에서 학교까지 얼마나 걸려요?","meaningEn":"How long does it take from home to school?","meaningZh":"从家到学校要多久？","situation":"travel/duration","register":"polite informal","sourceRefs":[{"file":"lesson6(ST).pptx","slides":[2,12,23]}]},
+    {"id":"e6-how-come","korean":"학교에 어떻게 와요?","meaningEn":"How do you come to school?","meaningZh":"你怎么来学校？","situation":"transportation","register":"polite informal","sourceRefs":[{"file":"lesson6(ST).pptx","slide":23}]},
+    {"id":"e6-weather","korean":"요즘 날씨가 어때요?","meaningEn":"How is the weather these days?","meaningZh":"最近天气怎么样？","situation":"weather","register":"polite informal","sourceRefs":[{"file":"lesson6(ST).pptx","slides":[28,29]}]},
+    {"id":"e6-past-activity","korean":"지난 주말에 뭐 했어요?","meaningEn":"What did you do last weekend?","meaningZh":"上周末你做了什么？","situation":"past activity","register":"polite informal","sourceRefs":[{"file":"lesson6(ST).pptx","slides":[38,42]}]}
+  ],
+  "practice": [
+    {"id":"p6-001","type":"typing","prompt":"Say ‘It takes about 20 minutes by bus.’","answers":["버스로 20분쯤 걸려요.","버스로 이십 분쯤 걸려요."],"displayAnswer":"버스로 20분쯤 걸려요.","explanation":"(으)로 marks the means and 쯤 adds approximation.","conceptIds":["g6-means","g6-duration"],"difficulty":2},
+    {"id":"p6-002","type":"multiple-choice","prompt":"Choose the correct polite form of 춥다.","choices":["춥어요","추워요","추아요"],"answers":["추워요"],"displayAnswer":"추워요","explanation":"The PPT teaches 춥다 as a ㅂ-irregular adjective.","conceptIds":["g6-b-irregular"],"difficulty":1},
+    {"id":"p6-003","type":"typing","prompt":"Put 수영하다 in the polite past tense.","answers":["수영했어요"],"displayAnswer":"수영했어요","explanation":"하다 becomes 했어요 in the past pattern.","conceptIds":["g6-past"],"difficulty":1},
+    {"id":"p6-004","type":"multiple-choice","prompt":"Which means ‘I cannot swim’ rather than simply ‘I do not swim’?","choices":["수영 안 해요.","수영 못 해요.","수영했어요."],"answers":["수영 못 해요."],"displayAnswer":"수영 못 해요.","explanation":"못 expresses inability in this lesson.","conceptIds":["g6-cannot"],"difficulty":1},
+    {"id":"p6-005","type":"typing","prompt":"Ask ‘How long does it take from home to school?’","answers":["집에서 학교까지 얼마나 걸려요?","집에서 학교까지 얼마나 걸려요"],"displayAnswer":"집에서 학교까지 얼마나 걸려요?","explanation":"Use 에서 for the starting point, 까지 for the endpoint, and 얼마나 걸려요 for duration.","conceptIds":["g6-range","g6-duration"],"difficulty":2}
+  ]
+}
