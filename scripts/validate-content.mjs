@@ -30,7 +30,7 @@ function walkJson(dir) {
   return out;
 }
 
-// 1) Parse every content JSON file so malformed data can never silently ship.
+// Parse every content JSON file so malformed data can never silently ship.
 const allJsonFiles = walkJson(contentDir);
 for (const file of allJsonFiles) readJson(file);
 
@@ -43,6 +43,17 @@ const systemMap = fs.existsSync(systemMapPath) ? readJson(systemMapPath) : null;
 
 const canonicalConceptIds = new Set((registry?.concepts || []).map(x => x.id));
 const systemIds = new Set((systemMap?.systems || []).map(x => x.id));
+const systemAliases = systemMap?.aliases || {};
+
+for (const [alias, target] of Object.entries(systemAliases)) {
+  if (!systemIds.has(target)) fail(`system-map alias '${alias}' points to unknown system '${target}'`);
+}
+
+const resolveSystemId = (value) => {
+  if (systemIds.has(value)) return value;
+  if (systemAliases[value] && systemIds.has(systemAliases[value])) return systemAliases[value];
+  return null;
+};
 
 if (!index) {
   fail('Missing or unreadable content/lessons-v1/index.json');
@@ -111,8 +122,8 @@ for (const pack of index?.packs || []) {
 
   if (Array.isArray(lesson?.connections)) {
     for (const connection of lesson.connections) {
-      if (!systemIds.has(connection)) {
-        warn(`${lessonId}: connection '${connection}' is not a canonical system ID; migrate toward system-map-v1 IDs`);
+      if (!resolveSystemId(connection)) {
+        warn(`${lessonId}: connection '${connection}' cannot be resolved to a system-map ID`);
       }
     }
   }
@@ -157,10 +168,11 @@ for (const pack of index?.packs || []) {
     }
   }
 
-  // Resolve practice concept references after all local IDs have been collected.
+  // Resolve practice references after all local IDs have been collected.
+  // A practice item may target a local lesson item, canonical cross-lesson concept, or whole system page.
   for (const [i, item] of (data.practice || []).entries()) {
     for (const conceptId of item.conceptIds || []) {
-      if (!localIds.has(conceptId) && !canonicalConceptIds.has(conceptId)) {
+      if (!localIds.has(conceptId) && !canonicalConceptIds.has(conceptId) && !resolveSystemId(conceptId)) {
         warn(`${lessonId}.practice[${i}]: unresolved conceptId '${conceptId}'`);
       }
     }
