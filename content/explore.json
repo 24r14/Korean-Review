@@ -4,136 +4,170 @@
       "id": "tense-aspect",
       "title": "Tense & aspect · 시제와 상",
       "level": "Foundation",
-      "summary": "Korean tense is carried mainly by the predicate ending. Aspect adds information such as whether an action is in progress or completed.",
+      "summary": "Korean tense is carried mainly by the predicate, while aspect shows whether an action is ongoing, completed, repeated, or in a resulting state.",
       "items": [
         {"label":"Present / general","pattern":"-아요/어요","example":"한국어를 공부해요. — I study Korean / I am studying Korean."},
         {"label":"Past","pattern":"-았/었어요","example":"어제 공부했어요. — I studied yesterday."},
         {"label":"Future / plan","pattern":"-(으)ㄹ 거예요","example":"내일 공부할 거예요. — I will study tomorrow."},
-        {"label":"Progressive","pattern":"-고 있다","example":"지금 공부하고 있어요. — I am studying now."}
+        {"label":"Progressive","pattern":"-고 있다","example":"지금 공부하고 있어요. — I am studying now."},
+        {"label":"Resulting state","pattern":"-아/어 있다","example":"문이 열려 있어요. — The door is open / remains opened."},
+        {"label":"Experience / completion","pattern":"-아/어 보다","example":"김치를 먹어 봤어요. — I have tried kimchi."}
       ],
-      "note": "English tense labels are useful as a starting point, but Korean endings also carry intention, politeness, evidential meaning, and discourse nuance."
+      "note": "Do not force every Korean ending into one English tense label. Korean endings also express intention, evidence, politeness, and the speaker’s attitude."
     },
     {
       "id": "negation",
       "title": "Negation · 부정",
       "level": "Foundation",
-      "summary": "Korean has short and long forms of negation, and it distinguishes not doing something from being unable to do it.",
+      "summary": "Korean distinguishes ordinary negation from inability, and often offers both a short and a long form.",
       "items": [
-        {"label":"Not","pattern":"안 + predicate","example":"오늘 학교에 안 가요. — I am not going to school today."},
-        {"label":"Not","pattern":"-지 않다","example":"커피를 마시지 않아요. — I do not drink coffee."},
-        {"label":"Cannot","pattern":"못 + predicate","example":"오늘 운동을 못 해요. — I cannot exercise today."},
-        {"label":"Cannot","pattern":"-지 못하다","example":"어제 잠을 자지 못했어요. — I could not sleep yesterday."}
-      ]
+        {"label":"Not · short","pattern":"안 + predicate","example":"오늘 학교에 안 가요. — I am not going to school today."},
+        {"label":"Not · long","pattern":"-지 않다","example":"커피를 마시지 않아요. — I do not drink coffee."},
+        {"label":"Cannot · short","pattern":"못 + predicate","example":"오늘 운동을 못 해요. — I cannot exercise today."},
+        {"label":"Cannot · long","pattern":"-지 못하다","example":"어제 잠을 자지 못했어요. — I could not sleep yesterday."}
+      ],
+      "note": "안 usually means ‘do not / choose not to’; 못 usually points to inability or circumstances preventing the action."
     },
     {
       "id": "passive-causative",
       "title": "Passive & causative · 피동과 사동",
       "level": "Growing",
-      "summary": "What English calls voice appears in Korean through several passive and causative patterns rather than one single ending.",
+      "summary": "Korean does not have one universal passive or causative ending. It uses lexical suffixes, productive constructions, and noun-based patterns.",
       "items": [
-        {"label":"Passive","pattern":"이/히/리/기 or lexical passive","example":"문이 열렸어요. — The door opened / was opened."},
-        {"label":"Change into a state","pattern":"-아/어지다","example":"날씨가 따뜻해졌어요. — The weather became warm."},
-        {"label":"Causative","pattern":"이/히/리/기/우/구/추","example":"아이를 앉혔어요. — I made / had the child sit."},
-        {"label":"Analytic causative","pattern":"-게 하다","example":"학생들이 말하게 했어요. — I had the students speak."}
+        {"label":"Lexical passive","pattern":"-이/-히/-리/-기-","example":"문이 닫혔어요. — The door was closed. / 이름이 불렸어요. — The name was called."},
+        {"label":"Productive passive / change","pattern":"V-아/어지다","example":"이 노래가 많이 알려졌어요. — This song became widely known."},
+        {"label":"Noun + passive/result","pattern":"N + 되다","example":"계획이 결정됐어요. — The plan was decided."},
+        {"label":"Lexical causative","pattern":"-이/-히/-리/-기/-우/-구/-추-","example":"아이에게 밥을 먹였어요. — I fed the child / made the child eat."},
+        {"label":"Productive causative","pattern":"V-게 하다","example":"학생들이 말하게 했어요. — I made / let the students speak."},
+        {"label":"Action noun causative","pattern":"N + 시키다","example":"학생들을 공부시켰어요. — I made the students study."}
       ],
-      "note": "Passive and causative forms are partly lexical, so learning them with common verbs is more reliable than memorizing one mechanical rule."
-    },
-    {
-      "id": "honorifics",
-      "title": "Honorifics & speech levels · 높임말",
-      "level": "Essential culture + grammar",
-      "summary": "Korean grammar encodes social relationships. Subject honorifics and sentence endings are related but separate choices.",
-      "items": [
-        {"label":"Subject honorific","pattern":"-(으)시-","example":"선생님이 오세요. — The teacher is coming."},
-        {"label":"Polite everyday","pattern":"해요체","example":"어디 가세요? — Where are you going?"},
-        {"label":"Formal polite","pattern":"합니다체","example":"감사합니다. — Thank you."},
-        {"label":"Casual","pattern":"해체","example":"뭐 해? — What are you doing?"}
-      ],
-      "note": "Age, familiarity, role, and setting can all affect speech style; there is no single English equivalent."
+      "note": "Many passive and causative forms are lexical: the exact suffix is tied to the verb. Learn common pairs as vocabulary rather than trying to guess mechanically. -게 하다 is much more productive and can mean ‘make’ or ‘let’ depending on context."
     },
     {
       "id": "connectors",
       "title": "Connecting ideas · 연결어미",
       "level": "Foundation → Growing",
-      "summary": "Connectors show sequence, contrast, reason, condition, and more. Learning the relationship between clauses is often more useful than translating one word at a time.",
+      "summary": "Connectors show sequence, contrast, reason, condition, concession, and purpose. Learn the relationship between clauses rather than translating one English conjunction at a time.",
       "items": [
         {"label":"And / sequence","pattern":"-고","example":"밥을 먹고 공부해요. — I eat and then study."},
         {"label":"Reason / sequence","pattern":"-아/어서","example":"비가 와서 집에 있었어요. — It rained, so I stayed home."},
-        {"label":"Reason","pattern":"-(으)니까","example":"늦었으니까 빨리 가요. — We are late, so let’s hurry."},
-        {"label":"Because of noun","pattern":"N 때문에","example":"시험 때문에 바빠요. — I am busy because of the test."}
+        {"label":"Reason / speaker judgment","pattern":"-(으)니까","example":"늦었으니까 빨리 가요. — We are late, so let’s hurry."},
+        {"label":"Because of noun","pattern":"N 때문에","example":"시험 때문에 바빠요. — I am busy because of the test."},
+        {"label":"If / when","pattern":"-(으)면","example":"시간이 있으면 같이 가요. — If you have time, let’s go together."},
+        {"label":"Although / but","pattern":"-지만","example":"비싸지만 좋아요. — It is expensive, but I like it."}
       ]
     }
   ],
-  "culture": [
+  "wordBuilding": [
     {
-      "category": "Food",
-      "title": "김치 · Kimchi",
-      "emoji": "🥬",
-      "summary": "A broad family of fermented vegetable dishes. Napa-cabbage kimchi is famous, but there are many regional and seasonal varieties.",
-      "language": "김치 is commonly served as 반찬, a side dish shared with a meal."
+      "title": "Noun + 하다 → action or descriptive predicate",
+      "summary": "One of the most productive Korean patterns. Many Sino-Korean nouns combine with 하다 and behave as verbs or descriptive verbs.",
+      "patterns": [
+        {"form":"공부 + 하다 → 공부하다","meaning":"study + do → to study"},
+        {"form":"운동 + 하다 → 운동하다","meaning":"exercise + do → to exercise"},
+        {"form":"전화 + 하다 → 전화하다","meaning":"telephone + do → to call"},
+        {"form":"필요 + 하다 → 필요하다","meaning":"necessity + do → to be necessary / need"}
+      ],
+      "note": "Not every noun can freely take 하다. Treat established combinations as lexical items even though the pattern is highly productive."
     },
     {
-      "category": "Food",
-      "title": "비빔밥 · Bibimbap",
-      "emoji": "🍚",
-      "summary": "Rice mixed with vegetables and other toppings, often with gochujang. The name literally points to mixing: 비비다 means to mix/rub and 밥 means cooked rice/meal.",
-      "language": "Useful words: 밥 rice/meal · 고추장 red-pepper paste · 비비다 to mix."
+      "title": "Noun + 되다 / 시키다",
+      "summary": "With many action nouns, 되다 often gives a passive/result meaning, while 시키다 gives a causative meaning.",
+      "patterns": [
+        {"form":"결정하다 → 결정되다","meaning":"decide → be decided"},
+        {"form":"사용하다 → 사용되다","meaning":"use → be used"},
+        {"form":"공부하다 → 공부시키다","meaning":"study → make someone study"},
+        {"form":"준비하다 → 준비시키다","meaning":"prepare → make someone prepare / get something prepared"}
+      ],
+      "note": "하다 / 되다 / 시키다 often form useful families, especially with Sino-Korean vocabulary."
     },
     {
-      "category": "Food",
-      "title": "불고기 · Bulgogi",
-      "emoji": "🥩",
-      "summary": "Thinly sliced marinated meat, usually beef, cooked by grilling or pan-cooking. The modern dish has many household and restaurant variations.",
-      "language": "불 means fire and 고기 means meat."
-    },
-    {
-      "category": "Food",
-      "title": "떡볶이 · Tteokbokki",
-      "emoji": "🌶️",
-      "summary": "A popular snack built around chewy rice cakes, commonly served in a spicy-sweet sauce. It is strongly associated with casual street-food culture.",
-      "language": "떡 rice cake · 볶다 to stir-fry; the modern dish is usually saucier than the literal name suggests."
-    },
-    {
-      "category": "Food",
-      "title": "김밥 · Gimbap",
-      "emoji": "🍙",
-      "summary": "Rice and assorted fillings rolled in dried seaweed and sliced into pieces. Fillings vary widely, from vegetables and egg to tuna or meat.",
-      "language": "김 dried seaweed · 밥 rice/meal."
-    },
-    {
-      "category": "Food",
-      "title": "미역국 · Seaweed soup",
-      "emoji": "🥣",
-      "summary": "A soup made with seaweed that is especially associated with birthdays in Korea and is also eaten in everyday meals.",
-      "language": "생일 birthday · 미역 seaweed · 국 soup."
-    },
-    {
-      "category": "Everyday culture",
-      "title": "반찬 and shared dishes",
-      "emoji": "🥢",
-      "summary": "Korean meals often include several side dishes placed in the center of the table. The exact arrangement depends on home, restaurant, region, and occasion.",
-      "language": "반찬 means side dish; 같이 먹어요 means ‘let’s eat together.’"
-    },
-    {
-      "category": "Language culture",
-      "title": "Names, titles, and respect",
-      "emoji": "🙇",
-      "summary": "Using a person’s name, title, kinship term, or 씨 depends on relationship and context. Korean often avoids repeatedly using ‘you’ where English would use it.",
-      "language": "선생님, 교수님, 사장님 and family-style terms can function as forms of address."
-    },
-    {
-      "category": "Holidays",
-      "title": "설날 and 추석",
-      "emoji": "🎎",
-      "summary": "설날 is Lunar New Year and 추석 is a major harvest holiday. Family gatherings, food, travel, and ancestral or family traditions vary by household.",
-      "language": "새해 복 많이 받으세요 is a common New Year greeting."
-    },
-    {
-      "category": "Class connection",
-      "title": "전화 etiquette",
-      "emoji": "☎️",
-      "summary": "Telephone Korean uses conventional expressions such as 여보세요 and polite requests for asking to speak to someone. The exact level of politeness changes with relationship and setting.",
-      "language": "여보세요 → 누구세요? → ___ 씨 좀 바꿔 주세요 → 안녕히 계세요 / 끊을게요."
+      "title": "High-value Sino-Korean suffixes",
+      "summary": "Recognizing common suffixes lets you infer families of words instead of memorizing every item independently.",
+      "patterns": [
+        {"form":"-적 的","meaning":"forms ‘-al / -ic’ ideas: 문화적 cultural, 개인적 personal"},
+        {"form":"-성 性","meaning":"property / possibility: 가능성 possibility, 중요성 importance"},
+        {"form":"-화 化","meaning":"change / -ization: 세계화 globalization, 현대화 modernization"},
+        {"form":"-자 者","meaning":"person associated with an action/role: 사용자 user, 참가자 participant"},
+        {"form":"-원 員","meaning":"member / worker: 회사원 office worker, 점원 store clerk"}
+      ],
+      "note": "These are especially helpful for Chinese readers because the Hanja often makes the semantic relationship visible immediately."
     }
+  ],
+  "numbers": {
+    "native": {
+      "title": "Native Korean numbers · 고유어 수",
+      "summary": "Common for hours, age, and many counters.",
+      "ones": ["하나 1","둘 2","셋 3","넷 4","다섯 5","여섯 6","일곱 7","여덟 8","아홉 9","열 10"],
+      "tens": ["스물 20","서른 30","마흔 40","쉰 50","예순 60","일흔 70","여든 80","아흔 90"],
+      "special": ["하나 → 한 개","둘 → 두 명","셋 → 세 시","넷 → 네 권","스물 → 스무 살"],
+      "uses": ["hours: 세 시","age: 스무 살","things: 두 개","people: 세 명 / 세 분","animals: 네 마리","books: 다섯 권","bottles: 두 병","cups: 한 잔"]
+    },
+    "sino": {
+      "title": "Sino-Korean numbers · 한자어 수",
+      "summary": "Common for dates, money, phone numbers, minutes, measurements, floors, and larger calculations.",
+      "ones": ["일 1","이 2","삼 3","사 4","오 5","육 6","칠 7","팔 8","구 9","십 10"],
+      "units": ["십 10","백 100","천 1,000","만 10,000","억 100,000,000"],
+      "uses": ["minutes: 십오 분","date: 구월 십삼일","money: 만 원","phone number: 공일공-…","floor: 삼 층","year: 이천이십육 년","math / measurements: 이십 퍼센트"]
+    },
+    "compare": [
+      {"situation":"3:15","korean":"세 시 십오 분","why":"hour = Native Korean; minute = Sino-Korean"},
+      {"situation":"23 years old","korean":"스물세 살","why":"age with 살 usually uses Native Korean"},
+      {"situation":"₩25,000","korean":"이만 오천 원","why":"money uses Sino-Korean"},
+      {"situation":"4 books","korean":"네 권","why":"counter 권 takes Native Korean numerals"},
+      {"situation":"September 13","korean":"구월 십삼일","why":"calendar dates use Sino-Korean"}
+    ]
+  },
+  "speechLevels": [
+    {
+      "name":"해체 · casual non-polite",
+      "formality":"casual",
+      "politeness":"non-polite",
+      "example":"뭐 해? / 집에 가.",
+      "use":"Close friends, younger family members, children, or people who have mutually agreed to use 반말.",
+      "warning":"Do not default to this with strangers, teachers, or older people just because the grammar is easier."
+    },
+    {
+      "name":"해요체 · everyday polite",
+      "formality":"informal / conversational",
+      "politeness":"polite",
+      "example":"뭐 해요? / 집에 가요.",
+      "use":"The safest default for many everyday conversations with adults you are not extremely close to.",
+      "warning":"Polite does not automatically mean honorific: subject honorific -(으)시- is a separate choice."
+    },
+    {
+      "name":"하십시오체 · formal polite",
+      "formality":"formal",
+      "politeness":"polite",
+      "example":"무엇을 합니까? / 집에 갑니다.",
+      "use":"Announcements, presentations, military/service contexts, formal interviews, customer-facing situations, and highly formal speech.",
+      "warning":"The declarative -ㅂ니다/습니다 and question -ㅂ니까/습니까 forms differ."
+    },
+    {
+      "name":"해라체 / plain style · formal non-polite",
+      "formality":"plain / detached",
+      "politeness":"non-polite",
+      "example":"학생이 공부한다. / 비가 온다.",
+      "use":"Writing, diaries, reports, narration, quotations of general facts, and some hierarchical speech. Very common in written Korean even though it is not a normal polite conversation style.",
+      "warning":"Calling it simply ‘rude’ is misleading: in writing it often functions as a neutral plain style."
+    }
+  ],
+  "honorificSystem": [
+    {"label":"Subject honorific","pattern":"-(으)시-","example":"선생님이 오세요.","meaning":"raises/respects the subject"},
+    {"label":"Honorific noun","pattern":"집 → 댁 / 이름 → 성함","example":"성함이 어떻게 되세요?","meaning":"special respectful vocabulary"},
+    {"label":"Honorific verb","pattern":"먹다 → 드시다 / 자다 → 주무시다","example":"식사하셨어요?","meaning":"lexical honorific replacement"},
+    {"label":"Humble speaker verb","pattern":"주다 → 드리다 / 묻다 → 여쭙다","example":"제가 선생님께 여쭤볼게요.","meaning":"lowers the speaker’s action relative to the respected person"}
+  ],
+  "culture": [
+    {"category":"Food","title":"김치 · Kimchi","emoji":"🥬","summary":"A broad family of fermented vegetable dishes. Napa-cabbage kimchi is famous, but there are many regional and seasonal varieties.","language":"김치 is commonly served as 반찬, a side dish shared with a meal."},
+    {"category":"Food","title":"비빔밥 · Bibimbap","emoji":"🍚","summary":"Rice mixed with vegetables and other toppings, often with gochujang.","language":"비비다 means to mix; 밥 means cooked rice / meal."},
+    {"category":"Food","title":"불고기 · Bulgogi","emoji":"🥩","summary":"Thinly sliced marinated meat, usually beef, cooked by grilling or pan-cooking.","language":"불 means fire and 고기 means meat."},
+    {"category":"Food","title":"떡볶이 · Tteokbokki","emoji":"🌶️","summary":"A popular snack built around chewy rice cakes, commonly served in a spicy-sweet sauce.","language":"떡 rice cake · 볶다 to stir-fry."},
+    {"category":"Food","title":"김밥 · Gimbap","emoji":"🍙","summary":"Rice and assorted fillings rolled in dried seaweed and sliced into pieces.","language":"김 dried seaweed · 밥 rice/meal."},
+    {"category":"Food","title":"미역국 · Seaweed soup","emoji":"🥣","summary":"A seaweed soup especially associated with birthdays in Korea and also eaten in everyday meals.","language":"생일 birthday · 미역 seaweed · 국 soup."},
+    {"category":"Everyday culture","title":"반찬 and shared dishes","emoji":"🥢","summary":"Korean meals often include several side dishes placed in the center of the table.","language":"반찬 means side dish; 같이 먹어요 means ‘let’s eat together.’"},
+    {"category":"Language culture","title":"Names, titles, and respect","emoji":"🙇","summary":"Using a person’s name, title, kinship term, or 씨 depends on relationship and context. Korean often avoids repeatedly using ‘you’ where English would use it.","language":"선생님, 교수님, 사장님 and family-style terms can function as forms of address."},
+    {"category":"Holidays","title":"설날 and 추석","emoji":"🎎","summary":"설날 is Lunar New Year and 추석 is a major harvest holiday. Traditions vary by household.","language":"새해 복 많이 받으세요 is a common New Year greeting."},
+    {"category":"Class connection","title":"전화 etiquette","emoji":"☎️","summary":"Telephone Korean uses conventional expressions such as 여보세요 and polite requests for asking to speak to someone.","language":"여보세요 → 누구세요? → ___ 씨 좀 바꿔 주세요 → 안녕히 계세요 / 끊을게요."}
   ]
 }
