@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "content pipeline active; files are not yet wired into the live UI",
+  "schema": "../content-schema-v1.json",
+  "packs": [
+    {
+      "lessonId": "lesson-1",
+      "file": "lesson01.json",
+      "source": "lesson1.pptx",
+      "coverage": ["lesson metadata", "vocabulary", "grammar", "expressions", "pronunciation", "numbers", "original practice"],
+      "qa": "ready for content review"
+    },
+    {
+      "lessonId": "lesson-2",
+      "file": "lesson02.json",
+      "source": "lesson 2.pptx",
+      "coverage": ["lesson metadata", "vocabulary", "grammar", "expressions", "original practice"],
+      "qa": "ready for content review"
+    },
+    {
+      "lessonId": "lesson-3",
+      "file": "lesson03.json",
+      "source": "lesson3.pptx",
+      "coverage": ["lesson metadata", "vocabulary", "grammar", "expressions", "culture/pragmatics", "original practice"],
+      "qa": "ready for content review"
+    }
+  ],
+  "pipelineRules": [
+    "Core lesson facts must be traceable to teacher PPT slides through sourceRefs.",
+    "Chinese glosses and Hanja enrichment are separate from source-derived teacher content.",
+    "Examples and practice prompts may be rewritten or newly created; do not republish full slide/page content.",
+    "Do not wire a new lesson pack into the production UI until the current stability problems are resolved.",
+    "Course and Explore should eventually reference the same concept IDs rather than duplicating explanations.",
+    "Before scaling, check vocabulary meanings, Hanja, grammar labels, and sourceRefs for accuracy."
+  ],
+  "nextBatch": ["lesson-4", "lesson-5", "lesson-6"],
+  "laterBatch": ["lesson-7", "lesson-8", "lesson-9", "lesson-10", "lesson-11", "lesson-12", "lesson-13", "lesson-14"]
+}
