@@ -247,15 +247,151 @@
     {"label":"Humble speaker verb","pattern":"주다 → 드리다 / 묻다 → 여쭙다","example":"제가 선생님께 여쭤볼게요.","meaning":"lowers the speaker’s action relative to the respected person"}
   ],
   "culture": [
-    {"category":"Food","title":"김치 · Kimchi","emoji":"🥬","summary":"A broad family of fermented vegetable dishes. Napa-cabbage kimchi is famous, but there are many regional and seasonal varieties.","language":"김치 is commonly served as 반찬, a side dish shared with a meal."},
-    {"category":"Food","title":"비빔밥 · Bibimbap","emoji":"🍚","summary":"Rice mixed with vegetables and other toppings, often with gochujang.","language":"비비다 means to mix; 밥 means cooked rice / meal."},
-    {"category":"Food","title":"불고기 · Bulgogi","emoji":"🥩","summary":"Thinly sliced marinated meat, usually beef, cooked by grilling or pan-cooking.","language":"불 means fire and 고기 means meat."},
-    {"category":"Food","title":"떡볶이 · Tteokbokki","emoji":"🌶️","summary":"A popular snack built around chewy rice cakes, commonly served in a spicy-sweet sauce.","language":"떡 rice cake · 볶다 to stir-fry."},
-    {"category":"Food","title":"김밥 · Gimbap","emoji":"🍙","summary":"Rice and assorted fillings rolled in dried seaweed and sliced into pieces.","language":"김 dried seaweed · 밥 rice/meal."},
-    {"category":"Food","title":"미역국 · Seaweed soup","emoji":"🥣","summary":"A seaweed soup especially associated with birthdays in Korea and also eaten in everyday meals.","language":"생일 birthday · 미역 seaweed · 국 soup."},
-    {"category":"Everyday culture","title":"반찬 and shared dishes","emoji":"🥢","summary":"Korean meals often include several side dishes placed in the center of the table.","language":"반찬 means side dish; 같이 먹어요 means ‘let’s eat together.’"},
-    {"category":"Language culture","title":"Names, titles, and respect","emoji":"🙇","summary":"Using a person’s name, title, kinship term, or 씨 depends on relationship and context. Korean often avoids repeatedly using ‘you’ where English would use it.","language":"선생님, 교수님, 사장님 and family-style terms can function as forms of address."},
-    {"category":"Holidays","title":"설날 and 추석","emoji":"🎎","summary":"설날 is Lunar New Year and 추석 is a major harvest holiday. Traditions vary by household.","language":"새해 복 많이 받으세요 is a common New Year greeting."},
-    {"category":"Class connection","title":"전화 etiquette","emoji":"☎️","summary":"Telephone Korean uses conventional expressions such as 여보세요 and polite requests for asking to speak to someone.","language":"여보세요 → 누구세요? → ___ 씨 좀 바꿔 주세요 → 안녕히 계세요 / 끊을게요."}
+    {
+      "category":"Food",
+      "title":"김치 · Kimchi",
+      "emoji":"🥬",
+      "summary":"A broad family of fermented vegetable dishes. Napa-cabbage kimchi is famous, but there are many regional and seasonal varieties.",
+      "language":"김치 is commonly served as 반찬, a side dish shared with a meal.",
+      "tags":["반찬","fermented","spicy"],
+      "phrase":"김치 좀 주세요. — Please give me some kimchi.",
+      "photoPolicy":"Real photos can go here if they are your own photo, teacher-approved, or clearly licensed with attribution."
+    },
+    {
+      "category":"Food",
+      "title":"비빔밥 · Bibimbap",
+      "emoji":"🍚",
+      "summary":"Rice mixed with vegetables and other toppings, often with gochujang. It is useful for learning food nouns because the bowl shows ingredients clearly.",
+      "language":"비비다 means to mix; 밥 means cooked rice / meal.",
+      "tags":["밥","vegetables","mix"],
+      "phrase":"비빔밥 하나 주세요. — One bibimbap, please.",
+      "photoPolicy":"Use a classroom-safe photo only if the image rights are clear."
+    },
+    {
+      "category":"Food",
+      "title":"불고기 · Bulgogi",
+      "emoji":"🥩",
+      "summary":"Thinly sliced marinated meat, usually beef, cooked by grilling or pan-cooking. In U.S. Korean restaurants, this is one of the easiest dishes for classmates to recognize.",
+      "language":"불 means fire and 고기 means meat.",
+      "tags":["고기","grilled","restaurant"],
+      "phrase":"불고기 먹어 봤어요? — Have you tried bulgogi?",
+      "photoPolicy":"Do not reuse teacher PPT photos unless the teacher explicitly approves it."
+    },
+    {
+      "category":"Food",
+      "title":"떡볶이 · Tteokbokki",
+      "emoji":"🌶️",
+      "summary":"A popular snack built around chewy rice cakes, commonly served in a spicy-sweet sauce.",
+      "language":"떡 rice cake · 볶다 to stir-fry.",
+      "tags":["snack","street food","spicy"],
+      "phrase":"떡볶이는 매워요? — Is tteokbokki spicy?",
+      "photoPolicy":"Use original or licensed photos, not screenshots from slides."
+    },
+    {
+      "category":"Food",
+      "title":"김밥 · Gimbap",
+      "emoji":"🍙",
+      "summary":"Rice and assorted fillings rolled in dried seaweed and sliced into pieces. It is a good example for practicing counters such as 개.",
+      "language":"김 dried seaweed · 밥 rice/meal.",
+      "tags":["portable food","김","밥"],
+      "phrase":"김밥 두 개 주세요. — Two gimbap rolls, please.",
+      "photoPolicy":"A student-taken lunch photo would work well here."
+    },
+    {
+      "category":"Food",
+      "title":"미역국 · Seaweed soup",
+      "emoji":"🥣",
+      "summary":"A seaweed soup especially associated with birthdays in Korea and also eaten in everyday meals.",
+      "language":"생일 birthday · 미역 seaweed · 국 soup.",
+      "tags":["birthday","soup","home meal"],
+      "phrase":"오늘 생일이라서 미역국을 먹어요. — It is my birthday, so I eat seaweed soup.",
+      "photoPolicy":"Keep cultural photos separate from teacher-owned PPT images."
+    },
+    {
+      "category":"Food",
+      "title":"된장찌개 · Doenjang-jjigae",
+      "emoji":"🥘",
+      "summary":"A soybean-paste stew often eaten with rice. This card helps students distinguish 국 soup from 찌개 stew.",
+      "language":"된장 soybean paste · 찌개 stew.",
+      "tags":["stew","soybean paste","찌개"],
+      "phrase":"된장찌개하고 밥 주세요. — Please give me doenjang-jjigae and rice.",
+      "photoPolicy":"Use a licensed real food photo only with credit."
+    },
+    {
+      "category":"Food",
+      "title":"삼겹살 · Samgyeopsal",
+      "emoji":"🥓",
+      "summary":"Grilled pork belly often eaten at the table with lettuce wraps and side dishes. Useful for talking about group meals.",
+      "language":"삼 three · 겹 layer · 살 flesh/meat; the name refers to layered pork belly.",
+      "tags":["grill","group meal","meat"],
+      "phrase":"친구들이랑 삼겹살을 먹으러 가요. — I am going to eat samgyeopsal with friends.",
+      "photoPolicy":"Restaurant photos need permission or a clear license."
+    },
+    {
+      "category":"Food",
+      "title":"잡채 · Japchae",
+      "emoji":"🍜",
+      "summary":"Stir-fried glass noodles with vegetables and often meat. It is commonly seen at parties and holidays, but also eaten in ordinary meals.",
+      "language":"잡 mixed/assorted · 채 vegetables; modern Korean treats 잡채 as one dish name.",
+      "tags":["noodles","party food","vegetables"],
+      "phrase":"잡채를 좋아해요. — I like japchae.",
+      "photoPolicy":"Original illustration is used until a rights-safe photo is chosen."
+    },
+    {
+      "category":"Food",
+      "title":"호떡 · Hotteok",
+      "emoji":"🥞",
+      "summary":"A sweet filled pancake often associated with street food. It is useful for contrasting 달다 sweet and 뜨겁다 hot.",
+      "language":"호떡 is usually written in Hangul; students should not assume every Korean food name has useful Hanja.",
+      "tags":["sweet","street food","winter"],
+      "phrase":"호떡이 뜨거워요. — The hotteok is hot.",
+      "photoPolicy":"Use public-domain, Creative Commons, or self-made photos with credit."
+    },
+    {
+      "category":"Food",
+      "title":"빙수 · Bingsu",
+      "emoji":"🍧",
+      "summary":"A shaved-ice dessert with toppings. Modern versions can include fruit, red bean, chocolate, or cereal-like toppings.",
+      "language":"빙 氷 means ice in Sino-Korean vocabulary; 수 is part of the dish name 빙수.",
+      "tags":["dessert","ice","summer"],
+      "phrase":"여름에는 빙수를 먹고 싶어요. — In summer, I want to eat bingsu.",
+      "photoPolicy":"A real photo would be helpful here if it is not copied from a teacher slide."
+    },
+    {
+      "category":"Everyday culture",
+      "title":"반찬 and shared dishes",
+      "emoji":"🥢",
+      "summary":"Korean meals often include several side dishes placed in the center of the table. In class, this helps explain why Korean food words often appear with 같이 together.",
+      "language":"반찬 means side dish; 같이 먹어요 means ‘let’s eat together.’",
+      "tags":["meal culture","shared table"],
+      "phrase":"같이 먹어요. — Let’s eat together."
+    },
+    {
+      "category":"Language culture",
+      "title":"Names, titles, and respect",
+      "emoji":"🙇",
+      "summary":"Using a person’s name, title, kinship term, or 씨 depends on relationship and context. Korean often avoids repeatedly using ‘you’ where English would use it.",
+      "language":"선생님, 교수님, 사장님 and family-style terms can function as forms of address.",
+      "tags":["honorifics","address terms"],
+      "phrase":"선생님, 질문이 있어요. — Teacher, I have a question."
+    },
+    {
+      "category":"Holidays",
+      "title":"설날 and 추석",
+      "emoji":"🎎",
+      "summary":"설날 is Lunar New Year and 추석 is a major harvest holiday. Traditions vary by household.",
+      "language":"새해 복 많이 받으세요 is a common New Year greeting.",
+      "tags":["holiday","greeting"],
+      "phrase":"새해 복 많이 받으세요. — Happy New Year."
+    },
+    {
+      "category":"Class connection",
+      "title":"전화 etiquette",
+      "emoji":"☎️",
+      "summary":"Telephone Korean uses conventional expressions such as 여보세요 and polite requests for asking to speak to someone.",
+      "language":"여보세요 → 누구세요? → ___ 씨 좀 바꿔 주세요 → 안녕히 계세요 / 끊을게요.",
+      "tags":["phone","polite request"],
+      "phrase":"___ 씨 좀 바꿔 주세요. — May I speak to ___?"
+    }
   ]
 }
