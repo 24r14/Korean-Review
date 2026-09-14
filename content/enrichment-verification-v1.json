@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "verified enrichment batches; still not wired into the live UI",
+  "status": "verified enrichment batches; wired into Content QA, Browse, and Explore Hanja surfaces",
   "purpose": "Record which Hanja, Chinese gloss, and word-origin enrichments have been checked against named references.",
   "verificationPolicy": "../content/enrichment-policy-v1.json",
   "sources": [

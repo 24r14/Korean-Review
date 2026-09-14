@@ -119,14 +119,16 @@
       "id":"system-word-building",
       "title":"Word building & productive patterns",
       "lessonProgression":[
+        {"lesson":1,"focus":"native/Sino-Korean/loanword vocabulary layers; school and country Hanja families"},
         {"lesson":2,"focus":"N + 하다 verbs such as 공부하다/숙제하다"},
         {"lesson":5,"focus":"expanded N + 하다 vocabulary such as 쇼핑하다/운동하다/전화하다"},
         {"lesson":6,"focus":"negation placement with N+하다 patterns"},
+        {"lesson":12,"focus":"adjective roots, color words, and ㅎ-irregular forms in noun modifiers"},
         {"lesson":13,"focus":"benefactive V-아/어 주다 and compounds such as 빌려주다"},
-        {"lesson":14,"focus":"A-게 productive adverb formation"}
+        {"lesson":14,"focus":"A-게 productive adverb formation; transport/service Hanja compounds"}
       ],
-      "exploreSections":["N + 하다 → verb/adjective","N + 되다 change/passive-like patterns (future expansion)","N + 시키다 causative-like patterns (future expansion)","A + 게 → adverb","Hanja-derived suffix families such as -적/-성/-화/-자/-원 (enrichment, not teacher-PPT core)"],
-      "practiceIdeas":["turn noun into verb","where does 안 go?","build an adverb","word-family tree"]
+      "exploreSections":["vocabulary layers: native Korean vs Sino-Korean vs loanword vs mixed","N + 하다 → verb/adjective","where short and long negation go with N+하다 predicates","N + 되다 result/passive-like families","N + 시키다 causative-like families","stem + ending morphology across tense/aspect/irregular families","A + 게 → adverb","V-아/어 주다 benefactive compounds","noun + noun compounds","Hanja-derived suffix families such as -적/-성/-화/-자/-원/-인/-생/-장/-점/-관 (enrichment, not teacher-PPT core)","English/international loanword adaptation in Hangul"],
+      "practiceIdeas":["turn noun into verb","where does 안 go?","build an adverb","sort native/Sino/loanword items","match Hanja to Korean vocabulary","word-family tree","spot mixed words such as 선생님 and 몸조리"]
     },
     {
       "id":"system-location-movement",

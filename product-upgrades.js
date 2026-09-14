@@ -16,16 +16,22 @@
     return a;
   }
 
-  const systemSpeak=typeof speak==='function'?speak:null;
+  function browserKoreanSpeak(text){
+    text=String(text||'').trim();if(!text||!('speechSynthesis'in window))return false;
+    const u=new SpeechSynthesisUtterance(text);u.lang='ko-KR';
+    const voices=window.speechSynthesis.getVoices?.()||[];
+    const ko=voices.find(v=>/^ko/i.test(v.lang)||/korean|한국/i.test(v.name));
+    if(ko)u.voice=ko;
+    window.speechSynthesis.cancel();window.speechSynthesis.speak(u);return true;
+  }
   async function directKoreanAudio(text,audioUrl=''){
     text=String(text||'').trim();if(!text&&!audioUrl)return;
     try{
       if(audioUrl){await playRemote(audioUrl);return;}
+      if(browserKoreanSpeak(text))return;
       await playRemote(ONLINE_TTS(text));
     }catch(err){
-      if(systemSpeak){
-        try{systemSpeak(text);toastUpgrade('Online audio was unavailable, so the browser voice was used instead.');return}catch{}
-      }
+      if(browserKoreanSpeak(text))return;
       toastUpgrade('Audio could not play on this device. Use the Naver pronunciation link as a backup.');
     }
   }
@@ -44,7 +50,7 @@
 
   function refreshAudioStatus(){
     document.querySelectorAll('[data-audio-status]').forEach(el=>{
-      el.textContent='Online Korean audio is enabled — no Korean voice installation required. Naver remains a backup.';
+      el.textContent='Browser Korean pronunciation is enabled. Naver remains a backup for dictionary audio.';
       el.classList.add('online-ready');
     });
   }

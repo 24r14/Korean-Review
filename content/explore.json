@@ -60,6 +60,17 @@
   ],
   "wordBuilding": [
     {
+      "title": "Three vocabulary layers: native, Sino-Korean, loanword",
+      "summary": "Korean vocabulary often comes from three visible layers. Knowing the layer helps you decide whether Hanja, Chinese clues, or English loanword memory will actually help.",
+      "patterns": [
+        {"form":"고유어 / native Korean","meaning":"core everyday words: 집 home, 사람 person, 길 road, 먹다 eat"},
+        {"form":"한자어 / Sino-Korean","meaning":"many school, academic, date, money, country, and formal words: 학교 學校, 생일 生日, 공항 空港"},
+        {"form":"외래어 / loanword","meaning":"borrowed modern words, often from English: 커피 coffee, 택시 taxi, 메시지 message"},
+        {"form":"혼종어 / mixed word","meaning":"different layers can combine: 선생님 = 先生 + 님; 몸조리 = 몸 + 調理"}
+      ],
+      "note": "Hanja is powerful for Sino-Korean words, but it is not useful for every Korean word. Native Korean and modern loanwords need different memory strategies."
+    },
+    {
       "title": "Noun + 하다 → action or descriptive predicate",
       "summary": "One of the most productive Korean patterns. Many Sino-Korean nouns combine with 하다 and behave as verbs or descriptive verbs.",
       "patterns": [
@@ -69,6 +80,17 @@
         {"form":"필요 + 하다 → 필요하다","meaning":"necessity + do → to be necessary / need"}
       ],
       "note": "Not every noun can freely take 하다. Treat established combinations as lexical items even though the pattern is highly productive."
+    },
+    {
+      "title": "Where negation goes with N + 하다",
+      "summary": "For many 하다 verbs, short negation often appears between the noun and 하다. This is why students see 공부 안 해요 as a natural pattern.",
+      "patterns": [
+        {"form":"공부하다 → 공부 안 해요","meaning":"I do not study / I am not studying"},
+        {"form":"운동하다 → 운동 못 해요","meaning":"I cannot exercise"},
+        {"form":"전화하다 → 전화하지 않아요","meaning":"long-form negation keeps the whole predicate together"},
+        {"form":"필요하다 → 필요하지 않아요","meaning":"descriptive 하다 predicates commonly use the long form"}
+      ],
+      "note": "This pattern matters because Lesson 6 negation and Lesson 5/13 하다 vocabulary meet each other here."
     },
     {
       "title": "Noun + 되다 / 시키다",
@@ -82,6 +104,50 @@
       "note": "하다 / 되다 / 시키다 often form useful families, especially with Sino-Korean vocabulary."
     },
     {
+      "title": "A/V roots plus endings: grammar builds words too",
+      "summary": "Korean often builds meaning by keeping a stem and changing the ending. A learner should track the stem instead of memorizing every surface form separately.",
+      "patterns": [
+        {"form":"가다 → 가요 / 갔어요 / 갈 거예요","meaning":"same verb stem across present, past, and future/prospective forms"},
+        {"form":"춥다 → 추워요 / 추운 날","meaning":"irregular stems still belong to one vocabulary family"},
+        {"form":"마르다 → 말라요","meaning":"르-irregular change connects Lesson 14 forms"},
+        {"form":"빨갛다 → 빨간 옷","meaning":"ㅎ-irregular color adjectives connect Lesson 12 colors and noun modifiers"}
+      ],
+      "note": "This is morphology, not etymology: it explains how one Korean word changes shape in grammar."
+    },
+    {
+      "title": "A + 게 → adverb",
+      "summary": "Many descriptive verbs/adjectives form adverbial expressions with -게. This is a productive Lesson 14 pattern.",
+      "patterns": [
+        {"form":"빠르다 → 빠르게","meaning":"fast → quickly"},
+        {"form":"예쁘다 → 예쁘게","meaning":"pretty → prettily / in a pretty way"},
+        {"form":"쉽다 → 쉽게","meaning":"easy → easily"},
+        {"form":"조용하다 → 조용하게","meaning":"quiet → quietly"}
+      ],
+      "note": "English often uses -ly; Korean uses the adjective/descriptive stem plus 게."
+    },
+    {
+      "title": "Verb + 아/어 주다 → do for someone",
+      "summary": "A normal verb can combine with 주다 to show that the action benefits someone. Lesson 13 uses this as a major request and favor pattern.",
+      "patterns": [
+        {"form":"사다 → 사 주다","meaning":"buy → buy for someone"},
+        {"form":"빌리다 → 빌려주다","meaning":"borrow → lend / let someone borrow"},
+        {"form":"가르치다 → 가르쳐 주다","meaning":"teach / tell someone"},
+        {"form":"기다리다 → 기다려 주다","meaning":"wait for someone as a favor"}
+      ],
+      "note": "Do not translate 주다 literally as give every time; it often marks benefit."
+    },
+    {
+      "title": "Noun + noun compounds",
+      "summary": "Korean builds many transparent nouns by putting two nouns together. Some are Sino-Korean, some are native, and some mix layers.",
+      "patterns": [
+        {"form":"전화 + 번호 → 전화번호 電話番號","meaning":"telephone + number → phone number"},
+        {"form":"버스 + 정류장 → 버스 정류장","meaning":"bus + stop → bus stop"},
+        {"form":"백화 + 점 → 백화점 百貨店","meaning":"hundred-goods + store → department store"},
+        {"form":"몸 + 조리 → 몸조리 몸+調理","meaning":"body + care/regulation → recovery care"}
+      ],
+      "note": "Spacing can vary by lexicalization and style, so use dictionary forms for final spelling."
+    },
+    {
       "title": "High-value Sino-Korean suffixes",
       "summary": "Recognizing common suffixes lets you infer families of words instead of memorizing every item independently.",
       "patterns": [
@@ -92,6 +158,28 @@
         {"form":"-원 員","meaning":"member / worker: 회사원 office worker, 점원 store clerk"}
       ],
       "note": "These are especially helpful for Chinese readers because the Hanja often makes the semantic relationship visible immediately."
+    },
+    {
+      "title": "People, places, and role suffixes",
+      "summary": "Many Sino-Korean endings tell you whether a word points to a person, place, institution, or field.",
+      "patterns": [
+        {"form":"-인 人","meaning":"person/nationality: 한국인 Korean person, 미국인 American person"},
+        {"form":"-생 生","meaning":"student/learner status: 학생 student, 대학생 college student"},
+        {"form":"-원 員","meaning":"member/worker: 회사원 office worker, 직원 employee"},
+        {"form":"-장 場 / -점 店 / -관 館","meaning":"places: 정류장 stop, 서점 bookstore, 도서관 library"}
+      ],
+      "note": "These are enrichment clues. The lesson source tells you which word is taught; the Hanja family helps you remember related words."
+    },
+    {
+      "title": "English loanwords in Korean pronunciation",
+      "summary": "Loanwords are useful for U.S. high-school learners because many are familiar, but Korean adapts them to Hangul spelling and Korean sound patterns.",
+      "patterns": [
+        {"form":"coffee → 커피","meaning":"English / international loanword adapted into Korean"},
+        {"form":"taxi → 택시","meaning":"final vowels and consonants fit Korean syllable structure"},
+        {"form":"message → 메시지","meaning":"English sound is approximated with Korean syllables"},
+        {"form":"Russia / France / Spain → 러시아 / 프랑스 / 스페인","meaning":"country names can be loanwords instead of Sino-Korean names"}
+      ],
+      "note": "A loanword is still Korean once it is borrowed: pronounce it as Korean, attach Korean particles, and conjugate any 하다 form normally."
     }
   ],
   "numbers": {
