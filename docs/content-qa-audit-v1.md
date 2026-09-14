@@ -15,8 +15,8 @@ Current source layers:
 
 Current Lesson 1-14 status:
 - Hanja, Chinese glosses, `originType`, and `originNote` are classified as enrichment rather than teacher-source facts across the lesson packs.
-- `content/enrichment-verification-v1.json` now records the first verified batch: 17 high-frequency vocabulary items from Lessons 1, 5, 13, and 14.
-- Remaining Hanja/Chinese/word-origin fields stay **unverified enrichment** until they receive item-level evidence.
+- `content/enrichment-verification-v1.json` now records two verified batches: 34 high-frequency vocabulary items from Lessons 1, 5, 13, and 14.
+- Remaining Hanja/Chinese/word-origin fields stay **unverified enrichment** until they receive item-level evidence; semantic Chinese glosses are kept distinct from Korean Hanja even when both are verified.
 - The standalone `content/vocab-enrichment.json` file is also treated as unverified enrichment, even when individual items are plausible.
 - One malformed Hanja field was found and removed: `v4-of` had `hanja: "의"`, which was not Hanja.
 

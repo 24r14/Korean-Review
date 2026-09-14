@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "first verified enrichment batch; still not wired into the live UI",
+  "status": "verified enrichment batches; still not wired into the live UI",
   "purpose": "Record which Hanja, Chinese gloss, and word-origin enrichments have been checked against named references.",
   "verificationPolicy": "../content/enrichment-policy-v1.json",
   "sources": [
@@ -231,6 +231,221 @@
         {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%88%B0%E8%BE%BE&wdrst=0"}
       ],
       "notes": "Korean Hanja is 到着 plus native 하다; Chinese gloss is the natural Mandarin verb 到达."
+    },
+    {
+      "id": "ev-v1-grade",
+      "lessonId": "lesson-1",
+      "itemId": "v1-grade",
+      "korean": "학년",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "學年", "originType": "sino-korean", "meaningZh": "年级"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%ED%95%99%EB%85%84&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%B9%B4%E7%BA%A7&wdrst=0"}
+      ],
+      "notes": "Korean Hanja is 學年; the learner-facing Mandarin gloss 年级 reflects the classroom sense \"grade/school year\"."
+    },
+    {
+      "id": "ev-v1-highschool",
+      "lessonId": "lesson-1",
+      "itemId": "v1-highschool",
+      "korean": "고등학교",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "高等學校", "originType": "sino-korean", "meaningZh": "高中"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E9%AB%98%E4%B8%AD&wdrst=0"}
+      ],
+      "notes": "The Mandarin learner gloss uses the natural school term 高中, not a character-for-character rendering of 高等學校."
+    },
+    {
+      "id": "ev-v1-teacher",
+      "lessonId": "lesson-1",
+      "itemId": "v1-teacher",
+      "korean": "선생님",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "先生", "originType": "mixed-sino-korean", "meaningZh": "老师"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%84%A0%EC%83%9D%EB%8B%98&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E8%80%81%E5%B8%88&wdrst=0"}
+      ],
+      "notes": "선생 is Sino-Korean 先生; 님 is an honorific suffix, so the full learner item is mixed."
+    },
+    {
+      "id": "ev-v1-class",
+      "lessonId": "lesson-1",
+      "itemId": "v1-class",
+      "korean": "수업",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "授業", "originType": "sino-korean", "meaningZh": "课；课程"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%88%98%EC%97%85&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E8%AF%BE%E7%A8%8B&wdrst=0"}
+      ],
+      "notes": "The Chinese gloss is semantic classroom Chinese; Korean 授業 is kept as the Hanja source."
+    },
+    {
+      "id": "ev-v1-ssi",
+      "lessonId": "lesson-1",
+      "itemId": "v1-ssi",
+      "korean": "씨",
+      "verifiedFields": ["hanja", "originType"],
+      "values": {"hanja": "氏", "originType": "sino-korean"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%94%A8&nation=eng"}
+      ],
+      "notes": "Only Hanja and origin type are promoted here. The longer functional Chinese explanation remains a learner gloss, not a one-word dictionary equivalent."
+    },
+    {
+      "id": "ev-v5-deptstore",
+      "lessonId": "lesson-5",
+      "itemId": "v5-deptstore",
+      "korean": "백화점",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "百貨店", "originType": "sino-korean", "meaningZh": "百货商店"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EB%B0%B1%ED%99%94%EC%A0%90&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E7%99%BE%E8%B4%A7%E5%95%86%E5%BA%97&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v5-bookstore",
+      "lessonId": "lesson-5",
+      "itemId": "v5-bookstore",
+      "korean": "서점",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "書店", "originType": "sino-korean", "meaningZh": "书店"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%84%9C%EC%A0%90&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E4%B9%A6%E5%BA%97&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v5-semester",
+      "lessonId": "lesson-5",
+      "itemId": "v5-semester",
+      "korean": "학기",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "學期", "originType": "sino-korean", "meaningZh": "学期"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%ED%95%99%EA%B8%B0&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%AD%A6%E6%9C%9F&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v5-subject",
+      "lessonId": "lesson-5",
+      "itemId": "v5-subject",
+      "korean": "과목",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "科目", "originType": "sino-korean", "meaningZh": "科目"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EA%B3%BC%EB%AA%A9&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E7%A7%91%E7%9B%AE&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v5-monday",
+      "lessonId": "lesson-5",
+      "itemId": "v5-monday",
+      "korean": "월요일",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "月曜日", "originType": "sino-korean", "meaningZh": "星期一"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%9B%94%EC%9A%94%EC%9D%BC&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E6%98%9F%E6%9C%9F%E4%B8%80&wdrst=0"}
+      ],
+      "notes": "Modern Mandarin weekday gloss uses 星期一; Korean Hanja remains 月曜日."
+    },
+    {
+      "id": "ev-v5-friday",
+      "lessonId": "lesson-5",
+      "itemId": "v5-friday",
+      "korean": "금요일",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "金曜日", "originType": "sino-korean", "meaningZh": "星期五"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EA%B8%88%EC%9A%94%EC%9D%BC&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E6%98%9F%E6%9C%9F%E4%BA%94&wdrst=0"}
+      ],
+      "notes": "Modern Mandarin weekday gloss uses 星期五; Korean Hanja remains 金曜日."
+    },
+    {
+      "id": "ev-v5-sunday",
+      "lessonId": "lesson-5",
+      "itemId": "v5-sunday",
+      "korean": "일요일",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "日曜日", "originType": "sino-korean", "meaningZh": "星期日"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%9D%BC%EC%9A%94%EC%9D%BC&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E6%98%9F%E6%9C%9F%E6%97%A5&wdrst=0"}
+      ],
+      "notes": "Modern Mandarin weekday gloss uses 星期日; Korean Hanja remains 日曜日."
+    },
+    {
+      "id": "ev-v13-cold",
+      "lessonId": "lesson-13",
+      "itemId": "v13-cold",
+      "korean": "감기",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "感氣", "originType": "sino-korean", "meaningZh": "感冒"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EA%B0%90%EA%B8%B0&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E6%84%9F%E5%86%92&wdrst=0"}
+      ],
+      "notes": "Chinese gloss is semantic; it is not a claim that modern Mandarin uses 感氣 for \"a cold\"."
+    },
+    {
+      "id": "ev-v13-busy-line",
+      "lessonId": "lesson-13",
+      "itemId": "v13-busy-line",
+      "korean": "통화중이다",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "通話中", "originType": "sino-korean+copula", "meaningZh": "正在通话；占线"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%ED%86%B5%ED%99%94%20%EC%A4%91&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%8D%A0%E7%BA%BF&wdrst=0"}
+      ],
+      "notes": "통화 중 is 通話中 plus 이다 in this lesson item; the Chinese gloss combines active-call and busy-line senses."
+    },
+    {
+      "id": "ev-v14-driver",
+      "lessonId": "lesson-14",
+      "itemId": "v14-driver",
+      "korean": "기사",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "技士", "originType": "sino-korean", "meaningZh": "司机；技师"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EA%B8%B0%EC%82%AC&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%8F%B8%E6%9C%BA&wdrst=0"}
+      ],
+      "notes": "Lesson 14 uses the taxi-driver sense. Korean 기사 can also cover technical-worker senses, reflected in the broader Chinese gloss."
+    },
+    {
+      "id": "ev-v14-stop",
+      "lessonId": "lesson-14",
+      "itemId": "v14-stop",
+      "korean": "정류장",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "停留場", "originType": "sino-korean", "meaningZh": "车站；停靠站"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%A0%95%EB%A5%98%EC%9E%A5&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E8%BD%A6%E7%AB%99&wdrst=0"}
+      ],
+      "notes": "The Chinese gloss is the natural learner gloss for a transit stop, not a literal rendering of 停留場."
+    },
+    {
+      "id": "ev-v14-contact",
+      "lessonId": "lesson-14",
+      "itemId": "v14-contact",
+      "korean": "연락",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "連絡", "originType": "sino-korean", "meaningZh": "联系"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%97%B0%EB%9D%BD&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E8%81%94%E7%B3%BB&wdrst=0"}
+      ]
     }
   ]
 }

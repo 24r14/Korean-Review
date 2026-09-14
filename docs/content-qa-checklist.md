@@ -75,4 +75,4 @@ This checklist is used before any lesson pack is connected to the production UI.
 
 ## Known QA priority
 
-Hanja/Chinese etymology enrichment should receive a separate verification pass before it is exposed broadly in the public UI. It is useful as a learner aid, but it is not part of the teacher-source fidelity layer. As of the current Lesson 1-14 audit, the first 17 high-frequency vocabulary items have been promoted in `content/enrichment-verification-v1.json`; all other enrichment remains unverified.
+Hanja/Chinese etymology enrichment should receive a separate verification pass before it is exposed broadly in the public UI. It is useful as a learner aid, but it is not part of the teacher-source fidelity layer. As of the current Lesson 1-14 audit, 34 high-frequency vocabulary items have been promoted in `content/enrichment-verification-v1.json`; all other enrichment remains unverified.

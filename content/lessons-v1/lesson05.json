@@ -7,7 +7,7 @@
     "copyright": "Do not republish full PPT slides or textbook artwork.",
     "sourceLayers": {
       "teacherSource": "Derived from lesson5(ST).pptx and rewritten into structured study data.",
-      "verifiedEnrichment": "A first batch of Hanja, Chinese gloss, and word-origin enrichment is verified in content/enrichment-verification-v1.json; other enrichment remains unverified.",
+      "verifiedEnrichment": "Verified batches of Hanja, Chinese gloss, and word-origin enrichment are recorded in content/enrichment-verification-v1.json; other enrichment remains unverified.",
       "unverifiedEnrichment": "Chinese glosses, Hanja, originType, and originNote are assistant-added learner aids for QA review, not teacher-source facts."
     },
     "enrichmentQa": {
@@ -15,7 +15,7 @@
       "teacherSourceFields": ["korean","meaningEn","pattern","meaning","teacherFocus","sourceRefs"],
       "verifiedFields": [],
       "unverifiedFields": ["meaningZh","hanja","originType","originNote"],
-      "verifiedItemIds": ["v5-park","v5-birthday","v5-am","v5-pm"],
+      "verifiedItemIds": ["v5-park","v5-deptstore","v5-bookstore","v5-birthday","v5-am","v5-pm","v5-semester","v5-subject","v5-monday","v5-friday","v5-sunday"],
       "verificationRegister": "../enrichment-verification-v1.json",
       "publicDisplay": "Hide or label unverified enrichment until a reviewer promotes it to verified-enrichment."
     }
