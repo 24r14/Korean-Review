@@ -7,14 +7,16 @@
     "copyright": "Do not republish full PPT slides or complete dialogues.",
     "sourceLayers": {
       "teacherSource": "Derived from lesson13(1).pptx; lesson13(2).pptx is an overlapping teacher source.",
-      "verifiedEnrichment": "No Chinese gloss, Hanja, or word-origin enrichment in this pack is marked verified yet; promote individual fields only after an explicit dictionary/manual QA pass.",
+      "verifiedEnrichment": "A first batch of Hanja, Chinese gloss, and word-origin enrichment is verified in content/enrichment-verification-v1.json; other enrichment remains unverified.",
       "unverifiedEnrichment": "Chinese glosses, Hanja, originType, and originNote are assistant-added learner aids for QA review, not teacher-source facts."
     },
     "enrichmentQa": {
-      "status": "unverified",
+      "status": "mixed",
       "teacherSourceFields": ["korean","meaningEn","pattern","meaning","teacherFocus","sourceRefs"],
       "verifiedFields": [],
       "unverifiedFields": ["meaningZh","hanja","originType","originNote"],
+      "verifiedItemIds": ["v13-phone-number"],
+      "verificationRegister": "../enrichment-verification-v1.json",
       "publicDisplay": "Hide or label unverified enrichment until a reviewer promotes it to verified-enrichment."
     }
   },

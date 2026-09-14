@@ -21,6 +21,7 @@
   "pipelineRules": [
     "Core lesson facts must be traceable to teacher PPT slides through sourceRefs.",
     "Chinese glosses and Hanja enrichment are separate from source-derived teacher content and must be classified as verified or unverified enrichment.",
+    "Verified enrichment must be recorded in content/enrichment-verification-v1.json with item-level evidence.",
     "Examples and practice prompts may be rewritten or newly created; do not republish full slide/page content.",
     "Do not wire a new lesson pack into the production UI until the current stability problems are resolved.",
     "Course and Explore should eventually reference the same concept IDs rather than duplicating explanations.",

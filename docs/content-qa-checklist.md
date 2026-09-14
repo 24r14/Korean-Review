@@ -61,6 +61,7 @@ This checklist is used before any lesson pack is connected to the production UI.
 - Related concept IDs resolve.
 - Required fields follow `content/content-schema-v1.json`.
 - `content/enrichment-policy-v1.json` exists and defines the three source layers used by the validator.
+- `content/enrichment-verification-v1.json` records every item promoted to verified enrichment.
 - Lesson packs with `meaningZh`, `hanja`, `originType`, or `originNote` declare those fields in `sourcePolicy.enrichmentQa`.
 - No lesson pack is loaded on initial page startup unless it is needed.
 - Course and Explore reference shared concept data instead of duplicating competing explanations.
@@ -74,4 +75,4 @@ This checklist is used before any lesson pack is connected to the production UI.
 
 ## Known QA priority
 
-Hanja/Chinese etymology enrichment should receive a separate verification pass before it is exposed broadly in the public UI. It is useful as a learner aid, but it is not part of the teacher-source fidelity layer. As of the current Lesson 1-14 audit, no Hanja, Chinese gloss, or word-origin field has been promoted to verified enrichment.
+Hanja/Chinese etymology enrichment should receive a separate verification pass before it is exposed broadly in the public UI. It is useful as a learner aid, but it is not part of the teacher-source fidelity layer. As of the current Lesson 1-14 audit, the first 17 high-frequency vocabulary items have been promoted in `content/enrichment-verification-v1.json`; all other enrichment remains unverified.

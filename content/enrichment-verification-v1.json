@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "status": "first verified enrichment batch; still not wired into the live UI",
+  "purpose": "Record which Hanja, Chinese gloss, and word-origin enrichments have been checked against named references.",
+  "verificationPolicy": "../content/enrichment-policy-v1.json",
+  "sources": [
+    {
+      "id": "nikl-krdict",
+      "label": "National Institute of Korean Language Basic Korean Dictionary",
+      "type": "official-korean-dictionary",
+      "url": "https://krdict.korean.go.kr/eng/mainAction",
+      "usedFor": ["hanja", "originType", "meaningEn"]
+    },
+    {
+      "id": "mdbg-cc-cedict",
+      "label": "MDBG Chinese-English Dictionary / CC-CEDICT",
+      "type": "chinese-english-dictionary",
+      "url": "https://www.mdbg.net/chinese/dictionary",
+      "usedFor": ["meaningZh"]
+    }
+  ],
+  "verifiedItems": [
+    {
+      "id": "ev-v1-student",
+      "lessonId": "lesson-1",
+      "itemId": "v1-student",
+      "korean": "학생",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "學生", "originType": "sino-korean", "meaningZh": "学生"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%ED%95%99%EC%83%9D&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%AD%A6%E7%94%9F&wdrst=0"}
+      ],
+      "notes": "Modern Mandarin 学生 directly matches the learner gloss 'student'."
+    },
+    {
+      "id": "ev-v1-school",
+      "lessonId": "lesson-1",
+      "itemId": "v1-school",
+      "korean": "학교",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "學校", "originType": "sino-korean", "meaningZh": "学校"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=73276&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%AD%A6%E6%A0%A1&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v1-university",
+      "lessonId": "lesson-1",
+      "itemId": "v1-university",
+      "korean": "대학교",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "大學校", "originType": "sino-korean", "meaningZh": "大学"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EB%8C%80%ED%95%99%EA%B5%90&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%A4%A7%E5%AD%A6&wdrst=0"}
+      ],
+      "notes": "Korean Hanja includes 校; the natural modern Mandarin gloss is 大学, not a literal 大学校."
+    },
+    {
+      "id": "ev-v1-usa",
+      "lessonId": "lesson-1",
+      "itemId": "v1-usa",
+      "korean": "미국",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "美國", "originType": "sino-korean", "meaningZh": "美国"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EB%AF%B8%EA%B5%AD&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E7%BE%8E%E5%9B%BD&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v1-korea",
+      "lessonId": "lesson-1",
+      "itemId": "v1-korea",
+      "korean": "한국",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "韓國", "originType": "sino-korean", "meaningZh": "韩国"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%ED%95%9C%EA%B5%AD&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E9%9F%A9%E5%9B%BD&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v1-china",
+      "lessonId": "lesson-1",
+      "itemId": "v1-china",
+      "korean": "중국",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "中國", "originType": "sino-korean", "meaningZh": "中国"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%A4%91%EA%B5%AD&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E4%B8%AD%E5%9B%BD&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v1-japan",
+      "lessonId": "lesson-1",
+      "itemId": "v1-japan",
+      "korean": "일본",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "日本", "originType": "sino-korean", "meaningZh": "日本"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%9D%BC%EB%B3%B8&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E6%97%A5%E6%9C%AC&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v1-uk",
+      "lessonId": "lesson-1",
+      "itemId": "v1-uk",
+      "korean": "영국",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "英國", "originType": "sino-korean", "meaningZh": "英国"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%98%81%EA%B5%AD&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E8%8B%B1%E5%9B%BD&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v1-phone-number",
+      "lessonId": "lesson-1",
+      "itemId": "v1-phone-number",
+      "korean": "전화번호",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "電話番號", "originType": "sino-korean", "meaningZh": "电话号码"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81&wdrst=0"}
+      ],
+      "notes": "Modern Mandarin uses 电话号码; this is a meaning gloss, not a claim that Korean 番號 maps character-for-character to modern Mandarin."
+    },
+    {
+      "id": "ev-v5-park",
+      "lessonId": "lesson-5",
+      "itemId": "v5-park",
+      "korean": "공원",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "公園", "originType": "sino-korean", "meaningZh": "公园"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=31849&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%85%AC%E5%9B%AD&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v5-birthday",
+      "lessonId": "lesson-5",
+      "itemId": "v5-birthday",
+      "korean": "생일",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "生日", "originType": "sino-korean", "meaningZh": "生日"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%83%9D%EC%9D%BC&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E7%94%9F%E6%97%A5&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v5-am",
+      "lessonId": "lesson-5",
+      "itemId": "v5-am",
+      "korean": "오전",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "午前", "originType": "sino-korean", "meaningZh": "上午"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20246&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E4%B8%8A%E5%8D%88&wdrst=0"}
+      ],
+      "notes": "Chinese gloss is semantic, not literal Hanja mapping."
+    },
+    {
+      "id": "ev-v5-pm",
+      "lessonId": "lesson-5",
+      "itemId": "v5-pm",
+      "korean": "오후",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "午後", "originType": "sino-korean", "meaningZh": "下午"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%98%A4%ED%9B%84&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E4%B8%8B%E5%8D%88&wdrst=0"}
+      ],
+      "notes": "Chinese gloss is semantic, not literal Hanja mapping."
+    },
+    {
+      "id": "ev-v13-phone-number",
+      "lessonId": "lesson-13",
+      "itemId": "v13-phone-number",
+      "korean": "전화번호",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "電話番號", "originType": "sino-korean", "meaningZh": "电话号码"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81&wdrst=0"}
+      ],
+      "notes": "Same verified enrichment as v1-phone-number; kept separately because the lesson item ID is separate."
+    },
+    {
+      "id": "ev-v14-airport",
+      "lessonId": "lesson-14",
+      "itemId": "v14-airport",
+      "korean": "공항",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "空港", "originType": "sino-korean", "meaningZh": "机场"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=25620&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E6%9C%BA%E5%9C%BA&wdrst=0"}
+      ],
+      "notes": "Modern Mandarin usually says 机场; this confirms the Chinese learner gloss while keeping Korean Hanja separate."
+    },
+    {
+      "id": "ev-v14-exit",
+      "lessonId": "lesson-14",
+      "itemId": "v14-exit",
+      "korean": "출구",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "出口", "originType": "sino-korean", "meaningZh": "出口"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%B6%9C%EA%B5%AC&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%87%BA%E5%8F%A3&wdrst=0"}
+      ]
+    },
+    {
+      "id": "ev-v14-arrive",
+      "lessonId": "lesson-14",
+      "itemId": "v14-arrive",
+      "korean": "도착하다",
+      "verifiedFields": ["hanja", "originType", "meaningZh"],
+      "values": {"hanja": "到着", "originType": "sino-korean+하다", "meaningZh": "到达"},
+      "evidence": [
+        {"sourceId": "nikl-krdict", "fields": ["hanja", "originType"], "lookupUrl": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EB%8F%84%EC%B0%A9%ED%95%98%EB%8B%A4&nation=eng"},
+        {"sourceId": "mdbg-cc-cedict", "fields": ["meaningZh"], "lookupUrl": "https://www.mdbg.net/chinese/dictionary?page=worddict&wdqb=%E5%88%B0%E8%BE%BE&wdrst=0"}
+      ],
+      "notes": "Korean Hanja is 到着 plus native 하다; Chinese gloss is the natural Mandarin verb 到达."
+    }
+  ]
+}

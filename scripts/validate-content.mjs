@@ -44,6 +44,8 @@ const crosswalkPath = path.join(contentDir, 'concept-crosswalk-v1.json');
 const crosswalk = fs.existsSync(crosswalkPath) ? readJson(crosswalkPath) : null;
 const enrichmentPolicyPath = path.join(contentDir, 'enrichment-policy-v1.json');
 const enrichmentPolicy = fs.existsSync(enrichmentPolicyPath) ? readJson(enrichmentPolicyPath) : null;
+const enrichmentVerificationPath = path.join(contentDir, 'enrichment-verification-v1.json');
+const enrichmentVerification = fs.existsSync(enrichmentVerificationPath) ? readJson(enrichmentVerificationPath) : null;
 
 const canonicalConceptIds = new Set((registry?.concepts || []).map(x => x.id));
 const systemIds = new Set((systemMap?.systems || []).map(x => x.id));
@@ -71,6 +73,7 @@ if (!index) {
 const globalIds = new Map();
 const listedLessonIds = new Set();
 const lessonGrammarIds = new Map();
+const lessonItemIds = new Map();
 
 function checkSourceRefs(item, context) {
   if (!item || !Array.isArray(item.sourceRefs) || item.sourceRefs.length === 0) {
@@ -243,6 +246,7 @@ for (const pack of index?.packs || []) {
     }
   }
 
+  lessonItemIds.set(lessonId, localIds);
   lessonGrammarIds.set(lessonId, new Set((data.grammar || []).map(item => item.id).filter(Boolean)));
 
   // Resolve practice references after all local IDs have been collected.
@@ -252,6 +256,92 @@ for (const pack of index?.packs || []) {
       if (!localIds.has(conceptId) && !canonicalConceptIds.has(conceptId) && !resolveSystemId(conceptId)) {
         warn(`${lessonId}.practice[${i}]: unresolved conceptId '${conceptId}'`);
       }
+    }
+  }
+}
+
+// Verified enrichment register checks.
+if (!enrichmentVerification) {
+  fail('Missing content/enrichment-verification-v1.json');
+} else {
+  if (!Array.isArray(enrichmentVerification.sources) || enrichmentVerification.sources.length === 0) {
+    fail('enrichment-verification: sources must be a non-empty array');
+  }
+  if (!Array.isArray(enrichmentVerification.verifiedItems)) {
+    fail('enrichment-verification: verifiedItems must be an array');
+  }
+
+  const sourceIds = new Set();
+  for (const [i, source] of (enrichmentVerification.sources || []).entries()) {
+    if (!source.id || !source.label || !source.url) {
+      fail(`enrichment-verification sources[${i}] missing id/label/url`);
+      continue;
+    }
+    if (sourceIds.has(source.id)) fail(`enrichment-verification duplicate source ID: ${source.id}`);
+    sourceIds.add(source.id);
+  }
+
+  const seenVerifiedIds = new Set();
+  for (const [i, entry] of (enrichmentVerification.verifiedItems || []).entries()) {
+    const context = `enrichment-verification verifiedItems[${i}]`;
+    if (!entry.id || !entry.lessonId || !entry.itemId) {
+      fail(`${context}: id, lessonId, and itemId are required`);
+      continue;
+    }
+    if (seenVerifiedIds.has(entry.id)) fail(`${context}: duplicate verification ID '${entry.id}'`);
+    seenVerifiedIds.add(entry.id);
+
+    const itemIds = lessonItemIds.get(entry.lessonId);
+    if (!itemIds) {
+      fail(`${context}: unknown lessonId '${entry.lessonId}'`);
+    } else if (!itemIds.has(entry.itemId)) {
+      fail(`${context}: itemId '${entry.itemId}' does not exist in ${entry.lessonId}`);
+    }
+
+    if (!Array.isArray(entry.verifiedFields) || entry.verifiedFields.length === 0) {
+      fail(`${context}: verifiedFields must be a non-empty array`);
+    } else {
+      for (const field of entry.verifiedFields) {
+        if (!enrichmentFields.includes(field) || field === 'chinese') {
+          fail(`${context}: '${field}' is not a supported verifiable enrichment field`);
+        }
+        if (!(field in (entry.values || {}))) {
+          fail(`${context}: values.${field} is required for every verified field`);
+        }
+      }
+    }
+
+    if (!Array.isArray(entry.evidence) || entry.evidence.length === 0) {
+      fail(`${context}: evidence must be a non-empty array`);
+    } else {
+      for (const [evidenceIndex, evidence] of entry.evidence.entries()) {
+        if (!sourceIds.has(evidence.sourceId)) {
+          fail(`${context}.evidence[${evidenceIndex}]: unknown sourceId '${evidence.sourceId}'`);
+        }
+        if (!Array.isArray(evidence.fields) || evidence.fields.length === 0) {
+          fail(`${context}.evidence[${evidenceIndex}]: fields must be a non-empty array`);
+        } else {
+          for (const field of evidence.fields) {
+            if (!entry.verifiedFields?.includes(field)) {
+              fail(`${context}.evidence[${evidenceIndex}]: field '${field}' is not listed in verifiedFields`);
+            }
+          }
+        }
+        if (!evidence.lookupUrl && !evidence.notes) {
+          warn(`${context}.evidence[${evidenceIndex}]: add lookupUrl or notes for traceability`);
+        }
+      }
+    }
+  }
+
+  for (const pack of index?.packs || []) {
+    const lessonId = pack.lessonId;
+    const filePath = path.join(lessonDir, pack.file);
+    const data = fs.existsSync(filePath) ? readJson(filePath) : null;
+    const verifiedItemIds = data?.sourcePolicy?.enrichmentQa?.verifiedItemIds || [];
+    for (const itemId of verifiedItemIds) {
+      const hasVerification = (enrichmentVerification.verifiedItems || []).some(entry => entry.lessonId === lessonId && entry.itemId === itemId);
+      if (!hasVerification) fail(`${lessonId}: verifiedItemIds includes '${itemId}' without an enrichment-verification entry`);
     }
   }
 }

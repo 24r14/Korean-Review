@@ -45,9 +45,10 @@
   "currentAudit": {
     "lessonPacks": {
       "scope": "content/lessons-v1/lesson01.json through lesson14.json",
-      "status": "unverified-enrichment",
+      "status": "mixed",
       "notes": [
-        "All Lesson 1-14 packs now declare Hanja, Chinese glosses, originType, and originNote as unverified enrichment until a separate verification pass promotes them.",
+        "Lesson 1-14 packs now declare Hanja, Chinese glosses, originType, and originNote as enrichment instead of teacher-source facts.",
+        "A first verified batch is recorded in content/enrichment-verification-v1.json for selected Lesson 1, 5, 13, and 14 vocabulary items.",
         "Teacher PPT sourceRefs still establish the classroom vocabulary/grammar surface, but they do not automatically verify Hanja, Mandarin gloss fit, or etymology.",
         "The only obvious malformed Hanja field found in this pass was removed from v4-of, where the particle 의 had been placed in hanja."
       ]
@@ -61,9 +62,11 @@
       ]
     },
     "verifiedEnrichment": {
-      "status": "none-promoted-yet",
+      "status": "first-batch-promoted",
+      "file": "content/enrichment-verification-v1.json",
       "notes": [
-        "No Hanja, Chinese gloss, or word-origin item has been promoted to verified-enrichment in this repository snapshot."
+        "Selected high-frequency Hanja, Chinese gloss, and originType fields have been promoted for 17 lesson vocabulary items.",
+        "The remaining Hanja, Chinese gloss, and word-origin fields stay unverified until they receive entry-level evidence."
       ]
     }
   },
