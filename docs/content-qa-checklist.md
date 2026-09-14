@@ -19,6 +19,8 @@ This checklist is used before any lesson pack is connected to the production UI.
 - Mixed/native/loanword items are not falsely labeled Sino-Korean.
 - Homonyms or multiple senses are not collapsed when that would mislead a learner.
 - Part of speech and tags are consistent across lessons.
+- Hanja, Chinese glosses, and word-origin notes are classified as `teacher-source`, `verified-enrichment`, or `unverified-enrichment`.
+- `verified-enrichment` is used only after an explicit dictionary/manual QA pass; otherwise the item remains `unverified-enrichment`.
 
 ## 3. Grammar QA
 
@@ -58,6 +60,8 @@ This checklist is used before any lesson pack is connected to the production UI.
 - IDs are unique.
 - Related concept IDs resolve.
 - Required fields follow `content/content-schema-v1.json`.
+- `content/enrichment-policy-v1.json` exists and defines the three source layers used by the validator.
+- Lesson packs with `meaningZh`, `hanja`, `originType`, or `originNote` declare those fields in `sourcePolicy.enrichmentQa`.
 - No lesson pack is loaded on initial page startup unless it is needed.
 - Course and Explore reference shared concept data instead of duplicating competing explanations.
 
@@ -70,4 +74,4 @@ This checklist is used before any lesson pack is connected to the production UI.
 
 ## Known QA priority
 
-Hanja/Chinese etymology enrichment should receive a separate verification pass before it is exposed broadly in the public UI. It is useful as a learner aid, but it is not part of the teacher-source fidelity layer.
+Hanja/Chinese etymology enrichment should receive a separate verification pass before it is exposed broadly in the public UI. It is useful as a learner aid, but it is not part of the teacher-source fidelity layer. As of the current Lesson 1-14 audit, no Hanja, Chinese gloss, or word-origin field has been promoted to verified enrichment.

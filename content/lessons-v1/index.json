@@ -20,11 +20,11 @@
   ],
   "pipelineRules": [
     "Core lesson facts must be traceable to teacher PPT slides through sourceRefs.",
-    "Chinese glosses and Hanja enrichment are separate from source-derived teacher content.",
+    "Chinese glosses and Hanja enrichment are separate from source-derived teacher content and must be classified as verified or unverified enrichment.",
     "Examples and practice prompts may be rewritten or newly created; do not republish full slide/page content.",
     "Do not wire a new lesson pack into the production UI until the current stability problems are resolved.",
     "Course and Explore should eventually reference the same concept IDs rather than duplicating explanations.",
-    "Before scaling, check vocabulary meanings, Hanja, grammar labels, and sourceRefs for accuracy."
+    "Before scaling, check vocabulary meanings, Hanja, word origins, grammar labels, and sourceRefs for accuracy."
   ],
   "completedBatch": ["lesson-1","lesson-2","lesson-3","lesson-4","lesson-5","lesson-6","lesson-7","lesson-8","lesson-9","lesson-10","lesson-11","lesson-12","lesson-13","lesson-14"],
   "nextBatch": ["lesson-15","lesson-16"],

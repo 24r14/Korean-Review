@@ -17,7 +17,21 @@
       "cultureRefs": ["c-phone-etiquette"],
       "teacherFocus": ["body parts", "telephone flow"],
       "connections": ["system-honorifics", "system-reasons"],
-      "sourceRefs": [{"type":"teacher-ppt","file":"lesson13(2).pptx","slide":2}]
+      "sourceRefs": [{"type":"teacher-ppt","file":"lesson13(2).pptx","slide":2}],
+      "sourcePolicy": {
+        "sourceLayers": {
+          "teacherSource": "Core lesson facts are derived from the named teacher PPT sourceRefs.",
+          "verifiedEnrichment": "No Hanja/Chinese/word-origin fields are promoted here until an explicit QA pass records a reference.",
+          "unverifiedEnrichment": "Chinese glosses, Hanja, originType, and originNote are assistant-added learner aids until verified."
+        },
+        "enrichmentQa": {
+          "status": "unverified",
+          "teacherSourceFields": ["korean", "meaningEn", "pattern", "meaning", "teacherFocus", "sourceRefs"],
+          "verifiedFields": [],
+          "unverifiedFields": ["meaningZh", "hanja", "originType", "originNote"],
+          "publicDisplay": "Hide or label unverified enrichment until reviewed."
+        }
+      }
     }
   },
   "vocabulary": {
@@ -122,6 +136,7 @@
     "Keep sourceRefs for traceability but do not reproduce full copyrighted slides or textbook pages in the public site.",
     "Use original explanations and original practice questions.",
     "Vocabulary can have Hanja/Chinese clues only when the relationship is supportable; do not label every word as Chinese-derived.",
+    "Teacher source, verified enrichment, and unverified enrichment must remain visibly separate in data and QA documentation.",
     "Audio, images, examples, and translations are enrichments, not required blockers for creating an item.",
     "Course pages and Explore pages should reference the same concept IDs so a learner can move between lesson context and system-level explanations.",
     "User-created content should use the same vocabulary/grammar shapes where possible."

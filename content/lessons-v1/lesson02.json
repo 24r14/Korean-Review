@@ -4,7 +4,19 @@
   "sourcePolicy": {
     "coreContent": "Derived from the teacher Lesson 2 PPT and rewritten into structured study data.",
     "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids; only high-confidence items are filled.",
-    "copyright": "No full slide text or slide images should be republished in the public site."
+    "copyright": "No full slide text or slide images should be republished in the public site.",
+    "sourceLayers": {
+      "teacherSource": "Derived from the teacher Lesson 2 PPT and rewritten into structured study data.",
+      "verifiedEnrichment": "No Chinese gloss, Hanja, or word-origin enrichment in this pack is marked verified yet; promote individual fields only after an explicit dictionary/manual QA pass.",
+      "unverifiedEnrichment": "Chinese glosses, Hanja, originType, and originNote are assistant-added learner aids for QA review, not teacher-source facts."
+    },
+    "enrichmentQa": {
+      "status": "unverified",
+      "teacherSourceFields": ["korean","meaningEn","pattern","meaning","teacherFocus","sourceRefs"],
+      "verifiedFields": [],
+      "unverifiedFields": ["meaningZh","hanja","originType","originNote"],
+      "publicDisplay": "Hide or label unverified enrichment until a reviewer promotes it to verified-enrichment."
+    }
   },
   "lesson": {
     "id": "lesson-2",

@@ -4,7 +4,19 @@
   "sourcePolicy": {
     "coreContent": "Derived from lesson4(ST).pptx and rewritten into structured study data.",
     "generatedEnrichment": "Chinese glosses and selected Hanja are assistant-added learning aids.",
-    "copyright": "Do not republish full PPT slides or textbook artwork."
+    "copyright": "Do not republish full PPT slides or textbook artwork.",
+    "sourceLayers": {
+      "teacherSource": "Derived from lesson4(ST).pptx and rewritten into structured study data.",
+      "verifiedEnrichment": "No Chinese gloss, Hanja, or word-origin enrichment in this pack is marked verified yet; promote individual fields only after an explicit dictionary/manual QA pass.",
+      "unverifiedEnrichment": "Chinese glosses, Hanja, originType, and originNote are assistant-added learner aids for QA review, not teacher-source facts."
+    },
+    "enrichmentQa": {
+      "status": "unverified",
+      "teacherSourceFields": ["korean","meaningEn","pattern","meaning","teacherFocus","sourceRefs"],
+      "verifiedFields": [],
+      "unverifiedFields": ["meaningZh","hanja","originType","originNote"],
+      "publicDisplay": "Hide or label unverified enrichment until a reviewer promotes it to verified-enrichment."
+    }
   },
   "lesson": {
     "id":"lesson-4",
@@ -47,7 +59,7 @@
     {"id":"v4-counter-person","korean":"명","meaningEn":"counter for people","meaningZh":"名；位（人数）","pos":"counter","hanja":"名","originType":"sino-korean","tags":["counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[20,65]}]},
     {"id":"v4-counter-cup","korean":"잔","meaningEn":"counter for cups/glasses","meaningZh":"杯（量词）","pos":"counter","hanja":"盞","originType":"sino-korean","tags":["counter"],"sourceRefs":[{"file":"lesson4(ST).pptx","slide":62}]},
     {"id":"v4-only","korean":"만","meaningEn":"only","meaningZh":"只；仅","pos":"particle","originType":"native-korean","tags":["particle"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[83,85]}]},
-    {"id":"v4-of","korean":"의","meaningEn":"of; possessive particle","meaningZh":"的","pos":"particle","hanja":"의","originType":"grammatical particle","tags":["possession"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[83,86,95]}]},
+    {"id":"v4-of","korean":"의","meaningEn":"of; possessive particle","meaningZh":"的","pos":"particle","originType":"grammatical particle","tags":["possession"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[83,86,95]}]},
     {"id":"v4-learn","korean":"배우다","meaningEn":"to learn","meaningZh":"学习","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[5,83]}]},
     {"id":"v4-sleep","korean":"자다","meaningEn":"to sleep","meaningZh":"睡觉","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[5,83]}]},
     {"id":"v4-give","korean":"주다","meaningEn":"to give","meaningZh":"给","pos":"verb","originType":"native-korean","tags":["action"],"sourceRefs":[{"file":"lesson4(ST).pptx","slides":[5,83]}]},

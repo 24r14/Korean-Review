@@ -42,10 +42,15 @@ const systemMapPath = path.join(contentDir, 'system-map-v1.json');
 const systemMap = fs.existsSync(systemMapPath) ? readJson(systemMapPath) : null;
 const crosswalkPath = path.join(contentDir, 'concept-crosswalk-v1.json');
 const crosswalk = fs.existsSync(crosswalkPath) ? readJson(crosswalkPath) : null;
+const enrichmentPolicyPath = path.join(contentDir, 'enrichment-policy-v1.json');
+const enrichmentPolicy = fs.existsSync(enrichmentPolicyPath) ? readJson(enrichmentPolicyPath) : null;
 
 const canonicalConceptIds = new Set((registry?.concepts || []).map(x => x.id));
 const systemIds = new Set((systemMap?.systems || []).map(x => x.id));
 const systemAliases = systemMap?.aliases || {};
+const enrichmentFields = ['meaningZh', 'hanja', 'originType', 'originNote', 'chinese'];
+const validEnrichmentStatuses = new Set(['unverified', 'verified', 'mixed']);
+const cjkPattern = /[\u3400-\u9FFF\uF900-\uFAFF]/;
 
 for (const [alias, target] of Object.entries(systemAliases)) {
   if (!systemIds.has(target)) fail(`system-map alias '${alias}' points to unknown system '${target}'`);
@@ -101,6 +106,70 @@ function collectItemId(item, context, localIds) {
   }
 }
 
+function usesEnrichmentFields(data) {
+  for (const groupName of ['vocabulary', 'expressions']) {
+    for (const item of data[groupName] || []) {
+      if (enrichmentFields.some(field => item[field])) return true;
+    }
+  }
+  return false;
+}
+
+function checkEnrichmentPolicy(data, context) {
+  if (!usesEnrichmentFields(data)) return;
+
+  const sourcePolicy = data.sourcePolicy;
+  const sourceLayers = sourcePolicy?.sourceLayers;
+  const enrichmentQa = sourcePolicy?.enrichmentQa;
+
+  if (!sourceLayers?.teacherSource || !sourceLayers?.verifiedEnrichment || !sourceLayers?.unverifiedEnrichment) {
+    fail(`${context}: enrichment fields require sourcePolicy.sourceLayers with teacherSource, verifiedEnrichment, and unverifiedEnrichment`);
+  }
+
+  if (!enrichmentQa) {
+    fail(`${context}: enrichment fields require sourcePolicy.enrichmentQa`);
+    return;
+  }
+
+  if (!validEnrichmentStatuses.has(enrichmentQa.status)) {
+    fail(`${context}: enrichmentQa.status must be one of ${[...validEnrichmentStatuses].join(', ')}`);
+  }
+
+  const accountedFields = new Set([
+    ...(enrichmentQa.verifiedFields || []),
+    ...(enrichmentQa.unverifiedFields || [])
+  ]);
+  for (const field of enrichmentFields.filter(field => field !== 'chinese')) {
+    if (!accountedFields.has(field)) {
+      fail(`${context}: enrichment field '${field}' must be listed in verifiedFields or unverifiedFields`);
+    }
+  }
+}
+
+function checkVocabularyEnrichment(item, context) {
+  if (item.hanja && !cjkPattern.test(item.hanja)) {
+    fail(`${context}: hanja field must contain at least one CJK/Hanja character`);
+  }
+  if (item.hanja && item.originType && /^native-korean/.test(item.originType)) {
+    warn(`${context}: native-korean originType also has Hanja; verify this is intentional mixed/lexicalized usage`);
+  }
+}
+
+if (!enrichmentPolicy) {
+  fail('Missing content/enrichment-policy-v1.json');
+} else {
+  const tierIds = new Set((enrichmentPolicy.tiers || []).map(tier => tier.id));
+  for (const tierId of ['teacher-source', 'verified-enrichment', 'unverified-enrichment']) {
+    if (!tierIds.has(tierId)) fail(`enrichment-policy: missing tier '${tierId}'`);
+  }
+  for (const field of enrichmentFields) {
+    if (field === 'chinese') continue;
+    if (!(enrichmentPolicy.fieldClassification?.requiresEnrichmentQa || []).includes(field)) {
+      fail(`enrichment-policy: requiresEnrichmentQa must include '${field}'`);
+    }
+  }
+}
+
 for (const pack of index?.packs || []) {
   const lessonId = pack.lessonId;
   const fileName = pack.file;
@@ -117,6 +186,7 @@ for (const pack of index?.packs || []) {
 
   const data = readJson(filePath);
   if (!data) continue;
+  checkEnrichmentPolicy(data, lessonId);
   const lesson = data.lesson;
   if (!lesson?.id || lesson.id !== lessonId) fail(`${lessonId}: lesson.id must equal index lessonId`);
   if (!Number.isInteger(lesson?.number)) fail(`${lessonId}: lesson.number must be an integer`);
@@ -156,12 +226,14 @@ for (const pack of index?.packs || []) {
         if (item.hanja && !data.sourcePolicy?.generatedEnrichment) {
           warn(`${context}: Hanja is present but pack does not declare generatedEnrichment/source policy`);
         }
+        checkVocabularyEnrichment(item, context);
       }
       if (groupName === 'grammar') {
         if (!item.pattern || !item.meaning) fail(`${context}: grammar needs pattern and meaning`);
       }
       if (groupName === 'expressions') {
         if (!item.korean || !item.meaningEn) fail(`${context}: expression needs korean and meaningEn`);
+        checkVocabularyEnrichment(item, context);
       }
       if (groupName === 'practice') {
         if (!item.type || !item.prompt || !Array.isArray(item.answers) || item.answers.length === 0) {
