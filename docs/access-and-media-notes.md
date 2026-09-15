@@ -7,6 +7,7 @@ This site is published with GitHub Pages, so it is a static website. The class a
 - Do not upload teacher PPT screenshots, original slide images, or copied slide layouts.
 - The lesson JSON should keep teacher-derived learning structure separate from enrichment.
 - Hanja, Chinese glosses, word origins, English loanword notes, generated visuals, and extra examples should remain clearly marked as enrichment unless verified.
+- Use the Teacher Review page before wider sharing so the teacher can check accuracy, enrichment labels, and PPT-property concerns in one place.
 
 ## Real photos
 
